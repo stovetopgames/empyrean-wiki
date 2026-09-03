@@ -1,0 +1,1549 @@
+[
+ {
+  "items": [
+   "POKEBALL",
+   "POTION",
+   "ANTIDOTE"
+  ],
+  "greeting": null,
+  "mapId": 4,
+  "mapName": "Town Mart",
+  "event": "Mart"
+ },
+ {
+  "items": [
+   "POKEBALL",
+   "POKEZAAR_POTION"
+  ],
+  "greeting": "Welcome to the provisional Pokézaar!",
+  "mapId": 10,
+  "mapName": "Shawmonk Forest",
+  "event": "EV038"
+ },
+ {
+  "items": [
+   "POKEBALL",
+   "POKEZAAR_POTION",
+   "POKEZAAR_SUPERPOTION",
+   "POKEZAAR_REPEL",
+   "APRIPLUM"
+  ],
+  "greeting": "Welcome to the Pokézaar!",
+  "mapId": 14,
+  "mapName": "Shawmonk Town",
+  "event": "EV001"
+ },
+ {
+  "items": [
+   "RED_HAT_M",
+   "GREEN_HAT_M",
+   "BLUE_HAT_M"
+  ],
+  "greeting": "Welcome. Are you interested in some apparel?",
+  "mapId": 30,
+  "mapName": "Town Mart",
+  "event": "Mart"
+ },
+ {
+  "items": [
+   "RED_HAT_F",
+   "GREEN_HAT_F",
+   "BLUE_HAT_F"
+  ],
+  "greeting": "Welcome. Are you interested in some apparel?",
+  "mapId": 30,
+  "mapName": "Town Mart",
+  "event": "Mart"
+ },
+ {
+  "items": [
+   "POKEBALL",
+   "GREATBALL",
+   "ULTRABALL",
+   "POTION",
+   "SUPERPOTION",
+   "HYPERPOTION",
+   "MAXPOTION",
+   "FULLRESTORE",
+   "REVIVE",
+   "ANTIDOTE",
+   "AWAKENING",
+   "BURNHEAL",
+   "ICEHEAL",
+   "FULLHEAL",
+   "ESCAPEROPE",
+   "REPEL",
+   "SUPERREPEL",
+   "MAXREPEL"
+  ],
+  "greeting": null,
+  "mapId": 30,
+  "mapName": "Town Mart",
+  "event": "Mart"
+ },
+ {
+  "items": [
+   "POKEBALL",
+   "GREATBALL",
+   "ULTRABALL",
+   "POTION",
+   "SUPERPOTION",
+   "HYPERPOTION",
+   "MAXPOTION",
+   "REVIVE",
+   "ANTIDOTE",
+   "AWAKENING",
+   "BURNHEAL",
+   "ICEHEAL",
+   "FULLHEAL",
+   "ESCAPEROPE",
+   "REPEL",
+   "SUPERREPEL",
+   "MAXREPEL"
+  ],
+  "greeting": null,
+  "mapId": 30,
+  "mapName": "Town Mart",
+  "event": "Mart"
+ },
+ {
+  "items": [
+   "POKEBALL",
+   "GREATBALL",
+   "ULTRABALL",
+   "POTION",
+   "SUPERPOTION",
+   "HYPERPOTION",
+   "REVIVE",
+   "ANTIDOTE",
+   "AWAKENING",
+   "BURNHEAL",
+   "ICEHEAL",
+   "FULLHEAL",
+   "ESCAPEROPE",
+   "REPEL",
+   "SUPERREPEL",
+   "MAXREPEL"
+  ],
+  "greeting": null,
+  "mapId": 30,
+  "mapName": "Town Mart",
+  "event": "Mart"
+ },
+ {
+  "items": [
+   "POKEBALL",
+   "GREATBALL",
+   "POTION",
+   "SUPERPOTION",
+   "HYPERPOTION",
+   "REVIVE",
+   "ANTIDOTE",
+   "AWAKENING",
+   "BURNHEAL",
+   "ICEHEAL",
+   "ESCAPEROPE",
+   "REPEL",
+   "SUPERREPEL"
+  ],
+  "greeting": null,
+  "mapId": 30,
+  "mapName": "Town Mart",
+  "event": "Mart"
+ },
+ {
+  "items": [
+   "POKEBALL",
+   "GREATBALL",
+   "POTION",
+   "SUPERPOTION",
+   "ANTIDOTE",
+   "AWAKENING",
+   "BURNHEAL",
+   "ICEHEAL",
+   "ESCAPEROPE",
+   "REPEL"
+  ],
+  "greeting": null,
+  "mapId": 30,
+  "mapName": "Town Mart",
+  "event": "Mart"
+ },
+ {
+  "items": [
+   "POKEBALL",
+   "POTION",
+   "APRIPLUM"
+  ],
+  "greeting": null,
+  "mapId": 30,
+  "mapName": "Town Mart",
+  "event": "Mart"
+ },
+ {
+  "items": [
+   "POKEBALL",
+   "POKEZAAR_POTION",
+   "APRIPLUM"
+  ],
+  "greeting": "Welcome to the Pokézaar!",
+  "mapId": 36,
+  "mapName": "Calistern Town",
+  "event": "EV029"
+ },
+ {
+  "items": [
+   "POKEBALL",
+   "POTION",
+   "ANTIDOTE"
+  ],
+  "greeting": null,
+  "mapId": 54,
+  "mapName": "Town Mart",
+  "event": "Mart"
+ },
+ {
+  "items": [
+   "RED_HAT_M",
+   "GREEN_HAT_M",
+   "BLUE_HAT_M",
+   "GREEN_SHIRT_M"
+  ],
+  "greeting": "Welcome. Are you interested in some apparel?",
+  "mapId": 54,
+  "mapName": "Town Mart",
+  "event": "Mart"
+ },
+ {
+  "items": [
+   "RED_HAT_F",
+   "GREEN_HAT_F",
+   "BLUE_HAT_F",
+   "GREEN_SHIRT_F"
+  ],
+  "greeting": "Welcome. Are you interested in some apparel?",
+  "mapId": 54,
+  "mapName": "Town Mart",
+  "event": "Mart"
+ },
+ {
+  "items": [
+   "APRIPLUM",
+   "POKEBALL",
+   "GREATBALL",
+   "POKEZAAR_COOKIE",
+   "POKEZAAR_POTION",
+   "POKEZAAR_SUPERPOTION",
+   "POKEZAAR_REPEL",
+   "REVERSECANDY"
+  ],
+  "greeting": "Welcome to the \nPokézaar!",
+  "mapId": 68,
+  "mapName": "Dooriver City",
+  "event": "EV007"
+ },
+ {
+  "items": [
+   "ANTIDOTE",
+   "XATTACK",
+   "XSPEED",
+   "XSPDEF",
+   "XACCURACY",
+   "GUARDSPEC",
+   "DIREHIT"
+  ],
+  "greeting": null,
+  "mapId": 86,
+  "mapName": "Dept. Store 2F",
+  "event": "Cashier bottom"
+ },
+ {
+  "items": [
+   "HPUP",
+   "PROTEIN",
+   "IRON",
+   "CALCIUM",
+   "ZINC",
+   "CARBOS",
+   "HP_CANDY"
+  ],
+  "greeting": null,
+  "mapId": 86,
+  "mapName": "Dept. Store 2F",
+  "event": "Cashier top"
+ },
+ {
+  "items": [
+   "RED_HAT_M",
+   "GREEN_HAT_M",
+   "BLUE_HAT_M",
+   "RED_SHIRT_M",
+   "GREEN_SHIRT_M",
+   "BLUE_SHIRT_M"
+  ],
+  "greeting": "Welcome. Are you interested in some apparel?",
+  "mapId": 86,
+  "mapName": "Dept. Store 2F",
+  "event": "Mart"
+ },
+ {
+  "items": [
+   "RED_HAT_F",
+   "GREEN_HAT_F",
+   "BLUE_HAT_F",
+   "RED_SHIRT_F",
+   "GREEN_SHIRT_F",
+   "BLUE_SHIRT_F"
+  ],
+  "greeting": "Welcome. Are you interested in some apparel?",
+  "mapId": 86,
+  "mapName": "Dept. Store 2F",
+  "event": "Mart"
+ },
+ {
+  "items": [
+   "POKEBALL",
+   "GREATBALL",
+   "POTION",
+   "SUPERPOTION",
+   "REPEL",
+   "CARDUPGRADE"
+  ],
+  "greeting": null,
+  "mapId": 86,
+  "mapName": "Dept. Store 2F",
+  "event": "Mart"
+ },
+ {
+  "items": [
+   "POKEBALL",
+   "GREATBALL",
+   "SUPERPOTION",
+   "HYPERPOTION",
+   "ANTIDOTE",
+   "FULLHEAL",
+   "ESCAPEROPE"
+  ],
+  "greeting": "Welcome to the Sygnal Shop!",
+  "mapId": 100,
+  "mapName": "Sygnal Shop",
+  "event": "Clerk"
+ },
+ {
+  "items": [
+   "POKEBALL",
+   "GREATBALL",
+   "POKEZAAR_COOKIE",
+   "POKEZAAR_POTION",
+   "POKEZAAR_SUPERPOTION",
+   "POKEZAAR_REPEL",
+   "REVIVE",
+   "REVERSECANDY"
+  ],
+  "greeting": "Welcome to the provisional Pokézaar!",
+  "mapId": 110,
+  "mapName": "River Overpass",
+  "event": "EV020"
+ },
+ {
+  "items": [
+   "POKEBALL",
+   "GREATBALL",
+   "POKEZAAR_COOKIE",
+   "POKEZAAR_POTION",
+   "POKEZAAR_SUPERPOTION",
+   "POKEZAAR_REVIVE",
+   "POKEZAAR_REPEL",
+   "REVERSECANDY"
+  ],
+  "greeting": "Welcome to the Canyon Pokézaar!",
+  "mapId": 117,
+  "mapName": "Canyon Pass",
+  "event": "EV020"
+ },
+ {
+  "items": [
+   "POKEBALL",
+   "GREATBALL",
+   "POKEZAAR_COOKIE",
+   "POKEZAAR_POTION",
+   "POKEZAAR_SUPERPOTION",
+   "FULLRESTORE",
+   "REVIVE",
+   "POKEZAAR_REPEL",
+   "REVERSECANDY"
+  ],
+  "greeting": "Welcome to the \nemergency Pokézaar!",
+  "mapId": 131,
+  "mapName": "Poke Heal",
+  "event": "EV028"
+ },
+ {
+  "items": [
+   "UPGRADE",
+   "DUBIOUSDISC",
+   "DRAGONSCALE",
+   "PROTECTOR",
+   "ELECTIRIZER",
+   "MAGMARIZER",
+   "REAPERCLOTH",
+   "PRISMSCALE",
+   "KINGSROCK",
+   "RAZORCLAW",
+   "RAZORFANG"
+  ],
+  "greeting": "Hi! We're selling held evolution items here. Are you interested in buying some?",
+  "mapId": 138,
+  "mapName": "Research Center B6",
+  "event": "Miriam"
+ },
+ {
+  "items": [
+   "UPGRADE",
+   "DRAGONSCALE",
+   "ELECTIRIZER"
+  ],
+  "greeting": null,
+  "mapId": 138,
+  "mapName": "Research Center B6",
+  "event": "Miriam"
+ },
+ {
+  "items": [
+   "ANTIDOTE",
+   "FULLHEAL",
+   "XATTACK",
+   "XSPEED",
+   "XSPDEF",
+   "XACCURACY",
+   "DESTINYKNOT"
+  ],
+  "greeting": null,
+  "mapId": 148,
+  "mapName": "Sylen City Mall 2F",
+  "event": "Cashier bottom"
+ },
+ {
+  "items": [
+   "HPUP",
+   "PROTEIN",
+   "IRON",
+   "CALCIUM",
+   "ZINC",
+   "CARBOS",
+   "ATK_CANDY"
+  ],
+  "greeting": null,
+  "mapId": 148,
+  "mapName": "Sylen City Mall 2F",
+  "event": "Cashier top"
+ },
+ {
+  "items": [
+   "DEFAULT_HAT_M",
+   "RED_HAT_M",
+   "GREEN_HAT_M",
+   "BLUE_HAT_M",
+   "RED_SHIRT_M",
+   "GREEN_SHIRT_M",
+   "BLUE_SHIRT_M",
+   "YELLOW_SHIRT_M",
+   "PURPLE_SHIRT_M",
+   "DEFAULT_PANTS_M",
+   "WHITE_PANTS_M",
+   "JEANS_M"
+  ],
+  "greeting": "Welcome. Are you interested in some apparel?",
+  "mapId": 148,
+  "mapName": "Sylen City Mall 2F",
+  "event": "Mart"
+ },
+ {
+  "items": [
+   "DEFAULT_HAT_F",
+   "RED_HAT_F",
+   "GREEN_HAT_F",
+   "BLUE_HAT_F",
+   "RED_SHIRT_F",
+   "GREEN_SHIRT_F",
+   "BLUE_SHIRT_F",
+   "YELLOW_SHIRT_F",
+   "PURPLE_SHIRT_F",
+   "DEFAULT_PANTS_F",
+   "WHITE_PANTS_F",
+   "JEANS_F"
+  ],
+  "greeting": "Welcome. Are you interested in some apparel?",
+  "mapId": 148,
+  "mapName": "Sylen City Mall 2F",
+  "event": "Mart"
+ },
+ {
+  "items": [
+   "SWEETHEART",
+   "POKEBALL",
+   "GREATBALL",
+   "POTION",
+   "SUPERPOTION",
+   "HYPERPOTION",
+   "ESCAPEROPE",
+   "FULLHEAL",
+   "REPEL",
+   "SUPERREPEL",
+   "CARDUPGRADE"
+  ],
+  "greeting": null,
+  "mapId": 148,
+  "mapName": "Sylen City Mall 2F",
+  "event": "Mart"
+ },
+ {
+  "items": [
+   "TM10",
+   "TM11",
+   "TM18",
+   "TM27",
+   "TM35",
+   "TM37",
+   "TM61",
+   "TM75"
+  ],
+  "greeting": null,
+  "mapId": 149,
+  "mapName": "Sylen City Mall 3F",
+  "event": "Cashier top"
+ },
+ {
+  "items": [
+   "WATERSTONE",
+   "FIRESTONE",
+   "THUNDERSTONE",
+   "LEAFSTONE"
+  ],
+  "greeting": null,
+  "mapId": 149,
+  "mapName": "Sylen City Mall 3F",
+  "event": "Cashier top"
+ },
+ {
+  "items": [
+   "MOOMOOMILK",
+   "SASKINCENSE"
+  ],
+  "greeting": "Either way is fine with me! Yeehaw.",
+  "mapId": 184,
+  "mapName": "Route 106",
+  "event": "EV011"
+ },
+ {
+  "items": [
+   "POKEBALL",
+   "GREATBALL",
+   "ULTRABALL",
+   "POKEZAAR_COOKIE",
+   "POKEZAAR_POTION",
+   "POKEZAAR_SUPERPOTION",
+   "HYPERPOTION",
+   "POKEZAAR_REVIVE",
+   "POKEZAAR_REPEL",
+   "REVERSECANDY"
+  ],
+  "greeting": "It's too cold outside, so we've moved inside. Welcome!",
+  "mapId": 218,
+  "mapName": "Poke Heal",
+  "event": "EV005"
+ },
+ {
+  "items": [
+   "CHOCOLATE_CHIP",
+   "CHOCO_ICE_CREAM",
+   "SWEETHEART",
+   "CHOCOLATE_TEDDIURSA",
+   "CHOCOLATE_LOPUNNY",
+   "CHOCOLATE_CAKE"
+  ],
+  "greeting": "Buon Giorno! Welcome to the Chocolate Shop.",
+  "mapId": 236,
+  "mapName": "Route 107",
+  "event": "EV003"
+ },
+ {
+  "items": [
+   "LAVACOOKIE",
+   "FORTUNECOOKIE"
+  ],
+  "greeting": "Hello, dear. Would you like to buy some of my homemade cookies?",
+  "mapId": 255,
+  "mapName": "Naraku Village",
+  "event": "EV039"
+ },
+ {
+  "items": [
+   "POKEBALL",
+   "GREATBALL",
+   "ULTRABALL",
+   "POTION",
+   "SUPERPOTION",
+   "HYPERPOTION",
+   "FULLHEAL",
+   "ESCAPEROPE",
+   "REPEL",
+   "SUPERREPEL",
+   "MAXREPEL",
+   "REVERSECANDY"
+  ],
+  "greeting": null,
+  "mapId": 258,
+  "mapName": "Poke Heal",
+  "event": "Mart"
+ },
+ {
+  "items": [
+   "FULLHEAL",
+   "HYPERPOTION",
+   "SHADOW_SHIELD",
+   "REVERSECANDY"
+  ],
+  "greeting": "Are you in need of any items?",
+  "mapId": 267,
+  "mapName": "Dark Tower 3F",
+  "event": "EV007"
+ },
+ {
+  "items": [
+   "HEALPOWDER",
+   "ENERGYPOWDER",
+   "MENTALHERB",
+   "WHITEHERB",
+   "ENERGYROOT",
+   "REVIVALHERB",
+   "TM85",
+   "TM98"
+  ],
+  "greeting": null,
+  "mapId": 270,
+  "mapName": "Shaman Shop",
+  "event": "EV001"
+ },
+ {
+  "items": [
+   "POKEBALL",
+   "GREATBALL",
+   "ULTRABALL",
+   "POTION",
+   "SUPERPOTION",
+   "HYPERPOTION",
+   "FULLHEAL",
+   "ESCAPEROPE",
+   "REPEL",
+   "SUPERREPEL",
+   "MAXREPEL",
+   "REVERSECANDY"
+  ],
+  "greeting": "Welcome to the Islet Shop.",
+  "mapId": 281,
+  "mapName": "Cycling Highway",
+  "event": "Mart"
+ },
+ {
+  "items": [
+   "POKEBALL",
+   "GREATBALL",
+   "ULTRABALL",
+   "POTION",
+   "SUPERPOTION",
+   "HYPERPOTION",
+   "FULLHEAL",
+   "ESCAPEROPE",
+   "REPEL",
+   "SUPERREPEL",
+   "MAXREPEL",
+   "REVERSECANDY"
+  ],
+  "greeting": null,
+  "mapId": 288,
+  "mapName": "Checkpoint Gate",
+  "event": "Mart"
+ },
+ {
+  "items": [
+   "POKEBALL",
+   "GREATBALL",
+   "ULTRABALL",
+   "POTION",
+   "SUPERPOTION",
+   "HYPERPOTION",
+   "FULLHEAL",
+   "ESCAPEROPE",
+   "REPEL",
+   "SUPERREPEL",
+   "MAXREPEL",
+   "REVERSECANDY"
+  ],
+  "greeting": null,
+  "mapId": 289,
+  "mapName": "Checkpoint Gate",
+  "event": "Mart"
+ },
+ {
+  "items": [
+   "POKEBALL",
+   "GREATBALL",
+   "ULTRABALL",
+   "POTION",
+   "SUPERPOTION",
+   "HYPERPOTION",
+   "FULLHEAL",
+   "ESCAPEROPE",
+   "REPEL",
+   "SUPERREPEL",
+   "MAXREPEL",
+   "REVERSECANDY"
+  ],
+  "greeting": null,
+  "mapId": 291,
+  "mapName": "Checkpoint Gate",
+  "event": "Mart"
+ },
+ {
+  "items": [
+   "ULTRABALL",
+   "MAXPOTION",
+   "WAVEINCENSE",
+   "PROTEIN"
+  ],
+  "greeting": "Welcome to Cape Precipice. We offer only the most exquisite of items.",
+  "mapId": 292,
+  "mapName": "Cape Precipice",
+  "event": "Mart"
+ },
+ {
+  "items": [
+   "POKEBALL",
+   "GREATBALL",
+   "ULTRABALL",
+   "POKEZAAR_COOKIE",
+   "POKEZAAR_SUPERPOTION",
+   "POKEZAAR_MEGAPOTION",
+   "POKEZAAR_REVIVE",
+   "POKEZAAR_TURBOREVIVE",
+   "POKEZAAR_REPEL",
+   "REVERSECANDY"
+  ],
+  "greeting": "Welcome to Asutra City Pokezaar! How can I help you?",
+  "mapId": 297,
+  "mapName": "Asutra City",
+  "event": "EV023"
+ },
+ {
+  "items": [
+   "APRIPLUM",
+   "HEALPOWDER",
+   "ENERGYPOWDER",
+   "MENTALHERB",
+   "WHITEHERB",
+   "ENERGYROOT",
+   "REVIVALHERB"
+  ],
+  "greeting": null,
+  "mapId": 297,
+  "mapName": "Asutra City",
+  "event": "EV045"
+ },
+ {
+  "items": [
+   "ANTIDOTE",
+   "AWAKENING",
+   "ICEHEAL",
+   "BURNHEAL",
+   "XATTACK2",
+   "XSPEED2",
+   "XSPDEF2",
+   "HPUP",
+   "PROTEIN",
+   "IRON",
+   "CARBOS",
+   "ZINC",
+   "CALCIUM",
+   "AQUA_SHIELD"
+  ],
+  "greeting": null,
+  "mapId": 304,
+  "mapName": "Asutra Mart",
+  "event": "Cashier bottom"
+ },
+ {
+  "items": [
+   "DEFAULT_HAT_M",
+   "RED_HAT_M",
+   "GREEN_HAT_M",
+   "BLUE_HAT_M",
+   "RED_SHIRT_M",
+   "GREEN_SHIRT_M",
+   "BLUE_SHIRT_M",
+   "YELLOW_SHIRT_M",
+   "PURPLE_SHIRT_M",
+   "DEFAULT_PANTS_M",
+   "WHITE_PANTS_M",
+   "JEANS_M",
+   "MENACING_JACKET"
+  ],
+  "greeting": "Welcome. Are you interested in some apparel?",
+  "mapId": 304,
+  "mapName": "Asutra Mart",
+  "event": "Mart"
+ },
+ {
+  "items": [
+   "DEFAULT_HAT_F",
+   "RED_HAT_F",
+   "GREEN_HAT_F",
+   "BLUE_HAT_F",
+   "RED_SHIRT_F",
+   "GREEN_SHIRT_F",
+   "BLUE_SHIRT_F",
+   "YELLOW_SHIRT_F",
+   "PURPLE_SHIRT_F",
+   "DEFAULT_PANTS_F",
+   "WHITE_PANTS_F",
+   "JEANS_F"
+  ],
+  "greeting": "Welcome. Are you interested in some apparel?",
+  "mapId": 304,
+  "mapName": "Asutra Mart",
+  "event": "Mart"
+ },
+ {
+  "items": [
+   "POKEBALL",
+   "GREATBALL",
+   "ULTRABALL",
+   "GIGABALL",
+   "SUPERPOTION",
+   "HYPERPOTION",
+   "MAXPOTION",
+   "FULLHEAL",
+   "ESCAPEROPE",
+   "SUPERREPEL",
+   "MAXREPEL",
+   "APRIPLUM",
+   "REVERSECANDY"
+  ],
+  "greeting": null,
+  "mapId": 304,
+  "mapName": "Asutra Mart",
+  "event": "Mart"
+ },
+ {
+  "items": [
+   "POKEBALL",
+   "GREATBALL",
+   "ULTRABALL",
+   "SUPERPOTION",
+   "HYPERPOTION",
+   "MAXPOTION",
+   "FULLHEAL",
+   "ESCAPEROPE",
+   "SUPERREPEL",
+   "MAXREPEL",
+   "REVERSECANDY"
+  ],
+  "greeting": null,
+  "mapId": 304,
+  "mapName": "Asutra Mart",
+  "event": "Mart"
+ },
+ {
+  "items": [
+   "HP_CANDY",
+   "ATK_CANDY",
+   "DEF_CANDY",
+   "SPATK_CANDY",
+   "SPDEF_CANDY"
+  ],
+  "greeting": "It's a vending machine.",
+  "mapId": 308,
+  "mapName": "Research Centre B1",
+  "event": "EV013"
+ },
+ {
+  "items": [
+   "FIRESTONE",
+   "THUNDERSTONE",
+   "WATERSTONE",
+   "LEAFSTONE",
+   "MOONSTONE",
+   "DAWNSTONE",
+   "METALCOAT"
+  ],
+  "greeting": "It's a vending machine.",
+  "mapId": 308,
+  "mapName": "Research Centre B1",
+  "event": "EV014"
+ },
+ {
+  "items": [
+   "POKEBALL",
+   "GREATBALL",
+   "ULTRABALL",
+   "FULLHEAL",
+   "REVIVE",
+   "POKEZAAR_TURBOREVIVE",
+   "HYPERPOTION"
+  ],
+  "greeting": "In need of any items?",
+  "mapId": 310,
+  "mapName": "Sukuyomi Mansion",
+  "event": "EV031"
+ },
+ {
+  "items": [
+   "GREATBALL",
+   "ULTRABALL",
+   "FRESHWATER",
+   "HYPERPOTION",
+   "MAXPOTION",
+   "REVIVE",
+   "MAXREPEL"
+  ],
+  "greeting": "It's a vending machine.",
+  "mapId": 326,
+  "mapName": "Factorial Indoor",
+  "event": "EV005"
+ },
+ {
+  "items": [
+   "FRESHWATER",
+   "HYPERPOTION",
+   "MAXPOTION",
+   "REVIVE"
+  ],
+  "greeting": "It's a vending machine.",
+  "mapId": 329,
+  "mapName": "Factory 00",
+  "event": "EV059"
+ },
+ {
+  "items": [
+   "HONEY"
+  ],
+  "greeting": "Would you like to buy some Honey?",
+  "mapId": 339,
+  "mapName": "Flowery Park",
+  "event": "EV013"
+ },
+ {
+  "items": [
+   "POKEBALL",
+   "GREATBALL",
+   "ULTRABALL",
+   "GIGABALL",
+   "SUPERPOTION",
+   "HYPERPOTION",
+   "MAXPOTION",
+   "FULLHEAL",
+   "ESCAPEROPE",
+   "SUPERREPEL",
+   "MAXREPEL",
+   "APRIPLUM",
+   "REVERSECANDY"
+  ],
+  "greeting": null,
+  "mapId": 360,
+  "mapName": "Krystolny Healery",
+  "event": "Mart"
+ },
+ {
+  "items": [
+   "POKEBALL",
+   "GREATBALL",
+   "ULTRABALL",
+   "POKEZAAR_COOKIE",
+   "POKEZAAR_SUPERPOTION",
+   "POKEZAAR_MEGAPOTION",
+   "POKEZAAR_REVIVE",
+   "POKEZAAR_TURBOREVIVE",
+   "POKEZAAR_REPEL",
+   "REVERSECANDY"
+  ],
+  "greeting": "Welcome to Roarin Island Pokezaar! How can I help you?",
+  "mapId": 367,
+  "mapName": "Roarin Plateau",
+  "event": "EV010"
+ },
+ {
+  "items": [
+   "FIRESTONE",
+   "WATERSTONE",
+   "THUNDERSTONE",
+   "ICESTONE",
+   "LEAFSTONE",
+   "MOONSTONE",
+   "DAWNSTONE",
+   "DUSKSTONE",
+   "SUNSTONE",
+   "STONEOFLIGHT",
+   "OVALSTONE"
+  ],
+  "greeting": "Buon Giorno! In need of any evolution stones?",
+  "mapId": 367,
+  "mapName": "Roarin Plateau",
+  "event": "EV055"
+ },
+ {
+  "items": [
+   "HPUP",
+   "PROTEIN",
+   "ZINC",
+   "CARBOS",
+   "IRON",
+   "CALCIUM",
+   "FOCUSSASH",
+   "DRACO_SHIELD"
+  ],
+  "greeting": null,
+  "mapId": 371,
+  "mapName": "Roarin Mart",
+  "event": "Mart"
+ },
+ {
+  "items": [
+   "POKEBALL",
+   "GREATBALL",
+   "ULTRABALL",
+   "GIGABALL",
+   "HYPERPOTION",
+   "MAXPOTION",
+   "FULLRESTORE",
+   "FULLHEAL",
+   "REVIVE",
+   "MAXREPEL",
+   "REVERSECANDY"
+  ],
+  "greeting": null,
+  "mapId": 371,
+  "mapName": "Roarin Mart",
+  "event": "Mart"
+ },
+ {
+  "items": [
+   "POKEBALL",
+   "GREATBALL",
+   "ULTRABALL",
+   "SUPERPOTION",
+   "HYPERPOTION",
+   "MAXPOTION",
+   "FULLHEAL",
+   "ESCAPEROPE",
+   "SUPERREPEL",
+   "MAXREPEL",
+   "REVERSECANDY"
+  ],
+  "greeting": null,
+  "mapId": 371,
+  "mapName": "Roarin Mart",
+  "event": "Mart"
+ },
+ {
+  "items": [
+   "CHOCOLATE_CHIP",
+   "SWEETHEART",
+   "CHOCOLATE_CAKE",
+   "APRIPLUM",
+   "ASUTRACONE",
+   "RAGECANDYBAR",
+   "WHITEHERB",
+   "REVIVALHERB",
+   "HP_CANDY",
+   "ATK_CANDY",
+   "SPATK_CANDY",
+   "SPD_CANDY"
+  ],
+  "greeting": "'Sup. Welcome to the Candy Shop.",
+  "mapId": 373,
+  "mapName": "Candy Shop",
+  "event": "shopkeeper"
+ },
+ {
+  "items": [
+   "HP_CANDY",
+   "ATK_CANDY",
+   "DEF_CANDY",
+   "SPATK_CANDY",
+   "SPDEF_CANDY",
+   "SPD_CANDY",
+   "ABILITYCAPSULE"
+  ],
+  "greeting": "It's a vending machine.",
+  "mapId": 386,
+  "mapName": "Space Station Lobby",
+  "event": "EV008"
+ },
+ {
+  "items": [
+   "FULLHEAL",
+   "HYPERPOTION",
+   "MAXPOTION",
+   "FULLRESTORE",
+   "REVIVE",
+   "ABILITYCAPSULE"
+  ],
+  "greeting": "It's a vending machine.",
+  "mapId": 386,
+  "mapName": "Space Station Lobby",
+  "event": "EV009"
+ },
+ {
+  "items": [
+   "FULLHEAL",
+   "HYPERPOTION",
+   "MAXPOTION",
+   "FULLRESTORE",
+   "REVIVE"
+  ],
+  "greeting": "It's a vending machine.",
+  "mapId": 386,
+  "mapName": "Space Station Lobby",
+  "event": "EV011"
+ },
+ {
+  "items": [
+   "ASUTRACONE",
+   "LAVACOOKIE",
+   "OLDGATEAU",
+   "FRESHWATER"
+  ],
+  "greeting": "Welcome to the Ice Cream Shop!",
+  "mapId": 424,
+  "mapName": "Ice Cream Shop",
+  "event": "EV001"
+ },
+ {
+  "items": [
+   "ASUTRACONE",
+   "CHOCO_ICE_CREAM",
+   "VANILLA_ICE_CREAM",
+   "STRAWBERRY_ICE_CREAM",
+   "MINT_ICE_CREAM",
+   "LAVA_ICE_CREAM"
+  ],
+  "greeting": "Welcome to the Ice Cream Shop!",
+  "mapId": 424,
+  "mapName": "Ice Cream Shop",
+  "event": "EV011"
+ },
+ {
+  "items": [
+   "FULLHEAL",
+   "HYPERPOTION",
+   "MAXPOTION",
+   "FULLRESTORE",
+   "REVIVE"
+  ],
+  "greeting": "Emergency provisions.",
+  "mapId": 435,
+  "mapName": "Mt. Dynamo 2F",
+  "event": "EV004"
+ },
+ {
+  "items": [
+   "HEAT_COUNTER",
+   "FIST_AMPLIFIER",
+   "PIXIE_AMPLIFIER",
+   "DRACO_AMPLIFIER",
+   "GAIA_NULLIFIER",
+   "AQUA_NULLIFIER",
+   "SHADOW_NULLIFIER",
+   "DARKNESS_NULLIFIER",
+   "VOLT_NULLIFIER"
+  ],
+  "greeting": "Gigu. Welcome to the Shop.",
+  "mapId": 453,
+  "mapName": "Asutra Mart",
+  "event": "Mart"
+ },
+ {
+  "items": [
+   "MAXREPEL",
+   "GIGABALL",
+   "HYPERPOTION",
+   "FULLRESTORE",
+   "REVIVE",
+   "COLORLESS_STONE",
+   "GOLDENEGG"
+  ],
+  "greeting": "Gigu. Welcome to the Shop.",
+  "mapId": 453,
+  "mapName": "Asutra Mart",
+  "event": "Mart"
+ },
+ {
+  "items": [
+   "SITRUSBERRY",
+   "POMEGBERRY",
+   "KELPSYBERRY",
+   "QUALOTBERRY",
+   "HONDEWBERRY",
+   "GREPABERRY",
+   "TAMATOBERRY",
+   "YAKSHABERRY"
+  ],
+  "greeting": "Welcome to the Safari Berry Shop!",
+  "mapId": 459,
+  "mapName": "Safari House",
+  "event": "Mart"
+ },
+ {
+  "items": [
+   "SUPERREPEL",
+   "SUPERPOTION",
+   "MACHOBRACE",
+   "POWERWEIGHT",
+   "POWERBRACER",
+   "POWERBELT",
+   "POWERLENS",
+   "POWERBAND",
+   "POWERANKLET",
+   "EXPSHARE"
+  ],
+  "greeting": "Welcome to the Safari Shop!",
+  "mapId": 459,
+  "mapName": "Safari House",
+  "event": "Mart"
+ },
+ {
+  "items": [
+   "GIGABALL",
+   "MAXPOTION",
+   "FULLRESTORE",
+   "REVIVE",
+   "RED_REVIVE",
+   "BLUE_REVIVE",
+   "COLORLESS_STONE"
+  ],
+  "greeting": "Hiya, dearie. Do you need any provisions?",
+  "mapId": 466,
+  "mapName": "Treetops Checkpoint",
+  "event": "EV017"
+ },
+ {
+  "items": [
+   "FULLRESTORE",
+   "THORIUM_BATTERY",
+   "FAIRYDUST",
+   "FIST_AMPLIFIER",
+   "ROCKY_NULLIFIER",
+   "ODD_SHIELD"
+  ],
+  "greeting": "May I interest you in some goods?",
+  "mapId": 488,
+  "mapName": "Teren Desert",
+  "event": "EV004"
+ },
+ {
+  "items": [
+   "FULLHEAL",
+   "FULLRESTORE",
+   "GIGABALL",
+   "REVIVE",
+   "METAL_REVIVE",
+   "THORIUM_BATTERY",
+   "STEEL_NET",
+   "CARDUPGRADE"
+  ],
+  "greeting": "Zoom... zoom... how may I be of service, young human?",
+  "mapId": 493,
+  "mapName": "Astarr Indoor",
+  "event": "EV014"
+ },
+ {
+  "items": [
+   "GIGABALL",
+   "MAXPOTION",
+   "FULLRESTORE",
+   "REVIVE",
+   "RED_REVIVE",
+   "BLUE_REVIVE",
+   "ELECTRO_REVIVE",
+   "METAL_REVIVE",
+   "DATARESTORE",
+   "COLORLESS_STONE"
+  ],
+  "greeting": "Gigu. Welcome to the Neon Shoppe.",
+  "mapId": 509,
+  "mapName": "Neon Shoppe",
+  "event": "Mart"
+ },
+ {
+  "items": [
+   "THORIUM_BATTERY",
+   "INSULATOR",
+   "TOXIC_NULLIFIER",
+   "ROCKY_NULLIFIER",
+   "TITAN_NULLIFIER",
+   "FROST_NULLIFIER",
+   "ODD_SHIELD",
+   "RAINBOW_SHIELD"
+  ],
+  "greeting": "Gigu. Welcome to the Neon Shoppe.",
+  "mapId": 509,
+  "mapName": "Neon Shoppe",
+  "event": "Mart"
+ },
+ {
+  "items": [
+   "CARDBALL",
+   "CARDUPGRADE",
+   "OM_SHINX_CARD",
+   "OM_MACHOP_CARD",
+   "OM_TEDDIURSA_CARD",
+   "CHARMANDER_CARD",
+   "TREECKO_CARD",
+   "PIPLUP_CARD"
+  ],
+  "greeting": "Welcome to the Card Shop. Here you can buy individual cards and card tools.",
+  "mapId": 547,
+  "mapName": "Card Shop",
+  "event": "EV001"
+ },
+ {
+  "items": [
+   "BOOSTERPACK"
+  ],
+  "greeting": "How many would you like to buy?",
+  "mapId": 547,
+  "mapName": "Card Shop",
+  "event": "EV011"
+ },
+ {
+  "items": [
+   "LEAFCARDUPGRADE",
+   "SUNCARDUPGRADE",
+   "WATERCARDUPGRADE",
+   "KINGCARDUPGRADE",
+   "THUNDERCARDUPGRADE",
+   "FIRECARDUPGRADE",
+   "ESPERCARDUPGRADE",
+   "DARKCARDUPGRADE",
+   "ICECARDUPGRADE",
+   "FAIRYCARDUPGRADE",
+   "DAWNCARDUPGRADE",
+   "SHEDCARDUPGRADE",
+   "LIGHTCARDUPGRADE",
+   "DATACARDUPGRADE"
+  ],
+  "greeting": "It's a Card Upgrade Vending Machine.",
+  "mapId": 547,
+  "mapName": "Card Shop",
+  "event": "EV021"
+ },
+ {
+  "items": [
+   "COLORLESS_STONE",
+   "THORIUM_BATTERY",
+   "INSULATOR",
+   "STEEL_NET",
+   "FAIRYDUST",
+   "GOLDENEGG",
+   "TM103",
+   "TM104",
+   "TM105",
+   "TOXIC_NULLIFIER",
+   "ROCKY_NULLIFIER",
+   "TITAN_NULLIFIER",
+   "FROST_NULLIFIER",
+   "ODD_SHIELD",
+   "NATURE_SHIELD",
+   "RAINBOW_SHIELD"
+  ],
+  "greeting": "Gigu. Welcome to the Jungle Haven shop.",
+  "mapId": 550,
+  "mapName": "Jungle Haven",
+  "event": "Mart"
+ },
+ {
+  "items": [
+   "CHICKENWING"
+  ],
+  "greeting": "Zoom... zoom... Come again! ... or don't.",
+  "mapId": 551,
+  "mapName": "The Plantation",
+  "event": "EV041"
+ },
+ {
+  "items": [
+   "DATARESTORE",
+   "DATAUPGRADE",
+   "LAWNMOWER",
+   "AQUA_NULLIFIER",
+   "GAIA_NULLIFIER",
+   "FIST_NULLIFIER",
+   "SHADOW_NULLIFIER",
+   "DARKNESS_NULLIFIER",
+   "VOLT_NULLIFIER",
+   "FROST_NULLIFIER"
+  ],
+  "greeting": "Gigu. Welcome to the Plantation shop.",
+  "mapId": 551,
+  "mapName": "The Plantation",
+  "event": "Mart"
+ },
+ {
+  "items": [
+   "FULLHEAL",
+   "HYPERPOTION",
+   "MAXPOTION",
+   "FULLRESTORE",
+   "REVIVE",
+   "MAXREVIVE"
+  ],
+  "greeting": null,
+  "mapId": 594,
+  "mapName": "The League",
+  "event": "EV005"
+ },
+ {
+  "items": [
+   "HEALPOWDER",
+   "ENERGYPOWDER",
+   "MENTALHERB",
+   "WHITEHERB",
+   "ENERGYROOT",
+   "TM81",
+   "WOOPER_CARD",
+   "SKRELP_CARD"
+  ],
+  "greeting": null,
+  "mapId": 618,
+  "mapName": "Swamp Shop",
+  "event": "EV002"
+ },
+ {
+  "items": [
+   "GIGABALL",
+   "FULLRESTORE",
+   "MAXREVIVE",
+   "COLORLESS_STONE",
+   "NUGGET",
+   "SHREDDER",
+   "APRIPLUM_ROYAL",
+   "SANDILE_CARD",
+   "CRUST_NULLIFIER"
+  ],
+  "greeting": null,
+  "mapId": 636,
+  "mapName": "Desert Shop",
+  "event": "Mart"
+ },
+ {
+  "items": [
+   "BLUESHARD",
+   "REDSHARD",
+   "WHITEFLUTE",
+   "BLACKFLUTE",
+   "GIGABALL",
+   "FULLRESTORE",
+   "MAXREVIVE",
+   "COLORLESS_STONE",
+   "NUGGET",
+   "LIFEORB"
+  ],
+  "greeting": null,
+  "mapId": 654,
+  "mapName": "Harbor House",
+  "event": "Mart"
+ },
+ {
+  "items": [
+   "POKEBALL",
+   "FRESHWATER",
+   "DESERTCOOKIE"
+  ],
+  "greeting": null,
+  "mapId": 679,
+  "mapName": "Nubis Town",
+  "event": "EV080"
+ },
+ {
+  "items": [
+   "POKEBALL",
+   "LEVELBALL",
+   "LUREBALL"
+  ],
+  "greeting": null,
+  "mapId": 679,
+  "mapName": "Nubis Town",
+  "event": "EV081"
+ },
+ {
+  "items": [
+   "POKEBALL",
+   "POTION",
+   "FRESHWATER",
+   "DESERTCOOKIE",
+   "ESCAPEROPE",
+   "OLDROD",
+   "BICYCLE"
+  ],
+  "greeting": null,
+  "mapId": 690,
+  "mapName": "Desert Road House",
+  "event": "EV001"
+ },
+ {
+  "items": [
+   "POKEBALL",
+   "FRESHWATER",
+   "DESERTCOOKIE",
+   "GREATBALL",
+   "HYPERPOTION",
+   "FULLRESTORE"
+  ],
+  "greeting": null,
+  "mapId": 708,
+  "mapName": "Route D003",
+  "event": "EV004"
+ },
+ {
+  "items": [
+   "POKEBALL",
+   "FRESHWATER",
+   "DESERTCOOKIE",
+   "GREATBALL",
+   "HYPERPOTION",
+   "FULLRESTORE"
+  ],
+  "greeting": null,
+  "mapId": 710,
+  "mapName": "Route D003",
+  "event": "EV012"
+ },
+ {
+  "items": [
+   "POKEBALL",
+   "FRESHWATER",
+   "DESERTCOOKIE",
+   "GREATBALL",
+   "HYPERPOTION",
+   "FULLRESTORE"
+  ],
+  "greeting": null,
+  "mapId": 726,
+  "mapName": "Scorched Way",
+  "event": "EV004"
+ },
+ {
+  "items": [
+   "POKEBALL",
+   "FRESHWATER",
+   "DESERTCOOKIE",
+   "GREATBALL",
+   "HYPERPOTION",
+   "FULLRESTORE"
+  ],
+  "greeting": null,
+  "mapId": 732,
+  "mapName": "The Alarean",
+  "event": "EV151"
+ }
+]

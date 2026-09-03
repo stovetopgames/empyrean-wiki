@@ -1,0 +1,60 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import PartyTable from '../../components/PartyTable.astro';
+import { trainers, locations, type Trainer } from '../../lib/game';
+
+export async function getStaticPaths() {
+  return trainers.map((t) => ({ params: { slug: t.slug }, props: { t } }));
+}
+
+const { t } = Astro.props as { t: Trainer };
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const loc = locations.find((l) => l.mapId === t.mapId);
+const others = trainers.filter((o) => o.mapId === t.mapId && o.slug !== t.slug).slice(0, 12);
+---
+
+<StarlightPage
+  frontmatter={{
+    title: t.displayName,
+    description: `${t.displayName} in ${t.mapName ?? 'Pokémon Empyrean'} — a ${t.partySize}-Pokémon team up to level ${t.maxLevel}.`,
+    tableOfContents: false,
+  }}
+>
+  <p class="meta">
+    {t.trainerType} · {loc ? <a href={`${base}/locations/${loc.slug}`}>{t.mapName}</a> : t.mapName}
+    {' '}· {t.partySize} Pokémon · up to level {t.maxLevel}
+  </p>
+
+  {t.dynamic && (
+    <aside class="note">
+      Part of this battle is chosen at run time (the rival mirrors your starter, for
+      example), so the team below may differ in play.
+    </aside>
+  )}
+
+  <PartyTable party={t.party} />
+
+  <p class="muted">
+    Movesets shown are the ones written into the battle. Where a slot is blank the
+    Pokémon uses its level-up moveset, and above a level threshold the game may
+    substitute a competitive set.
+  </p>
+
+  {others.length > 0 && (
+    <>
+      <h2>Other trainers here</h2>
+      <p class="chips">
+        {others.map((o) => <a href={`${base}/trainers/${o.slug}`}>{o.displayName}</a>)}
+      </p>
+    </>
+  )}
+</StarlightPage>
+
+<style>
+  .meta { color: var(--sl-color-gray-2); font-size: .9rem; margin-top: 1rem; }
+  .note { border-left: 3px solid var(--sl-color-orange); padding: .5rem .75rem;
+          background: var(--sl-color-gray-7); font-size: .85rem; border-radius: 0 4px 4px 0; margin: .75rem 0; }
+  .muted { color: var(--sl-color-gray-3); font-size: .8rem; margin-top: .5rem; }
+  .chips { display: flex; flex-wrap: wrap; gap: .3rem .4rem; }
+  .chips a { background: var(--sl-color-gray-6); padding: .1rem .5rem; border-radius: 999px; font-size: .8rem; text-decoration: none; }
+</style>

@@ -1,0 +1,1248 @@
+[
+ {
+  "gym": 1,
+  "leader": "Rita",
+  "trainerType": "Gym Captain",
+  "mapId": 3,
+  "mapName": "Calistern Gym",
+  "badge": "Hard",
+  "reward": "TM78",
+  "levelCap": 25,
+  "normal": [
+   {
+    "species": "ARON",
+    "level": 10,
+    "moves": [],
+    "gender": null,
+    "item": null,
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "ZANGOOSE",
+    "level": 12,
+    "moves": [],
+    "gender": null,
+    "item": null,
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "RHYHORN",
+    "level": 11,
+    "moves": [
+     "HORNATTACK",
+     "BULLDOZE",
+     "ROCKSLIDE",
+     "STOMP"
+    ],
+    "gender": null,
+    "item": null,
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   }
+  ],
+  "extreme": [
+   {
+    "species": "ARON",
+    "level": 11,
+    "moves": [],
+    "gender": null,
+    "item": null,
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "ZANGOOSE",
+    "level": 11,
+    "moves": [
+     "SLASH",
+     "QUICKATTACK",
+     "PURSUIT"
+    ],
+    "gender": null,
+    "item": null,
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "RHYHORN",
+    "level": 12,
+    "moves": [
+     "HORNATTACK",
+     "BULLDOZE",
+     "ROCKSLIDE",
+     "STOMP"
+    ],
+    "gender": null,
+    "item": null,
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "CRUSTLE",
+    "level": 13,
+    "moves": [
+     "ROCKBLAST",
+     "SHELLSMASH",
+     "WITHDRAW",
+     "BUGBITE"
+    ],
+    "gender": null,
+    "item": null,
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   }
+  ]
+ },
+ {
+  "gym": 2,
+  "leader": "Syler",
+  "trainerType": "Gym Captain",
+  "mapId": 65,
+  "mapName": "Shawmonk Gym",
+  "badge": "Timber",
+  "reward": "TM89",
+  "levelCap": 32,
+  "normal": [
+   {
+    "species": "TREECKO",
+    "level": 19,
+    "moves": [],
+    "gender": null,
+    "item": null,
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "DEERLING",
+    "level": 20,
+    "moves": [],
+    "gender": null,
+    "item": null,
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "SCYTHER",
+    "level": 21,
+    "moves": [],
+    "gender": "female",
+    "item": null,
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   }
+  ],
+  "extreme": [
+   {
+    "species": "TREECKO",
+    "level": 19,
+    "moves": [
+     "BULLETSEED",
+     "CRUNCH",
+     "GIGADRAIN",
+     "DRAGONBREATH"
+    ],
+    "gender": null,
+    "item": null,
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "DEERLING",
+    "level": 20,
+    "moves": [
+     "ENERGYBALL",
+     "DOUBLEKICK",
+     "LEECHSEED",
+     "TAKEDOWN"
+    ],
+    "gender": null,
+    "item": null,
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "SCYTHER",
+    "level": 21,
+    "moves": [
+     "VACUUMWAVE",
+     "WINGATTACK",
+     "XSCISSOR",
+     "PURSUIT"
+    ],
+    "gender": "female",
+    "item": "HEAT_SHIELD",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "PHANTUMP",
+    "level": 22,
+    "moves": [
+     "INGRAIN",
+     "VENOMDRENCH",
+     "PHANTOMFORCE",
+     "HORNLEECH"
+    ],
+    "gender": null,
+    "item": null,
+    "card": "PHANTUMP_CARD",
+    "shiny": false,
+    "abilityIndex": null
+   }
+  ]
+ },
+ {
+  "gym": 3,
+  "leader": "Ashy",
+  "trainerType": "Gym Captain",
+  "mapId": 87,
+  "mapName": "The Arena",
+  "badge": "Ember",
+  "reward": "TM35",
+  "levelCap": 40,
+  "normal": [
+   {
+    "species": "MIGHTYENA",
+    "level": 26,
+    "moves": [
+     "SUCKERPUNCH",
+     "ICEFANG",
+     "THUNDERFANG",
+     "FIREFANG"
+    ],
+    "gender": null,
+    "item": null,
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "HOUNDOUR",
+    "level": 27,
+    "moves": [
+     "DARKPULSE",
+     "FLAMETHROWER"
+    ],
+    "gender": null,
+    "item": null,
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "QUILAVA",
+    "level": 29,
+    "moves": [
+     "QUICKATTACK",
+     "EMBER",
+     "FLAMEWHEEL"
+    ],
+    "gender": null,
+    "item": "PASSHOBERRY",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   }
+  ],
+  "extreme": [
+   {
+    "species": "MIGHTYENA",
+    "level": 28,
+    "moves": [
+     "SUCKERPUNCH",
+     "ICEFANG",
+     "THUNDERFANG",
+     "FIREFANG"
+    ],
+    "gender": null,
+    "item": null,
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "HOUNDOUR",
+    "level": 28,
+    "moves": [
+     "DARKPULSE",
+     "FLAMETHROWER",
+     "CRUNCH"
+    ],
+    "gender": null,
+    "item": "AQUA_SHIELD",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "QUILAVA",
+    "level": 30,
+    "moves": [
+     "QUICKATTACK",
+     "EMBER",
+     "FLAMEWHEEL"
+    ],
+    "gender": null,
+    "item": "AIRBALLOON",
+    "card": "QUILAVA_CARD",
+    "shiny": false,
+    "abilityIndex": null
+   }
+  ]
+ },
+ {
+  "gym": 4,
+  "leader": "Anper",
+  "trainerType": "Gym Captain",
+  "mapId": null,
+  "mapName": "Empral Factory 1F",
+  "badge": "Zap",
+  "reward": "ROCKYHELMET",
+  "levelCap": 55,
+  "normal": [
+   {
+    "species": "VOLTLIGHT",
+    "level": 37,
+    "moves": [
+     "THUNDERSHOCK",
+     "BURSTLIGHT"
+    ],
+    "gender": null,
+    "item": "AIRBALLOON",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "ELECTIVIRE",
+    "level": 38,
+    "moves": [
+     "THUNDERBOLT",
+     "THUNDERPUNCH",
+     "FIREPUNCH"
+    ],
+    "gender": null,
+    "item": "AIRBALLOON",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "AMPHAROS",
+    "level": 39,
+    "moves": [
+     "DISCHARGE",
+     "POWERGEM",
+     "FOCUSBLAST"
+    ],
+    "gender": null,
+    "item": "AMPHAROSITE",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "EELEKTROSS",
+    "level": 39,
+    "moves": [
+     "DISCHARGE",
+     "THUNDERPUNCH",
+     "FIREPUNCH",
+     "SUPERFANG"
+    ],
+    "gender": null,
+    "item": "ROCKYHELMET",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "VALKYREON",
+    "level": 40,
+    "moves": [
+     "BURSTLIGHT",
+     "THUNDERBOLT",
+     "WINGATTACK"
+    ],
+    "gender": null,
+    "item": null,
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   }
+  ],
+  "extreme": [
+   {
+    "species": "VOLTLIGHT",
+    "level": 37,
+    "moves": [
+     "THUNDERSHOCK",
+     "BURSTLIGHT"
+    ],
+    "gender": null,
+    "item": "AIRBALLOON",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "ELECTIVIRE",
+    "level": 37,
+    "moves": [
+     "THUNDERBOLT",
+     "THUNDERPUNCH",
+     "FIREPUNCH"
+    ],
+    "gender": null,
+    "item": "AIRBALLOON",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "AMPHAROS",
+    "level": 37,
+    "moves": [
+     "DISCHARGE",
+     "POWERGEM",
+     "FOCUSBLAST"
+    ],
+    "gender": null,
+    "item": "AMPHAROSITE",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "EELEKTROSS",
+    "level": 37,
+    "moves": [
+     "DISCHARGE",
+     "THUNDERPUNCH",
+     "FIREPUNCH",
+     "SUPERFANG"
+    ],
+    "gender": null,
+    "item": "ROCKYHELMET",
+    "card": "EELEKTROSS_CARD",
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "OM_SWELLOW",
+    "level": 38,
+    "moves": [
+     "VOLTSWITCH",
+     "PURSUIT",
+     "THUNDERBOLT",
+     "AIRSLASH"
+    ],
+    "gender": null,
+    "item": null,
+    "card": "OM_SWELLOW_CARD",
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "VALKYREON",
+    "level": 38,
+    "moves": [
+     "BURSTLIGHT",
+     "THUNDERBOLT",
+     "WINGATTACK"
+    ],
+    "gender": null,
+    "item": null,
+    "card": "VALKYREON_CARD",
+    "shiny": false,
+    "abilityIndex": null
+   }
+  ]
+ },
+ {
+  "gym": 5,
+  "leader": "Alia&Tika",
+  "trainerType": "Gym Captains",
+  "mapId": null,
+  "mapName": "Ice Gym",
+  "badge": "Icicle",
+  "reward": "TM14",
+  "levelCap": 65,
+  "normal": [
+   {
+    "species": "ABOMASNOW",
+    "level": 55,
+    "moves": [
+     "ICEPUNCH",
+     "RAZORLEAF",
+     "WOODHAMMER",
+     "EARTHQUAKE"
+    ],
+    "gender": null,
+    "item": "ABOMASITE",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "WEAVILE",
+    "level": 56,
+    "moves": [
+     "METALCLAW",
+     "NIGHTSLASH",
+     "ICEPUNCH"
+    ],
+    "gender": null,
+    "item": "CHOPLEBERRY",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "SEALEO",
+    "level": 57,
+    "moves": [
+     "BRINE",
+     "AURORABEAM",
+     "REST",
+     "BLIZZARD"
+    ],
+    "gender": null,
+    "item": "CHOPLEBERRY",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": 1
+   },
+   {
+    "species": "GLACEON",
+    "level": 58,
+    "moves": [
+     "ICYWIND",
+     "BITE",
+     "ICEBEAM"
+    ],
+    "gender": null,
+    "item": "OCCABERRY",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "VANILLUXE",
+    "level": 59,
+    "moves": [
+     "ICYWIND",
+     "ICEBEAM",
+     "SHEERCOLD",
+     "BLIZZARD"
+    ],
+    "gender": null,
+    "item": "OCCABERRY",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "WALREIN",
+    "level": 60,
+    "moves": [
+     "AURORABEAM",
+     "BLIZZARD",
+     "ICEBEAM",
+     "REST"
+    ],
+    "gender": null,
+    "item": "LEFTOVERS",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   }
+  ],
+  "extreme": [
+   {
+    "species": "ABOMASNOW",
+    "level": 59,
+    "moves": [
+     "ICEPUNCH",
+     "RAZORLEAF",
+     "WOODHAMMER",
+     "EARTHQUAKE"
+    ],
+    "gender": null,
+    "item": "ABOMASITE",
+    "card": "SHINY_ABOMASNOW_CARD",
+    "shiny": true,
+    "abilityIndex": null
+   },
+   {
+    "species": "WEAVILE",
+    "level": 59,
+    "moves": [
+     "METALCLAW",
+     "NIGHTSLASH",
+     "ICEPUNCH"
+    ],
+    "gender": null,
+    "item": "FIST_NULLIFIER",
+    "card": "WEAVILE_CARD",
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "SEALEO",
+    "level": 59,
+    "moves": [
+     "BRINE",
+     "AURORABEAM",
+     "REST",
+     "BLIZZARD"
+    ],
+    "gender": null,
+    "item": "VOLT_SHIELD",
+    "card": "SEALEO_CARD",
+    "shiny": false,
+    "abilityIndex": 1
+   },
+   {
+    "species": "GLACEON",
+    "level": 59,
+    "moves": [
+     "HAIL",
+     "ICYWIND",
+     "BITE",
+     "ICEBEAM"
+    ],
+    "gender": null,
+    "item": "HEAT_SHIELD",
+    "card": "GLACEON_CARD",
+    "shiny": true,
+    "abilityIndex": null
+   },
+   {
+    "species": "VANILLUXE",
+    "level": 59,
+    "moves": [
+     "ICYWIND",
+     "ICEBEAM",
+     "SHEERCOLD",
+     "BLIZZARD"
+    ],
+    "gender": null,
+    "item": "HEAT_SHIELD",
+    "card": "VANILLUXE_CARD",
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "WALREIN",
+    "level": 60,
+    "moves": [
+     "AURORABEAM",
+     "BODYSLAM",
+     "ICEBEAM",
+     "REST"
+    ],
+    "gender": null,
+    "item": "LEFTOVERS",
+    "card": "SHINY_WALREIN_CARD",
+    "shiny": false,
+    "abilityIndex": null
+   }
+  ]
+ },
+ {
+  "gym": 6,
+  "leader": "Damon",
+  "trainerType": "Gym Captain",
+  "mapId": null,
+  "mapName": "Dark Tower 4F",
+  "badge": "Curse",
+  "reward": null,
+  "levelCap": 75,
+  "normal": [
+   {
+    "species": "SIGILYPH",
+    "level": 64,
+    "moves": [
+     "REFLECT",
+     "PROTECT",
+     "TOXIC",
+     "PSYCHIC"
+    ],
+    "gender": null,
+    "item": "LIGHTCLAY",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "CHANDELURE",
+    "level": 65,
+    "moves": [
+     "SHADOWBALL",
+     "FLAMETHROWER",
+     "ENERGYBALL",
+     "PSYCHIC"
+    ],
+    "gender": null,
+    "item": "AIRBALLOON",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "TREVENANT",
+    "level": 65,
+    "moves": [
+     "HORNLEECH",
+     "SHADOWCLAW",
+     "WOODHAMMER",
+     "EARTHQUAKE"
+    ],
+    "gender": null,
+    "item": "HEROMASK",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "REUNICLUS",
+    "level": 65,
+    "moves": [
+     "RECOVER",
+     "PSYCHIC",
+     "FLASHCANNON",
+     "FOCUSBLAST"
+    ],
+    "gender": null,
+    "item": "LEFTOVERS",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "ALAKAZAM",
+    "level": 65,
+    "moves": [
+     "PSYCHIC",
+     "CHARGEBEAM",
+     "DAZZLINGGLEAM",
+     "ENERGYBALL"
+    ],
+    "gender": null,
+    "item": "CHOICESCARF",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "GENGAR",
+    "level": 66,
+    "moves": [
+     "SHADOWBALL",
+     "DREAMEATER",
+     "THUNDERBOLT",
+     "SLUDGEBOMB"
+    ],
+    "gender": null,
+    "item": "GENGARITE",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   }
+  ],
+  "extreme": [
+   {
+    "species": "SIGILYPH",
+    "level": 63,
+    "moves": [
+     "REFLECT",
+     "PROTECT",
+     "TOXIC",
+     "PSYCHIC"
+    ],
+    "gender": null,
+    "item": "SHADOW_SHIELD",
+    "card": "SIGILYPH_CARD",
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "CHANDELURE",
+    "level": 64,
+    "moves": [
+     "SHADOWBALL",
+     "FLAMETHROWER",
+     "ENERGYBALL",
+     "PSYCHIC"
+    ],
+    "gender": null,
+    "item": "AIRBALLOON",
+    "card": "CHANDELURE_CARD",
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "TREVENANT",
+    "level": 64,
+    "moves": [
+     "HORNLEECH",
+     "SHADOWCLAW",
+     "WOODHAMMER",
+     "EARTHQUAKE"
+    ],
+    "gender": null,
+    "item": "HEAT_SHIELD",
+    "card": "TREVENANT_CARD",
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "REUNICLUS",
+    "level": 64,
+    "moves": [
+     "RECOVER",
+     "PSYCHIC",
+     "FLASHCANNON",
+     "FOCUSBLAST"
+    ],
+    "gender": null,
+    "item": "LEFTOVERS",
+    "card": "SHINY_REUNICLUS_CARD",
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "ALAKAZAM",
+    "level": 64,
+    "moves": [
+     "PSYCHIC",
+     "CHARGEBEAM",
+     "DAZZLINGGLEAM",
+     "ENERGYBALL"
+    ],
+    "gender": null,
+    "item": "HEROMASK",
+    "card": "SHINY_ALAKAZAM_CARD",
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "GENGAR",
+    "level": 64,
+    "moves": [
+     "SHADOWBALL",
+     "DREAMEATER",
+     "THUNDERBOLT",
+     "SLUDGEBOMB"
+    ],
+    "gender": null,
+    "item": "GENGARITE",
+    "card": "GENGAR_CARD",
+    "shiny": false,
+    "abilityIndex": null
+   }
+  ]
+ },
+ {
+  "gym": 7,
+  "leader": "Crow",
+  "trainerType": "Gym Captain",
+  "mapId": null,
+  "mapName": "Asutra Gym",
+  "badge": "Droplet",
+  "reward": "BOAT",
+  "levelCap": 90,
+  "normal": [
+   {
+    "species": "BRONZONG",
+    "level": 75,
+    "moves": [
+     "STEALTHROCK",
+     "TOXIC",
+     "GYROBALL",
+     "REFLECT"
+    ],
+    "gender": null,
+    "item": "LEFTOVERS",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": 0
+   },
+   {
+    "species": "EMPOLEON",
+    "level": 75,
+    "moves": [
+     "SURF",
+     "FLASHCANNON",
+     "EARTHQUAKE",
+     "ICEBEAM"
+    ],
+    "gender": null,
+    "item": "AIRBALLOON",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "VAPOREON",
+    "level": 77,
+    "moves": [
+     "SURF",
+     "WISH",
+     "ICEBEAM",
+     "ROAR"
+    ],
+    "gender": null,
+    "item": "LEFTOVERS",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "GARCHOMP",
+    "level": 78,
+    "moves": [
+     "EARTHQUAKE",
+     "DRAGONCLAW",
+     "POISONJAB",
+     "CRUNCH"
+    ],
+    "gender": null,
+    "item": "FROST_SHIELD",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": 2
+   },
+   {
+    "species": "HONCHKROW",
+    "level": 78,
+    "moves": [
+     "SUCKERPUNCH",
+     "NIGHTSLASH",
+     "WINGATTACK",
+     "DARKPULSE"
+    ],
+    "gender": null,
+    "item": "CHOICEBAND",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "CHARIZARD",
+    "level": 80,
+    "moves": [
+     "FLAMETHROWER",
+     "EARTHQUAKE",
+     "WINGATTACK",
+     "SHADOWCLAW"
+    ],
+    "gender": null,
+    "item": "CHARIZARDITEX",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   }
+  ],
+  "extreme": [
+   {
+    "species": "BRONZONG",
+    "level": 70,
+    "moves": [
+     "STEALTHROCK",
+     "TOXIC",
+     "GYROBALL",
+     "REFLECT"
+    ],
+    "gender": null,
+    "item": "LEFTOVERS",
+    "card": "BRONZONG_CARD",
+    "shiny": false,
+    "abilityIndex": 0
+   },
+   {
+    "species": "EMPOLEON",
+    "level": 70,
+    "moves": [
+     "SURF",
+     "FLASHCANNON",
+     "EARTHQUAKE",
+     "ICEBEAM"
+    ],
+    "gender": null,
+    "item": "VOLT_NULLIFIER",
+    "card": "EMPOLEON_CARD",
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "VAPOREON",
+    "level": 72,
+    "moves": [
+     "SURF",
+     "WISH",
+     "ICEBEAM",
+     "ROAR"
+    ],
+    "gender": null,
+    "item": "LEFTOVERS",
+    "card": null,
+    "shiny": true,
+    "abilityIndex": null
+   },
+   {
+    "species": "GARCHOMP",
+    "level": 73,
+    "moves": [
+     "EARTHQUAKE",
+     "DRAGONCLAW",
+     "POISONJAB",
+     "CRUNCH"
+    ],
+    "gender": null,
+    "item": "FROST_SHIELD",
+    "card": "GARCHOMP_CARD",
+    "shiny": false,
+    "abilityIndex": 2
+   },
+   {
+    "species": "HONCHKROW",
+    "level": 73,
+    "moves": [
+     "SUCKERPUNCH",
+     "NIGHTSLASH",
+     "WINGATTACK",
+     "DARKPULSE"
+    ],
+    "gender": null,
+    "item": "ROCKYHELMET",
+    "card": "SHINY_HONCHKROW_CARD",
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "CHARIZARD",
+    "level": 73,
+    "moves": [
+     "FLAMETHROWER",
+     "EARTHQUAKE",
+     "WINGATTACK",
+     "SHADOWCLAW"
+    ],
+    "gender": null,
+    "item": "CHARIZARDITEX",
+    "card": "SHINY_CHARIZARD_CARD",
+    "shiny": false,
+    "abilityIndex": null
+   }
+  ]
+ },
+ {
+  "gym": 8,
+  "leader": "Aeris",
+  "trainerType": "Dragon Tamer",
+  "mapId": null,
+  "mapName": "Draco Gym",
+  "badge": "Draco",
+  "reward": null,
+  "levelCap": 100,
+  "normal": [
+   {
+    "species": "B_PIDGEOT",
+    "level": 90,
+    "moves": [
+     "HURRICANE",
+     "HEATWAVE",
+     "UTURN",
+     "ROOST"
+    ],
+    "gender": null,
+    "item": "LEFTOVERS",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "B_NOIVERN",
+    "level": 90,
+    "moves": [
+     "HURRICANE",
+     "DRACOMETEOR",
+     "ROOST",
+     "FLAMETHROWER"
+    ],
+    "gender": null,
+    "item": "FROST_SHIELD",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "B_TYRANTRUM",
+    "level": 90,
+    "moves": [
+     "HEADSMASH",
+     "OUTRAGE",
+     "EARTHQUAKE",
+     "DRAGONCLAW"
+    ],
+    "gender": null,
+    "item": "FROST_SHIELD",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "B_ALTARIA",
+    "level": 90,
+    "moves": [
+     "DRAGONDANCE",
+     "FACADE",
+     "EARTHQUAKE"
+    ],
+    "gender": null,
+    "item": "ALTARIANITE",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "B_SALAMENCE",
+    "level": 90,
+    "moves": [
+     "DRAGONDANCE",
+     "DOUBLEEDGE",
+     "EARTHQUAKE",
+     "DRAGONCLAW"
+    ],
+    "gender": null,
+    "item": "FROST_SHIELD",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "B_DRAGONITE",
+    "level": 90,
+    "moves": [
+     "DRAGONDANCE",
+     "THUNDERPUNCH",
+     "FIREPUNCH",
+     "EXTREMESPEED"
+    ],
+    "gender": null,
+    "item": "FROST_SHIELD",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   }
+  ],
+  "extreme": [
+   {
+    "species": "B_PIDGEOT",
+    "level": 90,
+    "moves": [
+     "HURRICANE",
+     "HEATWAVE",
+     "UTURN",
+     "ROOST"
+    ],
+    "gender": null,
+    "item": "LEFTOVERS",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "B_NOIVERN",
+    "level": 90,
+    "moves": [
+     "HURRICANE",
+     "DRACOMETEOR",
+     "ROOST",
+     "FLAMETHROWER"
+    ],
+    "gender": null,
+    "item": "FROST_SHIELD",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "B_TYRANTRUM",
+    "level": 90,
+    "moves": [
+     "HEADSMASH",
+     "OUTRAGE",
+     "EARTHQUAKE",
+     "DRAGONCLAW"
+    ],
+    "gender": null,
+    "item": "FROST_SHIELD",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "B_ALTARIA",
+    "level": 90,
+    "moves": [
+     "DRAGONDANCE",
+     "FACADE",
+     "EARTHQUAKE"
+    ],
+    "gender": null,
+    "item": "ALTARIANITE",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "B_SALAMENCE",
+    "level": 90,
+    "moves": [
+     "DRAGONDANCE",
+     "DOUBLEEDGE",
+     "EARTHQUAKE",
+     "DRAGONCLAW"
+    ],
+    "gender": null,
+    "item": "PIXIE_NULLIFIER",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "B_DRAGONITE",
+    "level": 90,
+    "moves": [
+     "DRAGONDANCE",
+     "THUNDERPUNCH",
+     "FIREPUNCH",
+     "EXTREMESPEED"
+    ],
+    "gender": null,
+    "item": "FROST_NULLIFIER",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   }
+  ]
+ }
+]

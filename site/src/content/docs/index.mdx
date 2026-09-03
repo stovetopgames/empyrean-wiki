@@ -1,0 +1,65 @@
+---
+title: Pokémon Empyrean Wiki
+description: Pokédex, moves, abilities, items and the full type chart for Pokémon Empyrean — generated directly from the game files.
+template: splash
+hero:
+  tagline: Every number on this site is read straight out of the game files, so it matches the version it was built from.
+  actions:
+    # Relative, not "/pokedex/". This page is the site root, so a relative link
+    # resolves under the base path on GitHub Pages and still works locally.
+    # An absolute path would drop the /empyrean-wiki/ prefix in production.
+    - text: Open the Pokédex
+      link: ./pokedex/
+      icon: right-arrow
+    - text: Type chart
+      link: ./types/
+      variant: minimal
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+export const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+<CardGrid>
+  <Card title="Pokédex" icon="open-book">
+    All species and forms, including the Omuran and Deshret regional variants, with
+    stats, learnsets, evolutions and type matchups.
+    <a href={`${base}/pokedex/`}>Browse →</a>
+  </Card>
+  <Card title="Moves" icon="rocket">
+    Every move with power, accuracy, PP, priority, flags and the full list of
+    Pokémon that learn it. <a href={`${base}/moves/`}>Browse →</a>
+  </Card>
+  <Card title="Abilities" icon="star">
+    Every ability, with the Pokémon that get it as a standard or hidden ability.
+    <a href={`${base}/abilities/`}>Browse →</a>
+  </Card>
+  <Card title="Items" icon="setting">
+    Items by bag pocket, with prices and effects, plus the separate card collection.
+    <a href={`${base}/items/`}>Browse →</a>
+  </Card>
+  <Card title="Locations" icon="map">
+    Clickable region maps, wild encounter tables, item pickups and shop stock.
+    <a href={`${base}/locations/`}>Browse →</a>
+  </Card>
+  <Card title="Gyms &amp; badges" icon="trophy">
+    All eight leaders with their badges, level caps and teams on both difficulties.
+    <a href={`${base}/gyms/`}>Browse →</a>
+  </Card>
+  <Card title="Bosses" icon="rocket">
+    Every named boss and story battle in the order you meet them, with full teams.
+    <a href={`${base}/bosses/`}>Browse →</a>
+  </Card>
+  <Card title="Trainers" icon="approve-check">
+    Every trainer battle in the game, searchable by name, area or Pokémon.
+    <a href={`${base}/trainers/`}>Browse →</a>
+  </Card>
+  <Card title="Type chart" icon="puzzle">
+    Includes Empyrean's custom types — Light, Data, Gold, Electrolight and the
+    fused Fire/Ground, Water/Ground and Light/Dark. <a href={`${base}/types/`}>Open →</a>
+  </Card>
+  <Card title="How this works" icon="information">
+    The wiki is generated from the game's PBS files and scripts, so it can be
+    rebuilt whenever the data changes. <a href={`${base}/about/`}>Read more →</a>
+  </Card>
+</CardGrid>

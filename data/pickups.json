@@ -1,0 +1,2369 @@
+[
+ {
+  "item": "TM78",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 3,
+  "mapName": "Calistern Gym",
+  "event": "MonCapitan"
+ },
+ {
+  "item": "APRIPLUM",
+  "quantity": 3,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 6,
+  "mapName": "Selene Town",
+  "event": "EV043"
+ },
+ {
+  "item": "GREATBALL",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 8,
+  "mapName": "Shawmonk Forest",
+  "event": "EV024"
+ },
+ {
+  "item": "POTION",
+  "quantity": 2,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 8,
+  "mapName": "Shawmonk Forest",
+  "event": "EV019"
+ },
+ {
+  "item": "REPEL",
+  "quantity": 2,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 8,
+  "mapName": "Shawmonk Forest",
+  "event": "EV019"
+ },
+ {
+  "item": "REPEL",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 8,
+  "mapName": "Shawmonk Forest",
+  "event": "EV042"
+ },
+ {
+  "item": "SUPERPOTION",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 8,
+  "mapName": "Shawmonk Forest",
+  "event": "EV031"
+ },
+ {
+  "item": "XATTACK",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 8,
+  "mapName": "Shawmonk Forest",
+  "event": "EV023"
+ },
+ {
+  "item": "BUGGEM",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 10,
+  "mapName": "Shawmonk Forest",
+  "event": "EV045"
+ },
+ {
+  "item": "CRICKET_NULLIFIER",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 10,
+  "mapName": "Shawmonk Forest",
+  "event": "EV047"
+ },
+ {
+  "item": "RARECANDY",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 13,
+  "mapName": "Shian Swamp",
+  "event": "EV007"
+ },
+ {
+  "item": "ULTRABALL",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 13,
+  "mapName": "Shian Swamp",
+  "event": "EV007"
+ },
+ {
+  "item": "GREATBALL",
+  "quantity": 1,
+  "method": "Item ball",
+  "conditional": false,
+  "mapId": 14,
+  "mapName": "Shawmonk Town",
+  "event": "EV002"
+ },
+ {
+  "item": "NETBALL",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 14,
+  "mapName": "Shawmonk Town",
+  "event": "EV022"
+ },
+ {
+  "item": "LUCKYSHELL",
+  "quantity": 1,
+  "method": "Item ball",
+  "conditional": true,
+  "mapId": 15,
+  "mapName": "Joyce's Bakery",
+  "event": "Item"
+ },
+ {
+  "item": "LUCKYYOLK",
+  "quantity": 1,
+  "method": "Item ball",
+  "conditional": true,
+  "mapId": 15,
+  "mapName": "Joyce's Bakery",
+  "event": "Item"
+ },
+ {
+  "item": "DADSLETTER",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 18,
+  "mapName": "Mr. Mon's House",
+  "event": "EV004"
+ },
+ {
+  "item": "POKEBALL",
+  "quantity": 3,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 22,
+  "mapName": "Mera Town",
+  "event": "EV028"
+ },
+ {
+  "item": "CARDUPGRADE",
+  "quantity": 1,
+  "method": "Item ball",
+  "conditional": false,
+  "mapId": 23,
+  "mapName": "Pokémon Lab",
+  "event": "EV006"
+ },
+ {
+  "item": "ANTIDOTE",
+  "quantity": 1,
+  "method": "Item ball",
+  "conditional": false,
+  "mapId": 25,
+  "mapName": "Route 101",
+  "event": "EV022"
+ },
+ {
+  "item": "POTION",
+  "quantity": 3,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 25,
+  "mapName": "Route 101",
+  "event": "R101 Quest Control"
+ },
+ {
+  "item": "REPEL",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 25,
+  "mapName": "Route 101",
+  "event": "EV024"
+ },
+ {
+  "item": "LUCKYEGG",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 27,
+  "mapName": "Route 101",
+  "event": "EV009"
+ },
+ {
+  "item": "GAIA_AMPLIFIER",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 28,
+  "mapName": "Route 102",
+  "event": "EV006"
+ },
+ {
+  "item": "GREATBALL",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 28,
+  "mapName": "Route 102",
+  "event": "EV039"
+ },
+ {
+  "item": "LEMONADE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 28,
+  "mapName": "Route 102",
+  "event": "EV010"
+ },
+ {
+  "item": "GOOMY_CARD",
+  "quantity": 1,
+  "method": "Item ball",
+  "conditional": false,
+  "mapId": 29,
+  "mapName": "Shawmonk Lake",
+  "event": "EV037"
+ },
+ {
+  "item": "MYSTICWATER",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 29,
+  "mapName": "Shawmonk Lake",
+  "event": "EV036"
+ },
+ {
+  "item": "REVIVE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 29,
+  "mapName": "Shawmonk Lake",
+  "event": "EV035"
+ },
+ {
+  "item": "HEARTSCALE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 36,
+  "mapName": "Calistern Town",
+  "event": "EV035"
+ },
+ {
+  "item": "OLDROD",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 36,
+  "mapName": "Calistern Town",
+  "event": "EV021"
+ },
+ {
+  "item": "ORANBERRY",
+  "quantity": 1,
+  "method": "Item ball",
+  "conditional": false,
+  "mapId": 36,
+  "mapName": "Calistern Town",
+  "event": "EV032"
+ },
+ {
+  "item": "POKEBALL",
+  "quantity": 3,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 36,
+  "mapName": "Calistern Town",
+  "event": "EV029"
+ },
+ {
+  "item": "POKEZAAR_POTION",
+  "quantity": 3,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 36,
+  "mapName": "Calistern Town",
+  "event": "EV029"
+ },
+ {
+  "item": "CHERIBERRY",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 37,
+  "mapName": "House 1",
+  "event": "EV004"
+ },
+ {
+  "item": "NAIL",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 37,
+  "mapName": "House 1",
+  "event": "EV004"
+ },
+ {
+  "item": "PECHABERRY",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 38,
+  "mapName": "House 2",
+  "event": "EV005"
+ },
+ {
+  "item": "NAIL",
+  "quantity": 2,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 40,
+  "mapName": "House 4",
+  "event": "EV004"
+ },
+ {
+  "item": "HAMMER",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 41,
+  "mapName": "House 5",
+  "event": "EV004"
+ },
+ {
+  "item": "SUPERPOTION",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 41,
+  "mapName": "House 5",
+  "event": "EV004"
+ },
+ {
+  "item": "ANTIDOTE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 44,
+  "mapName": "Shawmonk Forest",
+  "event": "EV003"
+ },
+ {
+  "item": "PARALYZEHEAL",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 44,
+  "mapName": "Shawmonk Forest",
+  "event": "EV003"
+ },
+ {
+  "item": "REPEL",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 44,
+  "mapName": "Shawmonk Forest",
+  "event": "EV012"
+ },
+ {
+  "item": "STEELSCISSORS",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 44,
+  "mapName": "Shawmonk Forest",
+  "event": "EV010"
+ },
+ {
+  "item": "SUPERPOTION",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 44,
+  "mapName": "Shawmonk Forest",
+  "event": "EV003"
+ },
+ {
+  "item": "HAMMER",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 52,
+  "mapName": "Shawmonk Indoor",
+  "event": "EV023"
+ },
+ {
+  "item": "ORANBERRY",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 52,
+  "mapName": "Shawmonk Indoor",
+  "event": "EV025"
+ },
+ {
+  "item": "RARECANDY",
+  "quantity": 1,
+  "method": "Item ball",
+  "conditional": false,
+  "mapId": 61,
+  "mapName": "The Deep Pit",
+  "event": "EV009"
+ },
+ {
+  "item": "TM89",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 65,
+  "mapName": "Shawmonk Gym",
+  "event": "MonCapitan"
+ },
+ {
+  "item": "ATK_CANDY",
+  "quantity": 1,
+  "method": "Item ball",
+  "conditional": false,
+  "mapId": 68,
+  "mapName": "Dooriver City",
+  "event": "EV069"
+ },
+ {
+  "item": "HP_CANDY",
+  "quantity": 1,
+  "method": "Item ball",
+  "conditional": false,
+  "mapId": 68,
+  "mapName": "Dooriver City",
+  "event": "EV027"
+ },
+ {
+  "item": "NIDORANMA_CARD",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 68,
+  "mapName": "Dooriver City",
+  "event": "EV064"
+ },
+ {
+  "item": "ORANBERRY",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 68,
+  "mapName": "Dooriver City",
+  "event": "EV021"
+ },
+ {
+  "item": "PRETTYWING",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 68,
+  "mapName": "Dooriver City",
+  "event": "EV025"
+ },
+ {
+  "item": "QUICKBALL",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 68,
+  "mapName": "Dooriver City",
+  "event": "EV015"
+ },
+ {
+  "item": "LEMONADE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 70,
+  "mapName": "Dooriver Indoor",
+  "event": "EV021"
+ },
+ {
+  "item": "WATERSTONE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 70,
+  "mapName": "Dooriver Indoor",
+  "event": "EV027"
+ },
+ {
+  "item": "PROTEIN",
+  "quantity": 1,
+  "method": "Item ball",
+  "conditional": false,
+  "mapId": 71,
+  "mapName": "Shian's Abode",
+  "event": "EV002"
+ },
+ {
+  "item": "SPD_CANDY",
+  "quantity": 1,
+  "method": "Item ball",
+  "conditional": false,
+  "mapId": 71,
+  "mapName": "Shian's Abode",
+  "event": "EV003"
+ },
+ {
+  "item": "SPD_CANDY",
+  "quantity": 1,
+  "method": "Item ball",
+  "conditional": false,
+  "mapId": 71,
+  "mapName": "Shian's Abode",
+  "event": "EV004"
+ },
+ {
+  "item": "MUSCLEWING",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 73,
+  "mapName": "Route 102",
+  "event": "EV008"
+ },
+ {
+  "item": "MIRACLESEED",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 77,
+  "mapName": "Route 104",
+  "event": "EV013"
+ },
+ {
+  "item": "RELICCOPPER",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 77,
+  "mapName": "Route 104",
+  "event": "EV012"
+ },
+ {
+  "item": "RELICCOPPER",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 77,
+  "mapName": "Route 104",
+  "event": "EV015"
+ },
+ {
+  "item": "HYPERPOTION",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 79,
+  "mapName": "Route 103",
+  "event": "EV012"
+ },
+ {
+  "item": "ZINC",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 79,
+  "mapName": "Route 103",
+  "event": "EV011"
+ },
+ {
+  "item": "EXPSHARE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 84,
+  "mapName": "Poke Heal",
+  "event": "EV012"
+ },
+ {
+  "item": "ANTIDOTE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 85,
+  "mapName": "Dept. Store",
+  "event": "EV004"
+ },
+ {
+  "item": "FRESHWATER",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 86,
+  "mapName": "Dept. Store 2F",
+  "event": "Vending machine 1"
+ },
+ {
+  "item": "LEMONADE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 86,
+  "mapName": "Dept. Store 2F",
+  "event": "Vending machine 1"
+ },
+ {
+  "item": "SODAPOP",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 86,
+  "mapName": "Dept. Store 2F",
+  "event": "Vending machine 1"
+ },
+ {
+  "item": "ULTRABALL",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 86,
+  "mapName": "Dept. Store 2F",
+  "event": "EV018"
+ },
+ {
+  "item": "TM35",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 87,
+  "mapName": "The Arena",
+  "event": "Controller backup"
+ },
+ {
+  "item": "TM43",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 87,
+  "mapName": "The Arena",
+  "event": "Controller"
+ },
+ {
+  "item": "POWERGLOVE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 95,
+  "mapName": "Research Lab B2",
+  "event": "EV013"
+ },
+ {
+  "item": "BIGROOT",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 97,
+  "mapName": "Empral Town",
+  "event": "EV002"
+ },
+ {
+  "item": "LEFTOVERS",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 99,
+  "mapName": "Empral Indoor",
+  "event": "EV005"
+ },
+ {
+  "item": "ROCKYHELMET",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 101,
+  "mapName": "Empral Factory 1F",
+  "event": "EV037"
+ },
+ {
+  "item": "AMBER_RING",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 104,
+  "mapName": "Route 105",
+  "event": "EV006"
+ },
+ {
+  "item": "KEY_BUNDLE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 105,
+  "mapName": "Teal Cave B2",
+  "event": "EV011"
+ },
+ {
+  "item": "DUCKLETT_CARD",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 108,
+  "mapName": "Tamra's House",
+  "event": "EV002"
+ },
+ {
+  "item": "FULLRESTORE",
+  "quantity": 3,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 108,
+  "mapName": "Tamra's House",
+  "event": "EV002"
+ },
+ {
+  "item": "SWIFTWING",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 109,
+  "mapName": "The Bird Garden",
+  "event": "EV003"
+ },
+ {
+  "item": "GASMASK",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 111,
+  "mapName": "River Overpass",
+  "event": "EV008"
+ },
+ {
+  "item": "METRONOME",
+  "quantity": 1,
+  "method": "Item ball",
+  "conditional": false,
+  "mapId": 115,
+  "mapName": "Route 105",
+  "event": "EV025"
+ },
+ {
+  "item": "SUNSTONE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 117,
+  "mapName": "Canyon Pass",
+  "event": "EV014"
+ },
+ {
+  "item": "INTDIMBONE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 118,
+  "mapName": "Teren Ruins",
+  "event": "EV039"
+ },
+ {
+  "item": "CHARCOAL",
+  "quantity": 1,
+  "method": "Item ball",
+  "conditional": false,
+  "mapId": 121,
+  "mapName": "Cave of Tranquility",
+  "event": "EV008"
+ },
+ {
+  "item": "DUSKSTONE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 121,
+  "mapName": "Cave of Tranquility",
+  "event": "EV013"
+ },
+ {
+  "item": "FRESHWATER",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 121,
+  "mapName": "Cave of Tranquility",
+  "event": "EV013"
+ },
+ {
+  "item": "HONEY",
+  "quantity": 3,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 125,
+  "mapName": "Flowery Path",
+  "event": "Trainer(2)"
+ },
+ {
+  "item": "HONEY",
+  "quantity": 3,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 125,
+  "mapName": "Flowery Path",
+  "event": "EV022"
+ },
+ {
+  "item": "MAXREVIVE",
+  "quantity": 3,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 127,
+  "mapName": "Sylen City",
+  "event": "EV085"
+ },
+ {
+  "item": "BOOSTERPACK",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 128,
+  "mapName": "Sylen City",
+  "event": "EV060"
+ },
+ {
+  "item": "PPMAX",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 128,
+  "mapName": "Sylen City",
+  "event": "EV061"
+ },
+ {
+  "item": "JOLYNE_PANTS",
+  "quantity": 1,
+  "method": "Item ball",
+  "conditional": false,
+  "mapId": 129,
+  "mapName": "Sylen City Outskirts",
+  "event": "Item"
+ },
+ {
+  "item": "JOLYNE_SHIRT",
+  "quantity": 1,
+  "method": "Item ball",
+  "conditional": false,
+  "mapId": 129,
+  "mapName": "Sylen City Outskirts",
+  "event": "Item"
+ },
+ {
+  "item": "PAYAPABERRY",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 129,
+  "mapName": "Sylen City Outskirts",
+  "event": "EV035"
+ },
+ {
+  "item": "BICYCLE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 130,
+  "mapName": "Bike Shoppe",
+  "event": "EV004"
+ },
+ {
+  "item": "CHOICESPECS",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 131,
+  "mapName": "Poke Heal",
+  "event": "EV034"
+ },
+ {
+  "item": "FULLRESTORE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 131,
+  "mapName": "Poke Heal",
+  "event": "EV026"
+ },
+ {
+  "item": "REVIVE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 133,
+  "mapName": "Research Center B1",
+  "event": "EV010"
+ },
+ {
+  "item": "DUSKBALL",
+  "quantity": 3,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 134,
+  "mapName": "Research Center B2",
+  "event": "EV027"
+ },
+ {
+  "item": "LEVELBALL",
+  "quantity": 3,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 134,
+  "mapName": "Research Center B2",
+  "event": "EV023"
+ },
+ {
+  "item": "PERSIMBERRY",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 135,
+  "mapName": "Research Center B3",
+  "event": "EV016"
+ },
+ {
+  "item": "USB_KEY",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 135,
+  "mapName": "Research Center B3",
+  "event": "FIODOR"
+ },
+ {
+  "item": "CORRUPTED_USB_KEY",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 136,
+  "mapName": "Research Center B4",
+  "event": "EV011"
+ },
+ {
+  "item": "MOOMOOMILK",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 136,
+  "mapName": "Research Center B4",
+  "event": "EV013"
+ },
+ {
+  "item": "POWER_CONDUIT",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 136,
+  "mapName": "Research Center B4",
+  "event": "EV007"
+ },
+ {
+  "item": "WACANBERRY",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 136,
+  "mapName": "Research Center B4",
+  "event": "EV009"
+ },
+ {
+  "item": "GRACIDEA",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 137,
+  "mapName": "Research Center B5",
+  "event": "EV059"
+ },
+ {
+  "item": "LEAFSTONE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 137,
+  "mapName": "Research Center B5",
+  "event": "EV019"
+ },
+ {
+  "item": "SHAYMIN_CARD",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 137,
+  "mapName": "Research Center B5",
+  "event": "EV059"
+ },
+ {
+  "item": "S_POWER_CONDUIT",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 137,
+  "mapName": "Research Center B5",
+  "event": "EV036"
+ },
+ {
+  "item": "S_POWER_CONDUIT",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 137,
+  "mapName": "Research Center B5",
+  "event": "EV021"
+ },
+ {
+  "item": "UPGRADE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 137,
+  "mapName": "Research Center B5",
+  "event": "EV011"
+ },
+ {
+  "item": "ATK_CANDY",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 138,
+  "mapName": "Research Center B6",
+  "event": "EV009"
+ },
+ {
+  "item": "BIKE_VOUCHER",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 138,
+  "mapName": "Research Center B6",
+  "event": "ALMOND 3"
+ },
+ {
+  "item": "GREEN_PASS",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 138,
+  "mapName": "Research Center B6",
+  "event": "ALMOND 3"
+ },
+ {
+  "item": "HOTEL_KEY_315",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 138,
+  "mapName": "Research Center B6",
+  "event": "ALMOND 3"
+ },
+ {
+  "item": "SPD_CANDY",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 138,
+  "mapName": "Research Center B6",
+  "event": "EV013"
+ },
+ {
+  "item": "COINCASE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 140,
+  "mapName": "Carnival Park",
+  "event": "EV027"
+ },
+ {
+  "item": "GREATBALL",
+  "quantity": 3,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 140,
+  "mapName": "Carnival Park",
+  "event": "EV025"
+ },
+ {
+  "item": "HYPERPOTION",
+  "quantity": 3,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 140,
+  "mapName": "Carnival Park",
+  "event": "EV025"
+ },
+ {
+  "item": "PAPER",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 140,
+  "mapName": "Carnival Park",
+  "event": "EV025"
+ },
+ {
+  "item": "SUPERPOTION",
+  "quantity": 3,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 140,
+  "mapName": "Carnival Park",
+  "event": "EV025"
+ },
+ {
+  "item": "BIG_BAG",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 145,
+  "mapName": "Sylen City Indoor",
+  "event": "EV007"
+ },
+ {
+  "item": "CHOICEBAND",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 145,
+  "mapName": "Sylen City Indoor",
+  "event": "EV007"
+ },
+ {
+  "item": "MAXPOTION",
+  "quantity": 5,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 145,
+  "mapName": "Sylen City Indoor",
+  "event": "EV007"
+ },
+ {
+  "item": "MAXREVIVE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 145,
+  "mapName": "Sylen City Indoor",
+  "event": "EV007"
+ },
+ {
+  "item": "WINTER_COAT_F",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 145,
+  "mapName": "Sylen City Indoor",
+  "event": "EV048"
+ },
+ {
+  "item": "WINTER_COAT_M",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 145,
+  "mapName": "Sylen City Indoor",
+  "event": "EV048"
+ },
+ {
+  "item": "SOOTHEBELL",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 147,
+  "mapName": "Sylen City Mall",
+  "event": "EV011"
+ },
+ {
+  "item": "FRESHWATER",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 148,
+  "mapName": "Sylen City Mall 2F",
+  "event": "Vending machine 1"
+ },
+ {
+  "item": "LEMONADE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 148,
+  "mapName": "Sylen City Mall 2F",
+  "event": "Vending machine 1"
+ },
+ {
+  "item": "SODAPOP",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 148,
+  "mapName": "Sylen City Mall 2F",
+  "event": "Vending machine 1"
+ },
+ {
+  "item": "FRESHWATER",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 149,
+  "mapName": "Sylen City Mall 3F",
+  "event": "Vending machine 1"
+ },
+ {
+  "item": "LEMONADE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 149,
+  "mapName": "Sylen City Mall 3F",
+  "event": "Vending machine 1"
+ },
+ {
+  "item": "SODAPOP",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 149,
+  "mapName": "Sylen City Mall 3F",
+  "event": "Vending machine 1"
+ },
+ {
+  "item": "FRESHWATER",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 151,
+  "mapName": "Sylen City Mall 4F",
+  "event": "Vending machine 1"
+ },
+ {
+  "item": "LEMONADE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 151,
+  "mapName": "Sylen City Mall 4F",
+  "event": "Vending machine 1"
+ },
+ {
+  "item": "SODAPOP",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 151,
+  "mapName": "Sylen City Mall 4F",
+  "event": "Vending machine 1"
+ },
+ {
+  "item": "KP_CARD",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 158,
+  "mapName": "Hotel Room 303",
+  "event": "EV005"
+ },
+ {
+  "item": "PAYAPABERRY",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 158,
+  "mapName": "Hotel Room 303",
+  "event": "EV011"
+ },
+ {
+  "item": "COOL_HAT_F",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 165,
+  "mapName": "KP Tower 3F",
+  "event": "VALENTIA 1"
+ },
+ {
+  "item": "COOL_HAT_M",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 165,
+  "mapName": "KP Tower 3F",
+  "event": "VALENTIA 1"
+ },
+ {
+  "item": "COOL_SHIRT_F",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 165,
+  "mapName": "KP Tower 3F",
+  "event": "VALENTIA 1"
+ },
+ {
+  "item": "COOL_SHIRT_M",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 165,
+  "mapName": "KP Tower 3F",
+  "event": "VALENTIA 1"
+ },
+ {
+  "item": "FRESHWATER",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 165,
+  "mapName": "KP Tower 3F",
+  "event": "EV007"
+ },
+ {
+  "item": "ABSORBINGHEART",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 172,
+  "mapName": "Sylen Underground",
+  "event": "EV065"
+ },
+ {
+  "item": "FRESHWATER",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 175,
+  "mapName": "Sylentia Corp. HQ",
+  "event": "Vending machine 1"
+ },
+ {
+  "item": "LEMONADE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 175,
+  "mapName": "Sylentia Corp. HQ",
+  "event": "Vending machine 1"
+ },
+ {
+  "item": "SODAPOP",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 175,
+  "mapName": "Sylentia Corp. HQ",
+  "event": "Vending machine 1"
+ },
+ {
+  "item": "RED_PASS",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 176,
+  "mapName": "Sylentia Corp. HQ 2F",
+  "event": "EV011"
+ },
+ {
+  "item": "DANTEAN_HORIZON",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 178,
+  "mapName": "Sylen City Library B1",
+  "event": "EV008"
+ },
+ {
+  "item": "HONEY",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 180,
+  "mapName": "Route 106",
+  "event": "EV007"
+ },
+ {
+  "item": "HONEY",
+  "quantity": 5,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 180,
+  "mapName": "Route 106",
+  "event": "EV007"
+ },
+ {
+  "item": "HONEY",
+  "quantity": 10,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 180,
+  "mapName": "Route 106",
+  "event": "EV007"
+ },
+ {
+  "item": "MEGARING",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 180,
+  "mapName": "Route 106",
+  "event": "EV001"
+ },
+ {
+  "item": "COOL_ATTIRE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 182,
+  "mapName": "Night Slash",
+  "event": "EV006"
+ },
+ {
+  "item": "HONEY",
+  "quantity": 3,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 185,
+  "mapName": "Route 106",
+  "event": "Trainer(4)"
+ },
+ {
+  "item": "FRESHWATER",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 193,
+  "mapName": "Mesmer Gondola",
+  "event": "Vending machine 1"
+ },
+ {
+  "item": "LEMONADE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 193,
+  "mapName": "Mesmer Gondola",
+  "event": "Vending machine 1"
+ },
+ {
+  "item": "SODAPOP",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 193,
+  "mapName": "Mesmer Gondola",
+  "event": "Vending machine 1"
+ },
+ {
+  "item": "METALCOAT",
+  "quantity": 1,
+  "method": "Item ball",
+  "conditional": false,
+  "mapId": 200,
+  "mapName": "Mt. Mesmer 6F",
+  "event": "EV003"
+ },
+ {
+  "item": "GOODROD",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 211,
+  "mapName": "Mesmer Town",
+  "event": "EV022"
+ },
+ {
+  "item": "ROCKET_WINGS",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 212,
+  "mapName": "Mesmer Town",
+  "event": "EV008"
+ },
+ {
+  "item": "CHOICESCARF",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 218,
+  "mapName": "Poke Heal",
+  "event": "EV007"
+ },
+ {
+  "item": "GOLDEN_COIN",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 219,
+  "mapName": "Star Temple",
+  "event": "EV012"
+ },
+ {
+  "item": "ICE_BREAKER",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 219,
+  "mapName": "Star Temple",
+  "event": "EV006"
+ },
+ {
+  "item": "TM14",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 226,
+  "mapName": "Ice Gym",
+  "event": "EV006"
+ },
+ {
+  "item": "DKIDZ_BADGE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 248,
+  "mapName": "Skaters Den HQ",
+  "event": "EV003"
+ },
+ {
+  "item": "GIGABALL",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 256,
+  "mapName": "Dark Lake",
+  "event": "EV001"
+ },
+ {
+  "item": "LEMONADE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 256,
+  "mapName": "Dark Lake",
+  "event": "EV002"
+ },
+ {
+  "item": "MIZU_SHURIKEN",
+  "quantity": 1,
+  "method": "Item ball",
+  "conditional": false,
+  "mapId": 256,
+  "mapName": "Dark Lake",
+  "event": "EV006"
+ },
+ {
+  "item": "FULLRESTORE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 257,
+  "mapName": "Naraku Village Indoor",
+  "event": "EV003"
+ },
+ {
+  "item": "BODY_PART_ARM",
+  "quantity": 2,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 259,
+  "mapName": "Naraku Gym",
+  "event": "EV007"
+ },
+ {
+  "item": "BODY_PART_EYES",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 259,
+  "mapName": "Naraku Gym",
+  "event": "EV007"
+ },
+ {
+  "item": "BODY_PART_HEAD",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 259,
+  "mapName": "Naraku Gym",
+  "event": "EV007"
+ },
+ {
+  "item": "BODY_PART_LEG",
+  "quantity": 2,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 259,
+  "mapName": "Naraku Gym",
+  "event": "EV007"
+ },
+ {
+  "item": "CURSEBADGE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 259,
+  "mapName": "Naraku Gym",
+  "event": "EV007"
+ },
+ {
+  "item": "SPELLTAG",
+  "quantity": 1,
+  "method": "Item ball",
+  "conditional": false,
+  "mapId": 268,
+  "mapName": "Dark Tower 4F",
+  "event": "EV027"
+ },
+ {
+  "item": "MYSTERYBOX",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 270,
+  "mapName": "Shaman Shop",
+  "event": "EV001"
+ },
+ {
+  "item": "TRAMPOLINE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 272,
+  "mapName": "Naraku Forest",
+  "event": "EV027"
+ },
+ {
+  "item": "TRAMPOLINE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 272,
+  "mapName": "Naraku Forest",
+  "event": "EV022"
+ },
+ {
+  "item": "TRAMPOLINE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 272,
+  "mapName": "Naraku Forest",
+  "event": "EV028"
+ },
+ {
+  "item": "TRAMPOLINE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 272,
+  "mapName": "Naraku Forest",
+  "event": "EV018"
+ },
+ {
+  "item": "TRAMPOLINE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 272,
+  "mapName": "Naraku Forest",
+  "event": "EV029"
+ },
+ {
+  "item": "TRAMPOLINE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 272,
+  "mapName": "Naraku Forest",
+  "event": "EV019"
+ },
+ {
+  "item": "TRAMPOLINE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 272,
+  "mapName": "Naraku Forest",
+  "event": "EV030"
+ },
+ {
+  "item": "TRAMPOLINE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 272,
+  "mapName": "Naraku Forest",
+  "event": "EV014"
+ },
+ {
+  "item": "TRAMPOLINE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 272,
+  "mapName": "Naraku Forest",
+  "event": "EV025"
+ },
+ {
+  "item": "TRAMPOLINE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 272,
+  "mapName": "Naraku Forest",
+  "event": "EV020"
+ },
+ {
+  "item": "TRAMPOLINE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 272,
+  "mapName": "Naraku Forest",
+  "event": "EV026"
+ },
+ {
+  "item": "HEAT_SHIELD",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 289,
+  "mapName": "Checkpoint Gate",
+  "event": "EV011"
+ },
+ {
+  "item": "GIGABALL",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 291,
+  "mapName": "Checkpoint Gate",
+  "event": "EV009"
+ },
+ {
+  "item": "FRESHWATER",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 297,
+  "mapName": "Asutra City",
+  "event": "EV025"
+ },
+ {
+  "item": "SUPERROD",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 298,
+  "mapName": "Delta Overpass",
+  "event": "EV002"
+ },
+ {
+  "item": "FRESHWATER",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 304,
+  "mapName": "Asutra Mart",
+  "event": "Vending machine 1"
+ },
+ {
+  "item": "LEMONADE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 304,
+  "mapName": "Asutra Mart",
+  "event": "Vending machine 1"
+ },
+ {
+  "item": "SODAPOP",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 304,
+  "mapName": "Asutra Mart",
+  "event": "Vending machine 1"
+ },
+ {
+  "item": "BOAT",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 309,
+  "mapName": "Asutra Gym",
+  "event": "EV001"
+ },
+ {
+  "item": "VOLT_AMPLIFIER",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 329,
+  "mapName": "Factory 00",
+  "event": "EV049"
+ },
+ {
+  "item": "MAXREVIVE",
+  "quantity": 1,
+  "method": "Item ball",
+  "conditional": false,
+  "mapId": 335,
+  "mapName": "Leeward Calm",
+  "event": "EV004"
+ },
+ {
+  "item": "TM86",
+  "quantity": 1,
+  "method": "Item ball",
+  "conditional": false,
+  "mapId": 335,
+  "mapName": "Leeward Calm",
+  "event": "EV003"
+ },
+ {
+  "item": "TOXIC_AMPLIFIER",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 338,
+  "mapName": "Gangstar's Den",
+  "event": "T"
+ },
+ {
+  "item": "EXP_TURBO",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 339,
+  "mapName": "Flowery Park",
+  "event": "EV025"
+ },
+ {
+  "item": "HONEY_CAKE_PIECE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 339,
+  "mapName": "Flowery Park",
+  "event": "EV017"
+ },
+ {
+  "item": "HONEY_CAKE_PIECE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 339,
+  "mapName": "Flowery Park",
+  "event": "EV018"
+ },
+ {
+  "item": "HONEY_CAKE_PIECE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 339,
+  "mapName": "Flowery Park",
+  "event": "EV019"
+ },
+ {
+  "item": "SNIVY_CARD",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 339,
+  "mapName": "Flowery Park",
+  "event": "EV016"
+ },
+ {
+  "item": "FUSION_RING",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 347,
+  "mapName": "Krystolny Town",
+  "event": "STINE"
+ },
+ {
+  "item": "VODENKA",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 359,
+  "mapName": "The Tavern",
+  "event": "EV019"
+ },
+ {
+  "item": "VODENKA",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 359,
+  "mapName": "The Tavern",
+  "event": "EV009"
+ },
+ {
+  "item": "MINING_KIT",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 362,
+  "mapName": "Krystolny Mines",
+  "event": "EV003"
+ },
+ {
+  "item": "PEN",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 364,
+  "mapName": "Roarin Island",
+  "event": "EV007"
+ },
+ {
+  "item": "BADGER_STONE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 371,
+  "mapName": "Roarin Mart",
+  "event": "EV009"
+ },
+ {
+  "item": "PENGUIN_STONE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 371,
+  "mapName": "Roarin Mart",
+  "event": "EV009"
+ },
+ {
+  "item": "SERPENT_STONE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 371,
+  "mapName": "Roarin Mart",
+  "event": "EV009"
+ },
+ {
+  "item": "STARDUST_CRYSTAL",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 372,
+  "mapName": "Roarin Indoor",
+  "event": "EV004"
+ },
+ {
+  "item": "MOOMOOMILK",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 375,
+  "mapName": "Space Elevator Base",
+  "event": "EV014"
+ },
+ {
+  "item": "RAINBOW_FEATHER",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 383,
+  "mapName": "Top of the Tower",
+  "event": "EV006"
+ },
+ {
+  "item": "ESPER_SHIELD",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 419,
+  "mapName": "Sukuyomi Mansion v2",
+  "event": "Ashy"
+ },
+ {
+  "item": "LUCKYSHELL",
+  "quantity": 1,
+  "method": "Item ball",
+  "conditional": true,
+  "mapId": 419,
+  "mapName": "Sukuyomi Mansion v2",
+  "event": "Item"
+ },
+ {
+  "item": "LUCKYYOLK",
+  "quantity": 1,
+  "method": "Item ball",
+  "conditional": true,
+  "mapId": 419,
+  "mapName": "Sukuyomi Mansion v2",
+  "event": "Item"
+ },
+ {
+  "item": "TRAMPOLINE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 464,
+  "mapName": "Asutran Jungle",
+  "event": "EV022"
+ },
+ {
+  "item": "TRAMPOLINE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 464,
+  "mapName": "Asutran Jungle",
+  "event": "EV023"
+ },
+ {
+  "item": "TRAMPOLINE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 464,
+  "mapName": "Asutran Jungle",
+  "event": "EV024"
+ },
+ {
+  "item": "TRAMPOLINE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 464,
+  "mapName": "Asutran Jungle",
+  "event": "EV025"
+ },
+ {
+  "item": "TRAMPOLINE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 464,
+  "mapName": "Asutran Jungle",
+  "event": "EV003"
+ },
+ {
+  "item": "TRAMPOLINE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 464,
+  "mapName": "Asutran Jungle",
+  "event": "EV004"
+ },
+ {
+  "item": "TRAMPOLINE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 464,
+  "mapName": "Asutran Jungle",
+  "event": "EV021"
+ },
+ {
+  "item": "PORTABLE_PC",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 478,
+  "mapName": "The Generator",
+  "event": "EV014"
+ },
+ {
+  "item": "THORIUM_BATTERY",
+  "quantity": 10,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 478,
+  "mapName": "The Generator",
+  "event": "EV014"
+ },
+ {
+  "item": "ESPER_NULLIFIER",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 489,
+  "mapName": "Deep Desert",
+  "event": "EV009"
+ },
+ {
+  "item": "REUNICLUS_COSTUME_F",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 540,
+  "mapName": "Altar Room",
+  "event": "Item"
+ },
+ {
+  "item": "REUNICLUS_COSTUME_M",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 540,
+  "mapName": "Altar Room",
+  "event": "Item"
+ },
+ {
+  "item": "CARDDIPLOMA",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 547,
+  "mapName": "Card Shop",
+  "event": "EV009"
+ },
+ {
+  "item": "CARDLURE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 547,
+  "mapName": "Card Shop",
+  "event": "EV009"
+ },
+ {
+  "item": "PLATINUMCARDDIPLOMA",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 547,
+  "mapName": "Card Shop",
+  "event": "EV009"
+ },
+ {
+  "item": "SHINYCARDDIPLOMA",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 547,
+  "mapName": "Card Shop",
+  "event": "EV009"
+ },
+ {
+  "item": "SHINYCHARM",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 547,
+  "mapName": "Card Shop",
+  "event": "EV009"
+ },
+ {
+  "item": "UBERCARD",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 547,
+  "mapName": "Card Shop",
+  "event": "EV009"
+ },
+ {
+  "item": "DRACO_STONE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 550,
+  "mapName": "Jungle Haven",
+  "event": "EV013"
+ },
+ {
+  "item": "AMBROSIA_FRUIT",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 551,
+  "mapName": "The Plantation",
+  "event": "EV028"
+ },
+ {
+  "item": "MECHRUFF_CARD",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 551,
+  "mapName": "The Plantation",
+  "event": "boss"
+ },
+ {
+  "item": "SCUTTLE_OF_EMPYREAN",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 581,
+  "mapName": "???x0????",
+  "event": "FusionStone"
+ },
+ {
+  "item": "CHAMPION_MEDAL",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 601,
+  "mapName": "Hall of Fame",
+  "event": "EV004"
+ },
+ {
+  "item": "HEAVYBALL",
+  "quantity": 1,
+  "method": "Item ball",
+  "conditional": false,
+  "mapId": 618,
+  "mapName": "Swamp Shop",
+  "event": "EV004"
+ },
+ {
+  "item": "FRESHWATER",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 619,
+  "mapName": "Headquarters",
+  "event": "Vending machine 1"
+ },
+ {
+  "item": "LEMONADE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 619,
+  "mapName": "Headquarters",
+  "event": "Vending machine 1"
+ },
+ {
+  "item": "SODAPOP",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 619,
+  "mapName": "Headquarters",
+  "event": "Vending machine 1"
+ },
+ {
+  "item": "CELEBI_CARD",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 631,
+  "mapName": "Cloudy Ruin",
+  "event": "EV001"
+ },
+ {
+  "item": "FINALDIPLOMA",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 651,
+  "mapName": "A Café in the Rift",
+  "event": "EV033"
+ },
+ {
+  "item": "PORTABLE_PC",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 658,
+  "mapName": "New Ma'at",
+  "event": "STINE"
+ },
+ {
+  "item": "BLUE_RIBBON",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 660,
+  "mapName": "Snovska Village",
+  "event": "EV015"
+ },
+ {
+  "item": "COINCASE",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 660,
+  "mapName": "Snovska Village",
+  "event": "Klaus"
+ },
+ {
+  "item": "RED_RIBBON",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 660,
+  "mapName": "Snovska Village",
+  "event": "BalloonMan"
+ },
+ {
+  "item": "SANTA_HAT_F",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 660,
+  "mapName": "Snovska Village",
+  "event": "EV038"
+ },
+ {
+  "item": "SANTA_HAT_M",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 660,
+  "mapName": "Snovska Village",
+  "event": "EV038"
+ },
+ {
+  "item": "YELLOW_RIBBON",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 660,
+  "mapName": "Snovska Village",
+  "event": "Moira"
+ },
+ {
+  "item": "OLDROD",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 667,
+  "mapName": "Route C002b",
+  "event": "EV020"
+ },
+ {
+  "item": "GOODROD",
+  "quantity": 1,
+  "method": "Given",
+  "conditional": false,
+  "mapId": 720,
+  "mapName": "Sacred Oasis",
+  "event": "EV016"
+ }
+]

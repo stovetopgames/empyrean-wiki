@@ -1,0 +1,10 @@
+# Dependencies and build output
+site/node_modules/
+site/dist/
+site/.astro/
+
+# MediaWiki export is generated on demand
+out/
+
+__pycache__/
+*.pyc

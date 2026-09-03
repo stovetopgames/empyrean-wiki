@@ -1,0 +1,3043 @@
+[
+ {
+  "battleKind": "wild",
+  "id": "wild:MUTANT_PIKACHU",
+  "species": "MUTANT_PIKACHU",
+  "title": "Mutant Pikachu",
+  "encounters": [
+   {
+    "mapId": 29,
+    "mapName": "Shawmonk Lake",
+    "level": 5,
+    "slug": "shawmonk-lake"
+   }
+  ],
+  "recurring": false,
+  "minLevel": 5,
+  "maxLevel": 5,
+  "partySize": 1,
+  "helper": "twoAgainstOneBattle",
+  "mapId": 29,
+  "mapName": "Shawmonk Lake",
+  "locationSlug": "shawmonk-lake",
+  "regionName": "Omuran",
+  "order": 1,
+  "slug": "mutant-pikachu"
+ },
+ {
+  "id": "moiraShawmonkBattle",
+  "script": "SpecialFights",
+  "name": "Moira",
+  "trainerTypeId": 105,
+  "party": [
+   {
+    "species": "MACHOP",
+    "level": 13,
+    "moves": [],
+    "gender": null,
+    "item": null,
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "LARVITAR",
+    "level": 15,
+    "moves": [],
+    "gender": null,
+    "item": null,
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   }
+  ],
+  "partner": null,
+  "quote": "Wow, so strong...",
+  "partySize": 2,
+  "maxLevel": 15,
+  "mapId": 65,
+  "mapName": "Shawmonk Gym",
+  "locationSlug": "shawmonk-gym",
+  "regionName": null,
+  "trainerType": "Pokémon Trainer",
+  "title": "Moira (Shawmonk Gym)",
+  "battleKind": "trainer",
+  "recurring": false,
+  "minLevel": 13,
+  "order": 2,
+  "slug": "moira-shawmonk-gym"
+ },
+ {
+  "battleKind": "wild",
+  "id": "wild:MUTANT_RAPIDASH",
+  "species": "MUTANT_RAPIDASH",
+  "title": "Mutant Rapidash",
+  "encounters": [
+   {
+    "mapId": 127,
+    "mapName": "Sylen City",
+    "level": 25,
+    "slug": "sylen-city"
+   }
+  ],
+  "recurring": false,
+  "minLevel": 25,
+  "maxLevel": 25,
+  "partySize": 1,
+  "helper": "twoAgainstOneBattle",
+  "mapId": 127,
+  "mapName": "Sylen City",
+  "locationSlug": "sylen-city",
+  "regionName": "Omuran",
+  "order": 3,
+  "slug": "mutant-rapidash"
+ },
+ {
+  "battleKind": "wild",
+  "id": "wild:MUTANT_RAPIDASH_2",
+  "species": "MUTANT_RAPIDASH_2",
+  "title": "Mutant Rapidash 2",
+  "encounters": [
+   {
+    "mapId": 127,
+    "mapName": "Sylen City",
+    "level": 25,
+    "slug": "sylen-city"
+   }
+  ],
+  "recurring": false,
+  "minLevel": 25,
+  "maxLevel": 25,
+  "partySize": 1,
+  "helper": "twoAgainstOneBattle",
+  "mapId": 127,
+  "mapName": "Sylen City",
+  "locationSlug": "sylen-city",
+  "regionName": "Omuran",
+  "order": 4,
+  "slug": "mutant-rapidash-2"
+ },
+ {
+  "id": "blitzRiverBattle",
+  "script": "SpecialFights",
+  "name": "",
+  "trainerTypeId": 106,
+  "party": [
+   {
+    "species": "HERACROSS",
+    "level": 33,
+    "moves": [],
+    "gender": null,
+    "item": null,
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "VIBRAVA",
+    "level": 34,
+    "moves": [],
+    "gender": null,
+    "item": null,
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "FEEBAS",
+    "level": 34,
+    "moves": [],
+    "gender": null,
+    "item": null,
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   }
+  ],
+  "partner": null,
+  "quote": "I-is this for real!?",
+  "partySize": 3,
+  "maxLevel": 34,
+  "mapId": 110,
+  "mapName": "River Overpass",
+  "locationSlug": "river-overpass",
+  "regionName": "Omuran",
+  "trainerType": "Pokémon Trainer",
+  "title": "Blitz River",
+  "battleKind": "trainer",
+  "recurring": false,
+  "minLevel": 33,
+  "order": 5,
+  "slug": "blitz-river"
+ },
+ {
+  "battleKind": "wild",
+  "id": "wild:MUTANT_KIRLIA",
+  "species": "MUTANT_KIRLIA",
+  "title": "Mutant Kirlia",
+  "encounters": [
+   {
+    "mapId": 234,
+    "mapName": "The Altar",
+    "level": 40,
+    "slug": null
+   }
+  ],
+  "recurring": false,
+  "minLevel": 40,
+  "maxLevel": 40,
+  "partySize": 1,
+  "helper": "twoAgainstOneBattle",
+  "mapId": 234,
+  "mapName": "The Altar",
+  "locationSlug": null,
+  "regionName": null,
+  "order": 6,
+  "slug": "mutant-kirlia"
+ },
+ {
+  "id": "moiraRoute107Fight",
+  "script": "SpecialFights",
+  "name": "Moira",
+  "trainerTypeId": 105,
+  "party": [
+   {
+    "species": "FURRET",
+    "level": 55,
+    "moves": [
+     "SUCKERPUNCH",
+     "BRICKBREAK",
+     "FACADE"
+    ],
+    "gender": null,
+    "item": null,
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "LUXRAY",
+    "level": 55,
+    "moves": [
+     "THUNDERBOLT",
+     "WILDCHARGE",
+     "FIREFANG",
+     "ICEFANG"
+    ],
+    "gender": null,
+    "item": null,
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "LUCARIO",
+    "level": 55,
+    "moves": [
+     "CLOSECOMBAT",
+     "DRAGONPULSE",
+     "FLASHCANNON"
+    ],
+    "gender": null,
+    "item": null,
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "NINETALES",
+    "level": 55,
+    "moves": [
+     "FLAMETHROWER",
+     "DARKPULSE",
+     "DREAMEATER"
+    ],
+    "gender": null,
+    "item": null,
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "EEVEE",
+    "level": 45,
+    "moves": [],
+    "gender": null,
+    "item": null,
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   }
+  ],
+  "partner": null,
+  "quote": "Ah... I thought this would happen...",
+  "partySize": 5,
+  "maxLevel": 55,
+  "mapId": 236,
+  "mapName": "Route 107",
+  "locationSlug": "route-107-2",
+  "regionName": "Omuran",
+  "trainerType": "Pokémon Trainer",
+  "title": "Moira (Route 107)",
+  "battleKind": "trainer",
+  "recurring": false,
+  "minLevel": 45,
+  "order": 7,
+  "slug": "moira-route-107"
+ },
+ {
+  "id": "blitzNarakuCaveFight",
+  "script": "SpecialFights",
+  "name": "Blitz",
+  "trainerTypeId": 106,
+  "party": [
+   {
+    "species": "HERACROSS",
+    "level": 60,
+    "moves": [
+     "EARTHQUAKE",
+     "NIGHTSLASH",
+     "MEGAHORN",
+     "CLOSECOMBAT"
+    ],
+    "gender": null,
+    "item": "HEROMASK",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "MILOTIC",
+    "level": 61,
+    "moves": [
+     "RECOVER",
+     "HAZE",
+     "SURF",
+     "TOXIC"
+    ],
+    "gender": null,
+    "item": "LEFTOVERS",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "METAGROSS",
+    "level": 61,
+    "moves": [
+     "METALCLAW",
+     "ZENHEADBUTT",
+     "METEORMASH",
+     "EARTHQUAKE"
+    ],
+    "gender": null,
+    "item": "METAGROSSITE",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "FLYGON",
+    "level": 62,
+    "moves": [
+     "EARTHPOWER",
+     "DRAGONTAIL",
+     "DRAGONCLAW",
+     "EARTHQUAKE"
+    ],
+    "gender": null,
+    "item": "CHOICESCARF",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "VOLCARONA",
+    "level": 62,
+    "moves": [
+     "HEATWAVE",
+     "BUGBUZZ",
+     "HURRICANE"
+    ],
+    "gender": null,
+    "item": "LIFEORB",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   }
+  ],
+  "partner": null,
+  "quote": "Wha-? ... sigh.",
+  "partySize": 5,
+  "maxLevel": 62,
+  "mapId": 249,
+  "mapName": "Naraku Cave",
+  "locationSlug": "naraku-cave-2",
+  "regionName": "Omuran",
+  "trainerType": "Pokémon Trainer",
+  "title": "Blitz (Naraku Cave)",
+  "battleKind": "trainer",
+  "recurring": false,
+  "minLevel": 60,
+  "order": 8,
+  "slug": "blitz-naraku-cave"
+ },
+ {
+  "battleKind": "wild",
+  "id": "wild:BRAIXEN_MIKO",
+  "species": "BRAIXEN_MIKO",
+  "title": "Braixen Miko",
+  "encounters": [
+   {
+    "mapId": 316,
+    "mapName": "The Lab",
+    "level": 69,
+    "slug": "the-lab"
+   }
+  ],
+  "recurring": false,
+  "minLevel": 69,
+  "maxLevel": 69,
+  "partySize": 1,
+  "helper": "twoAgainstOneBattle",
+  "mapId": 316,
+  "mapName": "The Lab",
+  "locationSlug": "the-lab",
+  "regionName": "Omuran",
+  "order": 9,
+  "slug": "braixen-miko"
+ },
+ {
+  "id": "moiraCyclingFight",
+  "script": "SpecialFights",
+  "name": "Moira",
+  "trainerTypeId": 189,
+  "party": [
+   {
+    "species": "FURRET",
+    "level": 69,
+    "moves": [
+     "TRICK",
+     "UTURN",
+     "BRICKBREAK",
+     "FACADE"
+    ],
+    "gender": null,
+    "item": "TOXICORB",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "LUXRAY",
+    "level": 70,
+    "moves": [
+     "THUNDERBOLT",
+     "WILDCHARGE",
+     "FIREFANG",
+     "ICEFANG"
+    ],
+    "gender": null,
+    "item": "AIRBALLOON",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "LUCARIO",
+    "level": 71,
+    "moves": [
+     "CLOSECOMBAT",
+     "DRAGONPULSE",
+     "FLASHCANNON",
+     "EARTHQUAKE"
+    ],
+    "gender": null,
+    "item": "HEROMASK",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "NINETALES",
+    "level": 72,
+    "moves": [
+     "FLAMETHROWER",
+     "DARKPULSE",
+     "DREAMEATER",
+     "ENERGYBALL"
+    ],
+    "gender": null,
+    "item": "LUCARIONITE",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "VALKYREON",
+    "level": 72,
+    "moves": [
+     "THUNDERBOLT",
+     "SHININGNOVA",
+     "HURRICANE",
+     "AERIALACE"
+    ],
+    "gender": null,
+    "item": "AIRBALLOON",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   }
+  ],
+  "partner": null,
+  "quote": "Still... I lose to you...",
+  "partySize": 5,
+  "maxLevel": 72,
+  "mapId": 286,
+  "mapName": "Cycling Highway",
+  "locationSlug": null,
+  "regionName": "Omuran",
+  "trainerType": "Pokémon Trainer",
+  "title": "Moira (Cycling Highway)",
+  "battleKind": "trainer",
+  "recurring": false,
+  "minLevel": 69,
+  "order": 10,
+  "slug": "moira-cycling-highway"
+ },
+ {
+  "battleKind": "wild",
+  "id": "wild:ARCH_CYBORG_00",
+  "species": "ARCH_CYBORG_00",
+  "title": "Arch Cyborg 00",
+  "encounters": [
+   {
+    "mapId": 329,
+    "mapName": "Factory 00",
+    "level": 80,
+    "slug": "factory-00"
+   }
+  ],
+  "recurring": false,
+  "minLevel": 80,
+  "maxLevel": 80,
+  "partySize": 1,
+  "helper": "simpleBattle",
+  "mapId": 329,
+  "mapName": "Factory 00",
+  "locationSlug": "factory-00",
+  "regionName": "Omuran",
+  "order": 11,
+  "slug": "arch-cyborg-00"
+ },
+ {
+  "battleKind": "wild",
+  "id": "wild:DREAM_HYPNO",
+  "species": "DREAM_HYPNO",
+  "title": "Dream Hypno",
+  "encounters": [
+   {
+    "mapId": 345,
+    "mapName": "Dream Room",
+    "level": 80,
+    "slug": null
+   }
+  ],
+  "recurring": false,
+  "minLevel": 80,
+  "maxLevel": 80,
+  "partySize": 1,
+  "helper": "twoAgainstOneBattle",
+  "mapId": 345,
+  "mapName": "Dream Room",
+  "locationSlug": null,
+  "regionName": null,
+  "order": 12,
+  "slug": "dream-hypno"
+ },
+ {
+  "id": "gangStarBoss",
+  "script": "SpecialFights",
+  "name": "Giovanni",
+  "trainerTypeId": 13,
+  "party": [
+   {
+    "species": "WEEZING",
+    "level": 75,
+    "moves": [
+     "BELCH",
+     "GYROBALL",
+     "GIGAIMPACT",
+     "SLUDGEBOMB"
+    ],
+    "gender": null,
+    "item": "TOXIC_AMPLIFIER",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "AMUK",
+    "level": 77,
+    "moves": [
+     "GUNKSHOT",
+     "FLAMETHROWER",
+     "BRUTALSWING",
+     "STONEEDGE"
+    ],
+    "gender": null,
+    "item": "LEFTOVERS",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "MACHAMP",
+    "level": 77,
+    "moves": [
+     "CROSSCHOP",
+     "BRICKBREAK",
+     "EARTHQUAKE",
+     "POISONJAB"
+    ],
+    "gender": null,
+    "item": "ESPER_SHIELD",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "NIDOQUEEN",
+    "level": 79,
+    "moves": [
+     "BODYSLAM",
+     "EARTHPOWER",
+     "SUPERPOWER",
+     "SURF"
+    ],
+    "gender": null,
+    "item": "GAIA_AMPLIFIER",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "KINGDRA",
+    "level": 80,
+    "moves": [
+     "DRAGONPULSE",
+     "SCALD",
+     "FLASHCANNON",
+     "ICEBEAM"
+    ],
+    "gender": null,
+    "item": "PIXIE_SHIELD",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   }
+  ],
+  "partner": null,
+  "quote": "This is it...",
+  "partySize": 5,
+  "maxLevel": 80,
+  "mapId": 338,
+  "mapName": "Gangstar's Den",
+  "locationSlug": "gangstar-s-den",
+  "regionName": "Omuran",
+  "trainerType": "Gang Star",
+  "title": "Giovanni",
+  "battleKind": "trainer",
+  "recurring": false,
+  "minLevel": 75,
+  "order": 13,
+  "slug": "giovanni"
+ },
+ {
+  "id": "blitzRoute108Fight",
+  "script": "SpecialFights",
+  "name": "Blitz",
+  "trainerTypeId": 106,
+  "party": [
+   {
+    "species": "HERACROSS",
+    "level": 79,
+    "moves": [
+     "EARTHQUAKE",
+     "NIGHTSLASH",
+     "MEGAHORN",
+     "CLOSECOMBAT"
+    ],
+    "gender": null,
+    "item": "HEROMASK",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "MILOTIC",
+    "level": 80,
+    "moves": [
+     "RECOVER",
+     "HAZE",
+     "SURF",
+     "TOXIC"
+    ],
+    "gender": null,
+    "item": "LEFTOVERS",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "METAGROSS",
+    "level": 80,
+    "moves": [
+     "FLASHCANNON",
+     "ZENHEADBUTT",
+     "METEORMASH",
+     "EARTHQUAKE"
+    ],
+    "gender": null,
+    "item": "METAGROSSITE",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "FLYGON",
+    "level": 81,
+    "moves": [
+     "EARTHPOWER",
+     "DRAGONTAIL",
+     "DRAGONCLAW",
+     "EARTHQUAKE"
+    ],
+    "gender": null,
+    "item": "CRUST_AMPLIFIER",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "VOLCARONA",
+    "level": 82,
+    "moves": [
+     "HEATWAVE",
+     "BUGBUZZ",
+     "HURRICANE"
+    ],
+    "gender": null,
+    "item": "LIFEORB",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   }
+  ],
+  "partner": null,
+  "quote": "...",
+  "partySize": 5,
+  "maxLevel": 82,
+  "mapId": 342,
+  "mapName": "Krystolny Forest",
+  "locationSlug": "krystolny-forest",
+  "regionName": "Omuran",
+  "trainerType": "Pokémon Trainer",
+  "title": "Blitz (Krystolny Forest)",
+  "battleKind": "trainer",
+  "recurring": false,
+  "minLevel": 79,
+  "order": 14,
+  "slug": "blitz-krystolny-forest"
+ },
+ {
+  "battleKind": "wild",
+  "id": "wild:DREAM_MACHINE",
+  "species": "DREAM_MACHINE",
+  "title": "Dream Machine",
+  "encounters": [
+   {
+    "mapId": 345,
+    "mapName": "Dream Room",
+    "level": 90,
+    "slug": null
+   }
+  ],
+  "recurring": false,
+  "minLevel": 90,
+  "maxLevel": 90,
+  "partySize": 1,
+  "helper": "twoAgainstOneBattle",
+  "mapId": 345,
+  "mapName": "Dream Room",
+  "locationSlug": null,
+  "regionName": null,
+  "order": 15,
+  "slug": "dream-machine"
+ },
+ {
+  "battleKind": "wild",
+  "id": "wild:RAYQYOMI_EGG",
+  "species": "RAYQYOMI_EGG",
+  "title": "Rayqyomi Egg",
+  "encounters": [
+   {
+    "mapId": 395,
+    "mapName": "Station Lab",
+    "level": 100,
+    "slug": "station-lab"
+   }
+  ],
+  "recurring": false,
+  "minLevel": 100,
+  "maxLevel": 100,
+  "partySize": 1,
+  "helper": "simpleBattle",
+  "mapId": 395,
+  "mapName": "Station Lab",
+  "locationSlug": "station-lab",
+  "regionName": null,
+  "order": 16,
+  "slug": "rayqyomi-egg"
+ },
+ {
+  "battleKind": "wild",
+  "id": "wild:RAYQYOMI_1",
+  "species": "RAYQYOMI_1",
+  "title": "Rayqyomi",
+  "encounters": [
+   {
+    "mapId": 398,
+    "mapName": "Path of Stars",
+    "level": 100,
+    "slug": "path-of-stars"
+   }
+  ],
+  "recurring": false,
+  "minLevel": 100,
+  "maxLevel": 100,
+  "partySize": 1,
+  "helper": "simpleBattle",
+  "mapId": 398,
+  "mapName": "Path of Stars",
+  "locationSlug": "path-of-stars",
+  "regionName": null,
+  "order": 17,
+  "slug": "rayqyomi"
+ },
+ {
+  "battleKind": "wild",
+  "id": "wild:LUCARIANE",
+  "species": "LUCARIANE",
+  "title": "Lucariane",
+  "encounters": [
+   {
+    "mapId": 417,
+    "mapName": "Mt. Dynamo 4F",
+    "level": 90,
+    "slug": null
+   },
+   {
+    "mapId": 434,
+    "mapName": "Mt. Dynamo 3F",
+    "level": 90,
+    "slug": null
+   },
+   {
+    "mapId": 434,
+    "mapName": "Mt. Dynamo 3F",
+    "level": 92,
+    "slug": null
+   },
+   {
+    "mapId": 436,
+    "mapName": "Mt. Dynamo 2F",
+    "level": 92,
+    "slug": null
+   },
+   {
+    "mapId": 437,
+    "mapName": "Mt. Dynamo 1F",
+    "level": 92,
+    "slug": null
+   }
+  ],
+  "recurring": true,
+  "minLevel": 90,
+  "maxLevel": 92,
+  "partySize": 1,
+  "helper": "simpleBattle",
+  "mapId": 417,
+  "mapName": "Mt. Dynamo 4F",
+  "locationSlug": null,
+  "regionName": "Year 3030",
+  "order": 18,
+  "slug": "lucariane"
+ },
+ {
+  "battleKind": "wild",
+  "id": "wild:CYBORG_AELENA",
+  "species": "CYBORG_AELENA",
+  "title": "Cyborg Aelena",
+  "encounters": [
+   {
+    "mapId": 442,
+    "mapName": "Factory A",
+    "level": 90,
+    "slug": null
+   },
+   {
+    "mapId": 443,
+    "mapName": "Factory B",
+    "level": 95,
+    "slug": null
+   }
+  ],
+  "recurring": false,
+  "minLevel": 90,
+  "maxLevel": 95,
+  "partySize": 1,
+  "helper": "simpleBattle",
+  "mapId": 442,
+  "mapName": "Factory A",
+  "locationSlug": null,
+  "regionName": null,
+  "order": 19,
+  "slug": "cyborg-aelena"
+ },
+ {
+  "battleKind": "wild",
+  "id": "wild:BOSS_MAGMORTION",
+  "species": "BOSS_MAGMORTION",
+  "title": "Boss Magmortion",
+  "encounters": [
+   {
+    "mapId": 438,
+    "mapName": "Dead End",
+    "level": 99,
+    "slug": null
+   }
+  ],
+  "recurring": false,
+  "minLevel": 99,
+  "maxLevel": 99,
+  "partySize": 1,
+  "helper": "simpleBattle",
+  "mapId": 438,
+  "mapName": "Dead End",
+  "locationSlug": null,
+  "regionName": "Year 3030",
+  "order": 20,
+  "slug": "boss-magmortion"
+ },
+ {
+  "battleKind": "wild",
+  "id": "wild:BISHARION",
+  "species": "BISHARION",
+  "title": "Bisharion",
+  "encounters": [
+   {
+    "mapId": 510,
+    "mapName": "Neon Cradle Citadel",
+    "level": 95,
+    "slug": null
+   },
+   {
+    "mapId": 512,
+    "mapName": "Citadel 2F",
+    "level": 95,
+    "slug": null
+   },
+   {
+    "mapId": 514,
+    "mapName": "Citadel 3F",
+    "level": 95,
+    "slug": null
+   },
+   {
+    "mapId": 524,
+    "mapName": "Citadel Prison",
+    "level": 95,
+    "slug": null
+   },
+   {
+    "mapId": 497,
+    "mapName": "Neon Road",
+    "level": 100,
+    "slug": null
+   },
+   {
+    "mapId": 511,
+    "mapName": "Citadel 2F",
+    "level": 100,
+    "slug": null
+   },
+   {
+    "mapId": 524,
+    "mapName": "Citadel Prison",
+    "level": 100,
+    "slug": null
+   }
+  ],
+  "recurring": true,
+  "minLevel": 95,
+  "maxLevel": 100,
+  "partySize": 1,
+  "helper": "simpleBattle",
+  "mapId": 510,
+  "mapName": "Neon Cradle Citadel",
+  "locationSlug": null,
+  "regionName": "Year 3030",
+  "order": 21,
+  "slug": "bisharion"
+ },
+ {
+  "battleKind": "wild",
+  "id": "wild:CYBORG",
+  "species": "CYBORG",
+  "title": "Cyborg",
+  "encounters": [
+   {
+    "mapId": 327,
+    "mapName": "Factory 01",
+    "level": 75,
+    "slug": null
+   },
+   {
+    "mapId": 328,
+    "mapName": "Factory 00",
+    "level": 75,
+    "slug": null
+   },
+   {
+    "mapId": 329,
+    "mapName": "Factory 00",
+    "level": 80,
+    "slug": "factory-00"
+   },
+   {
+    "mapId": 394,
+    "mapName": "Outer Stairway",
+    "level": 90,
+    "slug": null
+   },
+   {
+    "mapId": 419,
+    "mapName": "Sukuyomi Mansion v2",
+    "level": 100,
+    "slug": "sukuyomi-mansion-v2"
+   }
+  ],
+  "recurring": true,
+  "minLevel": 75,
+  "maxLevel": 100,
+  "partySize": 1,
+  "helper": "simpleBattle",
+  "mapId": 327,
+  "mapName": "Factory 01",
+  "locationSlug": null,
+  "regionName": "Omuran",
+  "order": 22,
+  "slug": "cyborg"
+ },
+ {
+  "battleKind": "wild",
+  "id": "wild:ELECTIVION",
+  "species": "ELECTIVION",
+  "title": "Electivion",
+  "encounters": [
+   {
+    "mapId": 518,
+    "mapName": "Citadel 6F",
+    "level": 95,
+    "slug": null
+   },
+   {
+    "mapId": 497,
+    "mapName": "Neon Road",
+    "level": 100,
+    "slug": null
+   },
+   {
+    "mapId": 516,
+    "mapName": "Citadel 4F",
+    "level": 100,
+    "slug": null
+   },
+   {
+    "mapId": 517,
+    "mapName": "Citadel 5F",
+    "level": 100,
+    "slug": null
+   },
+   {
+    "mapId": 518,
+    "mapName": "Citadel 6F",
+    "level": 100,
+    "slug": null
+   },
+   {
+    "mapId": 524,
+    "mapName": "Citadel Prison",
+    "level": 100,
+    "slug": null
+   }
+  ],
+  "recurring": true,
+  "minLevel": 95,
+  "maxLevel": 100,
+  "partySize": 1,
+  "helper": "simpleBattle",
+  "mapId": 518,
+  "mapName": "Citadel 6F",
+  "locationSlug": null,
+  "regionName": null,
+  "order": 23,
+  "slug": "electivion"
+ },
+ {
+  "battleKind": "wild",
+  "id": "wild:LUCARION",
+  "species": "LUCARION",
+  "title": "Lucarion",
+  "encounters": [
+   {
+    "mapId": 417,
+    "mapName": "Mt. Dynamo 4F",
+    "level": 90,
+    "slug": null
+   },
+   {
+    "mapId": 434,
+    "mapName": "Mt. Dynamo 3F",
+    "level": 90,
+    "slug": null
+   },
+   {
+    "mapId": 435,
+    "mapName": "Mt. Dynamo 2F",
+    "level": 92,
+    "slug": "mt-dynamo-2f-2"
+   },
+   {
+    "mapId": 436,
+    "mapName": "Mt. Dynamo 2F",
+    "level": 92,
+    "slug": null
+   },
+   {
+    "mapId": 437,
+    "mapName": "Mt. Dynamo 1F",
+    "level": 92,
+    "slug": null
+   },
+   {
+    "mapId": 497,
+    "mapName": "Neon Road",
+    "level": 100,
+    "slug": null
+   }
+  ],
+  "recurring": true,
+  "minLevel": 90,
+  "maxLevel": 100,
+  "partySize": 1,
+  "helper": "simpleBattle",
+  "mapId": 417,
+  "mapName": "Mt. Dynamo 4F",
+  "locationSlug": null,
+  "regionName": "Year 3030",
+  "order": 24,
+  "slug": "lucarion"
+ },
+ {
+  "battleKind": "wild",
+  "id": "wild:MAGMORTION",
+  "species": "MAGMORTION",
+  "title": "Magmortion",
+  "encounters": [
+   {
+    "mapId": 510,
+    "mapName": "Neon Cradle Citadel",
+    "level": 95,
+    "slug": null
+   },
+   {
+    "mapId": 514,
+    "mapName": "Citadel 3F",
+    "level": 95,
+    "slug": null
+   },
+   {
+    "mapId": 497,
+    "mapName": "Neon Road",
+    "level": 100,
+    "slug": null
+   },
+   {
+    "mapId": 517,
+    "mapName": "Citadel 5F",
+    "level": 100,
+    "slug": null
+   }
+  ],
+  "recurring": true,
+  "minLevel": 95,
+  "maxLevel": 100,
+  "partySize": 1,
+  "helper": "simpleBattle",
+  "mapId": 510,
+  "mapName": "Neon Cradle Citadel",
+  "locationSlug": null,
+  "regionName": "Year 3030",
+  "order": 25,
+  "slug": "magmortion"
+ },
+ {
+  "id": "bossMambaBattle",
+  "script": "CitadelBosses",
+  "name": "Mamba",
+  "trainerTypeId": 301,
+  "party": [
+   {
+    "species": "MAMBA",
+    "level": 100,
+    "moves": [],
+    "gender": null,
+    "item": "PHASE_OUT",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   }
+  ],
+  "partner": null,
+  "quote": "...",
+  "partySize": 1,
+  "maxLevel": 100,
+  "mapId": 524,
+  "mapName": "Citadel Prison",
+  "locationSlug": null,
+  "regionName": "Year 3030",
+  "trainerType": "Fusion Soldier",
+  "title": "Mamba",
+  "battleKind": "trainer",
+  "recurring": false,
+  "minLevel": 100,
+  "order": 26,
+  "slug": "mamba"
+ },
+ {
+  "id": "ashyAfterDateFight",
+  "script": "SpecialFights",
+  "name": "Ashy",
+  "trainerTypeId": 224,
+  "party": [
+   {
+    "species": "HOUNDOOM",
+    "level": 105,
+    "moves": [
+     "FLAMETHROWER",
+     "DARKPULSE",
+     "DREAMEATER"
+    ],
+    "gender": null,
+    "item": "HOUNDOOMINITE",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "HYDREIGON",
+    "level": 105,
+    "moves": [
+     "OUTRAGE",
+     "HEADBUTT",
+     "CRUNCH"
+    ],
+    "gender": null,
+    "item": "PIXIE_SHIELD",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "AMUK",
+    "level": 106,
+    "moves": [
+     "CRUNCH",
+     "GUNKSHOT",
+     "THUNDERBOLT",
+     "ROCKTOMB"
+    ],
+    "gender": null,
+    "item": "LEFTOVERS",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "MACHAMP",
+    "level": 107,
+    "moves": [
+     "SUBMISSION",
+     "BULLDOZE",
+     "STONEEDGE",
+     "DYNAMICPUNCH"
+    ],
+    "gender": null,
+    "item": "ESPER_SHIELD",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "INCINEROAR",
+    "level": 108,
+    "moves": [
+     "DARKESTLARIAT",
+     "THROATCHOP",
+     "FLAREBLITZ",
+     "CROSSCHOP"
+    ],
+    "gender": null,
+    "item": "CRUST_SHIELD",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "TYPHLOSION",
+    "level": 110,
+    "moves": [
+     "FLAMETHROWER",
+     "ERUPTION",
+     "EARTHQUAKE",
+     "FOCUSBLAST"
+    ],
+    "gender": null,
+    "item": "ASHEN_STONE",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   }
+  ],
+  "partner": null,
+  "quote": "... my, my. A true hero, aren't ya?",
+  "partySize": 6,
+  "maxLevel": 110,
+  "mapId": 419,
+  "mapName": "Sukuyomi Mansion v2",
+  "locationSlug": "sukuyomi-mansion-v2",
+  "regionName": null,
+  "trainerType": "Best Girl",
+  "title": "Ashy",
+  "battleKind": "trainer",
+  "recurring": false,
+  "minLevel": 105,
+  "order": 27,
+  "slug": "ashy"
+ },
+ {
+  "id": "blitzDateFight",
+  "script": "SpecialFights",
+  "name": "Blitz",
+  "trainerTypeId": 106,
+  "party": [
+   {
+    "species": "HERACROSS",
+    "level": 105,
+    "moves": [
+     "EARTHQUAKE",
+     "NIGHTSLASH",
+     "MEGAHORN",
+     "CLOSECOMBAT"
+    ],
+    "gender": null,
+    "item": "HEAT_SHIELD",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "PORYGONZ",
+    "level": 107,
+    "moves": [
+     "RECOVER",
+     "DATA_SWAP",
+     "ZAPCANNON",
+     "HARD_DRIVE_CRASH"
+    ],
+    "gender": null,
+    "item": "RECOVERYDISC",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": 1
+   },
+   {
+    "species": "METAGROSS",
+    "level": 110,
+    "moves": [
+     "FLASHCANNON",
+     "ZENHEADBUTT",
+     "METEORMASH",
+     "EARTHQUAKE"
+    ],
+    "gender": null,
+    "item": "METAGROSSITE",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "FLYGON",
+    "level": 115,
+    "moves": [
+     "EARTHPOWER",
+     "DRAGONTAIL",
+     "DRAGONCLAW",
+     "EARTHQUAKE"
+    ],
+    "gender": null,
+    "item": "FROST_SHIELD",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "VOLCARONA",
+    "level": 117,
+    "moves": [
+     "HEATWAVE",
+     "BUGBUZZ",
+     "HURRICANE"
+    ],
+    "gender": null,
+    "item": "LEFTOVERS",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   }
+  ],
+  "partner": null,
+  "quote": "... okay.",
+  "partySize": 5,
+  "maxLevel": 117,
+  "mapId": 429,
+  "mapName": "Sygnal RHQ 3F",
+  "locationSlug": null,
+  "regionName": null,
+  "trainerType": "Pokémon Trainer",
+  "title": "Blitz (Sygnal RHQ 3F)",
+  "battleKind": "trainer",
+  "recurring": false,
+  "minLevel": 105,
+  "order": 28,
+  "slug": "blitz-sygnal-rhq-3f"
+ },
+ {
+  "id": "generalRicoBattle",
+  "script": "CitadelBosses",
+  "name": "Rico",
+  "trainerTypeId": 223,
+  "party": [
+   {
+    "species": "TYRANITAR",
+    "level": 115,
+    "moves": [
+     "STEALTHROCK",
+     "CRUNCH",
+     "STONEEDGE",
+     "PURSUIT"
+    ],
+    "gender": null,
+    "item": "FIST_NULLIFIER",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "FLYGON",
+    "level": 115,
+    "moves": [
+     "EARTHPOWER",
+     "DRAGONCLAW",
+     "ROCKSLIDE"
+    ],
+    "gender": null,
+    "item": "INSTANT_THAW",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "EXCADRILL",
+    "level": 117,
+    "moves": [
+     "IRONHEAD",
+     "RAPIDSPIN",
+     "ROCKSLIDE",
+     "EARTHQUAKE"
+    ],
+    "gender": null,
+    "item": "AIRBALLOON",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "ACCELGOR",
+    "level": 117,
+    "moves": [
+     "BUGBUZZ",
+     "WATERSHURIKEN",
+     "SIGNALBEAM"
+    ],
+    "gender": null,
+    "item": "HEAT_COUNTER",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "LANDORUS",
+    "level": 118,
+    "moves": [
+     "SUPERPOWER",
+     "EARTHQUAKE",
+     "ROCKPOLISH",
+     "OUTRAGE"
+    ],
+    "gender": null,
+    "item": "FROST_NULLIFIER",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "SWAMPERT",
+    "level": 119,
+    "moves": [
+     "ICEPUNCH",
+     "WATERFALL",
+     "SUPERPOWER",
+     "WIDEGUARD"
+    ],
+    "gender": null,
+    "item": "LAWNMOWER",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   }
+  ],
+  "partner": null,
+  "quote": "... ahahah!",
+  "partySize": 6,
+  "maxLevel": 119,
+  "mapId": 512,
+  "mapName": "Citadel 2F",
+  "locationSlug": null,
+  "regionName": null,
+  "trainerType": "High General",
+  "title": "Rico",
+  "battleKind": "trainer",
+  "recurring": false,
+  "minLevel": 115,
+  "order": 29,
+  "slug": "rico"
+ },
+ {
+  "battleKind": "wild",
+  "id": "wild:VALKYREON",
+  "species": "VALKYREON",
+  "title": "Valkyreon",
+  "encounters": [
+   {
+    "mapId": 320,
+    "mapName": "Control Room",
+    "level": 75,
+    "slug": null
+   },
+   {
+    "mapId": 497,
+    "mapName": "Neon Road",
+    "level": 115,
+    "slug": null
+   },
+   {
+    "mapId": 512,
+    "mapName": "Citadel 2F",
+    "level": 115,
+    "slug": null
+   },
+   {
+    "mapId": 511,
+    "mapName": "Citadel 2F",
+    "level": 117,
+    "slug": null
+   },
+   {
+    "mapId": 497,
+    "mapName": "Neon Road",
+    "level": 119,
+    "slug": null
+   }
+  ],
+  "recurring": true,
+  "minLevel": 75,
+  "maxLevel": 119,
+  "partySize": 1,
+  "helper": "simpleBattle",
+  "mapId": 320,
+  "mapName": "Control Room",
+  "locationSlug": null,
+  "regionName": null,
+  "order": 30,
+  "slug": "valkyreon"
+ },
+ {
+  "id": "meshmanBattle",
+  "script": "SpecFights3030",
+  "name": "Meshman",
+  "trainerTypeId": 226,
+  "party": [
+   {
+    "species": "LINKCHIP",
+    "level": 100,
+    "moves": [
+     "VIRUS_INJECT",
+     "DISCHARGE",
+     "AGILITY",
+     "SIGNALBEAM"
+    ],
+    "gender": null,
+    "item": "HEAT_COUNTER",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "VALKYREON",
+    "level": 110,
+    "moves": [
+     "ICEBEAM",
+     "OBLIVIONWING",
+     "HURRICANE",
+     "SHININGNOVA"
+    ],
+    "gender": null,
+    "item": "INSTANT_THAW",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": 2
+   },
+   {
+    "species": "CYBORG_AELENA",
+    "level": 110,
+    "moves": [],
+    "gender": null,
+    "item": "HEAT_COUNTER",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": 2
+   },
+   {
+    "species": "DATA_REUNICLUS",
+    "level": 110,
+    "moves": [],
+    "gender": null,
+    "item": "INSTANT_THAW",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "DATA_ELECTIVIRE",
+    "level": 115,
+    "moves": [
+     "VOLTSWITCH",
+     "HARD_DRIVE_CRASH",
+     "FLAMETHROWER",
+     "ENERGYBALL"
+    ],
+    "gender": null,
+    "item": "INSTANT_THAW",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "CYBORG_DEHANA",
+    "level": 120,
+    "moves": [],
+    "gender": null,
+    "item": "HEAT_COUNTER",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   }
+  ],
+  "partner": null,
+  "quote": "... critical failure.",
+  "partySize": 6,
+  "maxLevel": 120,
+  "mapId": 443,
+  "mapName": "Factory B",
+  "locationSlug": null,
+  "regionName": null,
+  "trainerType": "Cyborg",
+  "title": "Meshman",
+  "battleKind": "trainer",
+  "recurring": false,
+  "minLevel": 100,
+  "order": 31,
+  "slug": "meshman"
+ },
+ {
+  "id": "trainerTowerBoss",
+  "script": "SpecialFights",
+  "name": "???",
+  "trainerTypeId": 16,
+  "party": [
+   {
+    "species": "ZAPDOS",
+    "level": 120,
+    "moves": [
+     "DISCHARGE",
+     "HEATWAVE",
+     "ROOST"
+    ],
+    "gender": null,
+    "item": "LEFTOVERS",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "MEWTWO",
+    "level": 120,
+    "moves": [
+     "PSYSTRIKE",
+     "ICEBEAM",
+     "FIREBLAST",
+     "FOCUSBLAST"
+    ],
+    "gender": null,
+    "item": "ESPER_AMPLIFIER",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "GROUDON",
+    "level": 120,
+    "moves": [
+     "ROCKPOLISH",
+     "PRECIPICEBLADES",
+     "FIREBLAST",
+     "DRAGONPULSE"
+    ],
+    "gender": null,
+    "item": "AQUA_SHIELD",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "DIALGA",
+    "level": 120,
+    "moves": [
+     "DRACOMETEOR",
+     "FIREBLAST",
+     "THUNDER",
+     "ZA_WARUDO"
+    ],
+    "gender": null,
+    "item": "CRUST_SHIELD",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "RESHIRAM",
+    "level": 120,
+    "moves": [
+     "BLUEFLARE",
+     "DRACOMETEOR",
+     "STONEEDGE",
+     "ROOST"
+    ],
+    "gender": null,
+    "item": "LIFEORB",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "SOLGALEO",
+    "level": 120,
+    "moves": [
+     "SUNSTEELSTRIKE",
+     "FLAREBLITZ",
+     "EARTHQUAKE",
+     "WILDCHARGE"
+    ],
+    "gender": null,
+    "item": "CRUST_SHIELD",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   }
+  ],
+  "partner": null,
+  "quote": "... disgrace.",
+  "partySize": 6,
+  "maxLevel": 120,
+  "mapId": 383,
+  "mapName": "Top of the Tower",
+  "locationSlug": "top-of-the-tower",
+  "regionName": "Omuran",
+  "trainerType": "Old Man",
+  "title": "Trainer Tower Boss",
+  "battleKind": "trainer",
+  "recurring": false,
+  "minLevel": 120,
+  "order": 32,
+  "slug": "trainer-tower-boss"
+ },
+ {
+  "id": "generalBoltBattle",
+  "script": "CitadelBosses",
+  "name": "Bolt",
+  "trainerTypeId": 222,
+  "party": [
+   {
+    "species": "LUXRAY",
+    "level": 120,
+    "moves": [
+     "ICEFANG",
+     "FIREFANG",
+     "WILDCHARGE",
+     "CRUNCH"
+    ],
+    "gender": null,
+    "item": "AIRBALLOON",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "CYBEREON",
+    "level": 120,
+    "moves": [
+     "RAINBOW_CODE",
+     "DISCHARGE",
+     "DATA_DRAIN",
+     "PROTECT"
+    ],
+    "gender": null,
+    "item": "INSTANT_THAW",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "OM_MACHAMP",
+    "level": 122,
+    "moves": [
+     "THUNDERPUNCH",
+     "FIREPUNCH",
+     "IRONPUNCH",
+     "CLOSECOMBAT"
+    ],
+    "gender": null,
+    "item": "AIRBALLOON",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "VIKAVOLT",
+    "level": 123,
+    "moves": [
+     "ENERGYBALL",
+     "THUNDERBOLT",
+     "AGILITY",
+     "XSCISSOR"
+    ],
+    "gender": null,
+    "item": "HEAT_COUNTER",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "THUNDURUS",
+    "level": 123,
+    "moves": [
+     "THUNDERBOLT",
+     "IRONTAIL",
+     "PSYCHIC"
+    ],
+    "gender": null,
+    "item": "LEFTOVERS",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "MECH_FURRET",
+    "level": 125,
+    "moves": [],
+    "gender": null,
+    "item": "HEAT_COUNTER",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   }
+  ],
+  "partner": null,
+  "quote": "... as expected.",
+  "partySize": 6,
+  "maxLevel": 125,
+  "mapId": 514,
+  "mapName": "Citadel 3F",
+  "locationSlug": null,
+  "regionName": null,
+  "trainerType": "High General",
+  "title": "Bolt",
+  "battleKind": "trainer",
+  "recurring": false,
+  "minLevel": 120,
+  "order": 33,
+  "slug": "bolt"
+ },
+ {
+  "id": "deusBattle",
+  "script": "CitadelBosses",
+  "name": "DEUS",
+  "trainerTypeId": 303,
+  "party": [
+   {
+    "species": "DEUS",
+    "level": 125,
+    "moves": [
+     "SIGNALBEAM",
+     "MACHINEGUN",
+     "DATA_DRAIN",
+     "DISCHARGE"
+    ],
+    "gender": null,
+    "item": "ANTIVIRUS",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   }
+  ],
+  "partner": null,
+  "quote": "...",
+  "partySize": 1,
+  "maxLevel": 125,
+  "mapId": 520,
+  "mapName": "The Nexus",
+  "locationSlug": null,
+  "regionName": "Year 3030",
+  "trainerType": "God of Cyborgs",
+  "title": "DEUS",
+  "battleKind": "trainer",
+  "recurring": false,
+  "minLevel": 125,
+  "order": 34,
+  "slug": "deus"
+ },
+ {
+  "id": "generalNinaBattle",
+  "script": "CitadelBosses",
+  "name": "Murasaki",
+  "trainerTypeId": 221,
+  "party": [
+   {
+    "species": "OM_HONCHKROW",
+    "level": 120,
+    "moves": [
+     "TOXICSPIKES",
+     "STEALTHROCK",
+     "BRAVEBIRD",
+     "METEORMASH"
+    ],
+    "gender": null,
+    "item": "VOLT_SHIELD",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "VALKYREON",
+    "level": 121,
+    "moves": [
+     "HURRICANE",
+     "OBLIVIONWING",
+     "THUNDER",
+     "SHININGNOVA"
+    ],
+    "gender": null,
+    "item": "LEFTOVERS",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": 2
+   },
+   {
+    "species": "AEGISLASH",
+    "level": 121,
+    "moves": [
+     "SACREDSWORD",
+     "AERIALACE",
+     "IRONHEAD",
+     "SHADOWSNEAK"
+    ],
+    "gender": null,
+    "item": "HEAT_COUNTER",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "GALLADE",
+    "level": 122,
+    "moves": [
+     "NIGHTSLASH",
+     "CLOSECOMBAT",
+     "PSYCHOCUT",
+     "LEAFBLADE"
+    ],
+    "gender": null,
+    "item": "GALLADITE",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "KARTANA",
+    "level": 125,
+    "moves": [
+     "LEAFBLADE",
+     "AIRSLASH",
+     "SACREDSWORD",
+     "PSYCHOCUT"
+    ],
+    "gender": null,
+    "item": "HEAT_COUNTER",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "NINA_BISHARP",
+    "level": 125,
+    "moves": [],
+    "gender": null,
+    "item": "PHASE_OUT",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   }
+  ],
+  "partner": "Crow",
+  "quote": "... marvelous.",
+  "partySize": 6,
+  "maxLevel": 125,
+  "mapId": 517,
+  "mapName": "Citadel 5F",
+  "locationSlug": null,
+  "regionName": null,
+  "trainerType": "High General",
+  "title": "Murasaki",
+  "battleKind": "trainer",
+  "recurring": false,
+  "minLevel": 120,
+  "order": 35,
+  "slug": "murasaki"
+ },
+ {
+  "id": "vordevBattle",
+  "script": "CitadelBosses",
+  "name": "Vordev",
+  "trainerTypeId": 113,
+  "party": [
+   {
+    "species": "DARK_CELEBI",
+    "level": 125,
+    "moves": [],
+    "gender": null,
+    "item": "LEFTOVERS",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "DUSKNOIR",
+    "level": 125,
+    "moves": [
+     "ICEPUNCH",
+     "SHADOWPUNCH",
+     "THUNDERPUNCH",
+     "FIREPUNCH"
+    ],
+    "gender": null,
+    "item": "LEFTOVERS",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "CLAYDOL",
+    "level": 125,
+    "moves": [
+     "EARTHPOWER",
+     "ANCIENTPOWER",
+     "COSMICPOWER",
+     "EARTHQUAKE"
+    ],
+    "gender": null,
+    "item": "SHADOW_SHIELD",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "WISERAPH",
+    "level": 125,
+    "moves": [
+     "HEAVENSSTRIKE",
+     "SHADOWBALL",
+     "FLAMETHROWER",
+     "THUNDERBOLT"
+    ],
+    "gender": null,
+    "item": "DARKNESS_NULLIFIER",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "GOTHITELLE",
+    "level": 125,
+    "moves": [
+     "PSYCHIC",
+     "THUNDERBOLT",
+     "SUBSTITUTE",
+     "EMBARGO"
+    ],
+    "gender": null,
+    "item": "LEFTOVERS",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "GARCHOMP",
+    "level": 125,
+    "moves": [
+     "OUTRAGE",
+     "THUNDERFANG",
+     "EARTHQUAKE",
+     "CRUNCH"
+    ],
+    "gender": null,
+    "item": "CRYSTAL_SCALES",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   }
+  ],
+  "partner": "Hal",
+  "quote": "... marvelous.",
+  "partySize": 6,
+  "maxLevel": 125,
+  "mapId": 523,
+  "mapName": "Citadel 9F",
+  "locationSlug": null,
+  "regionName": "Year 3030",
+  "trainerType": "Mastermind",
+  "title": "Vordev",
+  "battleKind": "trainer",
+  "recurring": false,
+  "minLevel": 125,
+  "order": 36,
+  "slug": "vordev"
+ },
+ {
+  "id": "axanaFight",
+  "script": "SpecFights3030",
+  "name": "Axana",
+  "trainerTypeId": 941,
+  "party": [
+   {
+    "species": "LYCANMECH",
+    "level": 125,
+    "moves": [],
+    "gender": null,
+    "item": "HEAT_COUNTER",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "HAXORUS",
+    "level": 125,
+    "moves": [
+     "SWORDSDANCE",
+     "OUTRAGE",
+     "EARTHQUAKE",
+     "POISONJAB"
+    ],
+    "gender": null,
+    "item": "PIXIE_NULLIFIER",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "DURANT",
+    "level": 127,
+    "moves": [
+     "XSCISSOR",
+     "STONEEDGE",
+     "SUPERPOWER",
+     "HONECLAWS"
+    ],
+    "gender": null,
+    "item": "AIRBALLOON",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "CYBEREON",
+    "level": 127,
+    "moves": [
+     "LOOP_BREAK",
+     "RAINBOW_CODE",
+     "DISCHARGE",
+     "PROGRAM_REVERSE"
+    ],
+    "gender": null,
+    "item": "INSTANT_THAW",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "MECH_LUXRAY",
+    "level": 130,
+    "moves": [
+     "HARD_DRIVE_CRASH",
+     "THUNDERBOLT",
+     "METALCLAW",
+     "METALCANNON"
+    ],
+    "gender": null,
+    "item": "HEAT_COUNTER",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "MECHRUFF",
+    "level": 133,
+    "moves": [],
+    "gender": null,
+    "item": "HEAT_COUNTER",
+    "card": "MECHRUFF_CARD",
+    "shiny": false,
+    "abilityIndex": null
+   }
+  ],
+  "partner": null,
+  "quote": "...",
+  "partySize": 6,
+  "maxLevel": 133,
+  "mapId": 551,
+  "mapName": "The Plantation",
+  "locationSlug": "the-plantation",
+  "regionName": "Year 3030",
+  "trainerType": "Bandit Boss",
+  "title": "Axana",
+  "battleKind": "trainer",
+  "recurring": false,
+  "minLevel": 125,
+  "order": 37,
+  "slug": "axana"
+ },
+ {
+  "id": "generalGrimmBattle",
+  "script": "CitadelBosses",
+  "name": "Grimm",
+  "trainerTypeId": 220,
+  "party": [
+   {
+    "species": "GR_SMEARGLE",
+    "level": 137,
+    "moves": [
+     "BATONPASS",
+     "GODPALM",
+     "CALMMIND",
+     "SWORDSDANCE"
+    ],
+    "gender": null,
+    "item": "FIST_NULLIFIER",
+    "card": "QUARTZ_CARD",
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "GOLD_DUCKLETT",
+    "level": 137,
+    "moves": [],
+    "gender": null,
+    "item": "HEAT_NULLIFIER",
+    "card": "QUARTZ_CARD",
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "DARKRAI",
+    "level": 137,
+    "moves": [
+     "DEEP_SLEEP",
+     "MINDCRUSH",
+     "DARKPULSE",
+     "THUNDERBOLT"
+    ],
+    "gender": null,
+    "item": "PIXIE_NULLIFIER",
+    "card": "QUARTZ_CARD",
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "SHUCKLE",
+    "level": 137,
+    "moves": [
+     "CLOSECOMBAT",
+     "FLEX",
+     "MEGABUGPUNCH",
+     "GOLDENTOUCH"
+    ],
+    "gender": null,
+    "item": "SHUCKLE_STONE",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "HOOH",
+    "level": 137,
+    "moves": [
+     "SACREDFIRE",
+     "ANCIENTPOWER",
+     "RAINBOWTORRENT",
+     "HURRICANE"
+    ],
+    "gender": null,
+    "item": "RAINBOWORB",
+    "card": "QUARTZ_CARD",
+    "shiny": true,
+    "abilityIndex": null
+   },
+   {
+    "species": "QMARKS",
+    "level": 137,
+    "moves": [],
+    "gender": null,
+    "item": "ANTIVIRUS",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   }
+  ],
+  "partner": null,
+  "quote": "... you never gave up. Good!",
+  "partySize": 6,
+  "maxLevel": 137,
+  "mapId": 640,
+  "mapName": "Mt. Dynamo Summit",
+  "locationSlug": "mt-dynamo-summit",
+  "regionName": "Omuran",
+  "trainerType": "High General",
+  "title": "Grimm",
+  "battleKind": "trainer",
+  "recurring": false,
+  "minLevel": 137,
+  "order": 38,
+  "slug": "grimm"
+ },
+ {
+  "id": "secondDevBattle",
+  "script": "SpecialFights",
+  "name": "Stochastic",
+  "trainerTypeId": 999,
+  "party": [
+   {
+    "species": "OM_SWELLOW",
+    "level": 137,
+    "moves": [
+     "AERIALACE",
+     "THUNDERBOLT",
+     "STEELWING",
+     "ROOST"
+    ],
+    "gender": null,
+    "item": null,
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "XATU_2",
+    "level": 137,
+    "moves": [
+     "PSYCHIC",
+     "NIGHTSHADE",
+     "AIRSLASH",
+     "MINDCRUSH"
+    ],
+    "gender": null,
+    "item": null,
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "ARTICUNO",
+    "level": 137,
+    "moves": [
+     "ICEBEAM",
+     "ANCIENTPOWER",
+     "AERIALACE",
+     "PROTECT"
+    ],
+    "gender": null,
+    "item": null,
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "PELISTORM",
+    "level": 137,
+    "moves": [
+     "ZA_WARUDO",
+     "HURRICANE",
+     "THUNDER",
+     "SCALD"
+    ],
+    "gender": null,
+    "item": null,
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "TOTALLY_A_BIRD",
+    "level": 137,
+    "moves": [
+     "DELETE_MATRIX",
+     "FREEZEBUG",
+     "BRAVEBIRD",
+     "THOUSANDPECKS"
+    ],
+    "gender": null,
+    "item": null,
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "OVERHEAVEN",
+    "level": 137,
+    "moves": [
+     "GOLDENDAGGER",
+     "HEAVENASCENT",
+     "METALCANNON",
+     "SCALESOFJUSTICE"
+    ],
+    "gender": null,
+    "item": null,
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   }
+  ],
+  "partner": null,
+  "quote": "... sigh. Are you happy now?",
+  "partySize": 6,
+  "maxLevel": 137,
+  "mapId": 651,
+  "mapName": "A Café in the Rift",
+  "locationSlug": "a-caf-in-the-rift",
+  "regionName": "Unknown",
+  "trainerType": "Mr.",
+  "title": "Stochastic (A Café in the Rift)",
+  "battleKind": "trainer",
+  "recurring": false,
+  "minLevel": 137,
+  "order": 39,
+  "slug": "stochastic-a-caf-in-the-rift"
+ },
+ {
+  "id": "jahveBattle",
+  "script": "SpecialFights",
+  "name": "Jahve",
+  "trainerTypeId": 962,
+  "party": [
+   {
+    "species": "BRELOOM",
+    "level": 150,
+    "moves": [
+     "STUNSPORE",
+     "LEECHSEED",
+     "SEEDBOMB",
+     "BRICKBREAK"
+    ],
+    "gender": null,
+    "item": "HEAT_NULLIFIER",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "TANGROWTH",
+    "level": 150,
+    "moves": [
+     "POWERWHIP",
+     "KNOCKOFF",
+     "SYNTHESIS",
+     "GIGADRAIN"
+    ],
+    "gender": null,
+    "item": "HEAT_NULLIFIER",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "LURANTIS",
+    "level": 150,
+    "moves": [
+     "XSCISSOR",
+     "NIGHTSLASH",
+     "PETALBLIZZARD",
+     "SOLARBLADE"
+    ],
+    "gender": null,
+    "item": "AVIAN_NULLIFIER",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "TSAREENA",
+    "level": 150,
+    "moves": [
+     "LEAFSTORM",
+     "SOLARBLADE",
+     "PLAYROUGH",
+     "ZENHEADBUTT"
+    ],
+    "gender": null,
+    "item": "HEAT_NULLIFIER",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "SHAYMIN",
+    "level": 150,
+    "moves": [
+     "SEEDFLARE",
+     "ENERGYBALL",
+     "HURRICANE",
+     "DAZZLINGGLEAM"
+    ],
+    "gender": null,
+    "item": "HEAT_NULLIFIER",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "LAVIGNANT",
+    "level": 150,
+    "moves": [
+     "THUNDER",
+     "SONICBOOM",
+     "THOUSANDLEAFCUTS",
+     "HORNLEECH"
+    ],
+    "gender": null,
+    "item": "HEAT_NULLIFIER",
+    "card": "0",
+    "shiny": false,
+    "abilityIndex": null
+   }
+  ],
+  "partner": null,
+  "quote": "...",
+  "partySize": 6,
+  "maxLevel": 150,
+  "mapId": 648,
+  "mapName": "Church of Imbalance",
+  "locationSlug": null,
+  "regionName": null,
+  "trainerType": "Archbishop",
+  "title": "Jahve",
+  "battleKind": "trainer",
+  "recurring": false,
+  "minLevel": 150,
+  "order": 40,
+  "slug": "jahve"
+ },
+ {
+  "id": "platinumOrderGoon1",
+  "script": "SpecialFights",
+  "name": "???",
+  "trainerTypeId": 960,
+  "party": [
+   {
+    "species": "GOLEM",
+    "level": 150,
+    "moves": [
+     "EARTHQUAKE",
+     "STONEEDGE",
+     "HEAVYSLAM",
+     "STEAMROLLER"
+    ],
+    "gender": null,
+    "item": "AQUA_NULLIFIER",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "MUK",
+    "level": 150,
+    "moves": [
+     "GUNKSHOT",
+     "EARTHQUAKE",
+     "TOXICSPIKES",
+     "FLAMETHROWER"
+    ],
+    "gender": null,
+    "item": "CRUST_NULLIFIER",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "BEAUTIFLY",
+    "level": 150,
+    "moves": [
+     "BUGBUZZ",
+     "WHIRLWIND",
+     "HURRICANE",
+     "QUIVERDANCE"
+    ],
+    "gender": null,
+    "item": "HEAT_NULLIFIER",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "LAPRAS",
+    "level": 150,
+    "moves": [
+     "ICEBEAM",
+     "DRAGONPULSE",
+     "DRAGONDANCE",
+     "ANCIENTPOWER"
+    ],
+    "gender": null,
+    "item": "FROST_AMPLIFIER",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "HOUNDOOM",
+    "level": 150,
+    "moves": [
+     "THUNDERFANG",
+     "FLAMETHROWER",
+     "CRUNCH",
+     "INFERNO"
+    ],
+    "gender": null,
+    "item": "HOUNDOOMINITE",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "LILLIGANT",
+    "level": 150,
+    "moves": [
+     "DREAMEATER",
+     "PETALDANCE",
+     "SLEEPPOWDER",
+     "LEECHSEED"
+    ],
+    "gender": null,
+    "item": "HEAT_NULLIFIER",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   }
+  ],
+  "partner": null,
+  "quote": "... the Starlight Path shall reveal itself unto us.",
+  "partySize": 6,
+  "maxLevel": 150,
+  "mapId": 372,
+  "mapName": "Roarin Indoor",
+  "locationSlug": "roarin-indoor",
+  "regionName": "Omuran",
+  "trainerType": "Platinum Order",
+  "title": "Platinum Order Goon 1",
+  "battleKind": "trainer",
+  "recurring": false,
+  "minLevel": 150,
+  "order": 41,
+  "slug": "platinum-order-goon-1"
+ },
+ {
+  "id": "firstDevBattle",
+  "script": "SpecialFights",
+  "name": "Stochastic",
+  "trainerTypeId": 998,
+  "party": [
+   {
+    "species": "QMARKS",
+    "level": 150,
+    "moves": [
+     "DELETE_MATRIX_2"
+    ],
+    "gender": null,
+    "item": null,
+    "card": null,
+    "shiny": true,
+    "abilityIndex": null
+   },
+   {
+    "species": "QMARKS",
+    "level": 150,
+    "moves": [
+     "MINDCRUSH",
+     "FLAMETHROWER",
+     "FREEZEBUG",
+     "VIRUS_INJECT"
+    ],
+    "gender": null,
+    "item": null,
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "QMARKS",
+    "level": 150,
+    "moves": [
+     "DELETE_MATRIX_2",
+     "ANCHORSHOT",
+     "HELLFIRE"
+    ],
+    "gender": null,
+    "item": null,
+    "card": null,
+    "shiny": true,
+    "abilityIndex": null
+   },
+   {
+    "species": "QMARKS",
+    "level": 150,
+    "moves": [
+     "MINDCRUSH",
+     "EMPYREANFIRE",
+     "DEVOURINGVOID",
+     "TESLA_CANNON"
+    ],
+    "gender": null,
+    "item": null,
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   },
+   {
+    "species": "QMARKS",
+    "level": 150,
+    "moves": [
+     "DELETE_MATRIX_2",
+     "SOLARSTORM"
+    ],
+    "gender": null,
+    "item": null,
+    "card": null,
+    "shiny": true,
+    "abilityIndex": null
+   },
+   {
+    "species": "QMARKS",
+    "level": 150,
+    "moves": [
+     "MINDCRUSH",
+     "AMATERASU",
+     "FREEZEBUG",
+     "DELETE_MATRIX_2"
+    ],
+    "gender": null,
+    "item": null,
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   }
+  ],
+  "partner": null,
+  "quote": "... oh... uh...",
+  "partySize": 6,
+  "maxLevel": 150,
+  "mapId": 651,
+  "mapName": "A Café in the Rift",
+  "locationSlug": "a-caf-in-the-rift",
+  "regionName": "Unknown",
+  "trainerType": "Mr.",
+  "title": "Stochastic (A Café in the Rift)",
+  "battleKind": "trainer",
+  "recurring": false,
+  "minLevel": 150,
+  "order": 42,
+  "slug": "stochastic-a-caf-in-the-rift-2"
+ },
+ {
+  "id": "tauBattle",
+  "script": "SpecialFights",
+  "name": "Tau",
+  "trainerTypeId": 961,
+  "party": [
+   {
+    "species": "ARMORED_MEWTWO_0",
+    "level": 150,
+    "moves": [],
+    "gender": null,
+    "item": "HEAT_NULLIFIER",
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   }
+  ],
+  "partner": null,
+  "quote": "...",
+  "partySize": 1,
+  "maxLevel": 150,
+  "mapId": 648,
+  "mapName": "Church of Imbalance",
+  "locationSlug": null,
+  "regionName": null,
+  "trainerType": "Platinum Boss",
+  "title": "Tau",
+  "battleKind": "trainer",
+  "recurring": false,
+  "minLevel": 150,
+  "order": 43,
+  "slug": "tau"
+ },
+ {
+  "battleKind": "wild",
+  "id": "wild:BEELUS",
+  "species": "BEELUS",
+  "title": "Beelus",
+  "encounters": [
+   {
+    "mapId": 747,
+    "mapName": "The Altar",
+    "level": 25,
+    "slug": null
+   }
+  ],
+  "recurring": false,
+  "minLevel": 25,
+  "maxLevel": 25,
+  "partySize": 1,
+  "helper": "twoAgainstOneBattle",
+  "mapId": 747,
+  "mapName": "The Altar",
+  "locationSlug": null,
+  "regionName": "Deshret",
+  "order": 44,
+  "slug": "beelus"
+ },
+ {
+  "id": "betaArceusFight",
+  "script": "ZTower",
+  "name": "???",
+  "trainerTypeId": 299,
+  "party": [
+   {
+    "species": "BETA_ARCEUS",
+    "level": 25,
+    "moves": [],
+    "gender": null,
+    "item": null,
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   }
+  ],
+  "partner": null,
+  "quote": "... ...",
+  "partySize": 1,
+  "maxLevel": 25,
+  "mapId": 781,
+  "mapName": "Realm of Stars",
+  "locationSlug": null,
+  "regionName": "Unknown",
+  "trainerType": "???",
+  "title": "Beta Arceus",
+  "battleKind": "trainer",
+  "recurring": false,
+  "minLevel": 25,
+  "order": 45,
+  "slug": "beta-arceus"
+ },
+ {
+  "id": "zineomBeachFight",
+  "script": "ZTower",
+  "name": "???",
+  "trainerTypeId": 299,
+  "party": [
+   {
+    "species": "ZIM",
+    "level": 30,
+    "moves": [],
+    "gender": null,
+    "item": null,
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   }
+  ],
+  "partner": null,
+  "quote": "... ...",
+  "partySize": 1,
+  "maxLevel": 30,
+  "mapId": 777,
+  "mapName": "Realm of Oceans",
+  "locationSlug": null,
+  "regionName": "Unknown",
+  "trainerType": "???",
+  "title": "Zineom Beach",
+  "battleKind": "trainer",
+  "recurring": false,
+  "minLevel": 30,
+  "order": 46,
+  "slug": "zineom-beach"
+ },
+ {
+  "id": "zineomBeastFight",
+  "script": "ZTower",
+  "name": "???",
+  "trainerTypeId": 299,
+  "party": [
+   {
+    "species": "Z_BEAST",
+    "level": 40,
+    "moves": [],
+    "gender": null,
+    "item": null,
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   }
+  ],
+  "partner": null,
+  "quote": "... ...",
+  "partySize": 1,
+  "maxLevel": 40,
+  "mapId": 780,
+  "mapName": "Realm of Ruin",
+  "locationSlug": null,
+  "regionName": "Unknown",
+  "trainerType": "???",
+  "title": "Zineom Beast",
+  "battleKind": "trainer",
+  "recurring": false,
+  "minLevel": 40,
+  "order": 47,
+  "slug": "zineom-beast"
+ },
+ {
+  "id": "zineomFakeFinalFight",
+  "script": "ZTower",
+  "name": "???",
+  "trainerTypeId": 299,
+  "party": [
+   {
+    "species": "ZINEOM",
+    "level": 50,
+    "moves": [],
+    "gender": null,
+    "item": null,
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   }
+  ],
+  "partner": null,
+  "quote": "... ...",
+  "partySize": 1,
+  "maxLevel": 50,
+  "mapId": 783,
+  "mapName": "Finale",
+  "locationSlug": null,
+  "regionName": "Deshret",
+  "trainerType": "???",
+  "title": "Zineom Fake Final",
+  "battleKind": "trainer",
+  "recurring": false,
+  "minLevel": 50,
+  "order": 48,
+  "slug": "zineom-fake-final"
+ },
+ {
+  "id": "zineomFinalFight",
+  "script": "ZTower",
+  "name": "???",
+  "trainerTypeId": 299,
+  "party": [
+   {
+    "species": "ZINEOM_2",
+    "level": 55,
+    "moves": [],
+    "gender": null,
+    "item": null,
+    "card": null,
+    "shiny": false,
+    "abilityIndex": null
+   }
+  ],
+  "partner": null,
+  "quote": "... ...",
+  "partySize": 1,
+  "maxLevel": 55,
+  "mapId": 784,
+  "mapName": "Space",
+  "locationSlug": null,
+  "regionName": "Unknown",
+  "trainerType": "???",
+  "title": "Zineom Final",
+  "battleKind": "trainer",
+  "recurring": false,
+  "minLevel": 55,
+  "order": 49,
+  "slug": "zineom-final"
+ }
+]

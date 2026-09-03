@@ -1,0 +1,65 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import { abilities, species, abilitySlug, type Ability } from '../../lib/game';
+
+export async function getStaticPaths() {
+  const seen = new Set<string>();
+  return abilities
+    .filter((a) => {
+      const s = abilitySlug(a);
+      if (seen.has(s)) return false;
+      seen.add(s);
+      return true;
+    })
+    .map((a) => ({ params: { slug: abilitySlug(a) }, props: { a } }));
+}
+
+const { a } = Astro.props as { a: Ability };
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const normal = species.filter((s) => s.abilities.includes(a.internal));
+const hidden = species.filter((s) => s.hiddenAbility === a.internal);
+---
+
+<StarlightPage
+  frontmatter={{ title: a.displayName, description: a.description.slice(0, 160), tableOfContents: false }}
+>
+  {a.exclusive && <p><span class="newtag">New in Empyrean</span></p>}
+  <blockquote>{a.description}</blockquote>
+
+  <h2>Pokémon with this ability <span class="count">({normal.length})</span></h2>
+  {normal.length === 0 ? <p class="muted">No Pokémon has this as a standard ability.</p> : (
+    <div class="grid">
+      {normal.map((s) => (
+        <a class="mon" href={`${base}/pokedex/${s.slug}`}>
+          <img class="game-sprite" src={`${base}/icons/${s.slug}.png`} alt="" width="32" height="32" loading="lazy" />
+          <span>{s.displayName}</span>
+        </a>
+      ))}
+    </div>
+  )}
+
+  {hidden.length > 0 && (
+    <>
+      <h2>As a hidden ability <span class="count">({hidden.length})</span></h2>
+      <div class="grid">
+        {hidden.map((s) => (
+          <a class="mon" href={`${base}/pokedex/${s.slug}`}>
+            <img class="game-sprite" src={`${base}/icons/${s.slug}.png`} alt="" width="32" height="32" loading="lazy" />
+            <span>{s.displayName}</span>
+          </a>
+        ))}
+      </div>
+    </>
+  )}
+</StarlightPage>
+
+<style>
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr)); gap: .15rem .5rem; }
+  .mon { display: flex; align-items: center; gap: .35rem; text-decoration: none; font-size: .85rem; padding: .1rem .2rem; border-radius: 4px; }
+  .mon:hover { background: var(--sl-color-gray-6); }
+  .mon img { image-rendering: pixelated; }
+  .muted { color: var(--sl-color-gray-3); }
+  .newtag { background: var(--sl-color-accent-low); color: var(--sl-color-accent-high);
+            padding: .1rem .5rem; border-radius: 999px; font-size: .72rem; font-weight: 600; }
+  .count { font-weight: 400; color: var(--sl-color-gray-3); font-size: .85rem; }
+</style>

@@ -1,0 +1,139 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import PartyTable from '../../components/PartyTable.astro';
+import TypeBadge from '../../components/TypeBadge.astro';
+import { bosses, locations, speciesByInternal, abilitiesByInternal } from '../../lib/game';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const locBySlug = new Map(locations.map((l) => [l.slug, l]));
+
+const headings = bosses.map((b) => ({
+  depth: 2, slug: b.slug, text: `${b.order}. ${b.title}`,
+}));
+
+const levelText = (b: typeof bosses[0]) =>
+  b.minLevel === b.maxLevel ? `${b.maxLevel}` : `${b.minLevel}–${b.maxLevel}`;
+---
+
+<StarlightPage
+  frontmatter={{
+    title: 'Bosses',
+    description: `All ${bosses.length} boss battles in Pokémon Empyrean, in the order you meet them, with full teams.`,
+    tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 2 },
+  }}
+  headings={headings}
+>
+  <p>
+    {bosses.length} boss battles, separate from the <a href={`${base}/gyms/`}>gym leaders</a>:
+    {' '}{bosses.filter((b) => b.battleKind === 'trainer').length} against named trainers and
+    {' '}{bosses.filter((b) => b.battleKind === 'wild').length} against boss Pokémon fought
+    directly. Ordered by the level of what you face, which is roughly the order a
+    playthrough meets them; the Z Tower ladder is placed last as endgame content.
+  </p>
+
+  <div class="tablewrap">
+    <table class="wikitable">
+      <thead>
+        <tr>
+          <th class="num">#</th><th>Boss</th><th>Kind</th><th>Location</th>
+          <th class="num">Lv.</th><th class="num">Team</th>
+        </tr>
+      </thead>
+      <tbody>
+        {bosses.map((b) => {
+          const loc = b.locationSlug ? locBySlug.get(b.locationSlug) : null;
+          return (
+            <tr>
+              <td class="num dim">{b.order}</td>
+              <td><a href={`#${b.slug}`}>{b.title}</a></td>
+              <td class="dim">
+                {b.battleKind === 'wild'
+                  ? (b.recurring ? 'Recurring enemy' : 'Boss Pokémon')
+                  : (b.trainerType ?? 'Trainer')}
+              </td>
+              <td class="dim">
+                {loc ? <a href={`${base}/locations/${loc.slug}`}>{b.mapName}</a> : (b.mapName ?? '—')}
+              </td>
+              <td class="num">{levelText(b)}</td>
+              <td class="num">{b.battleKind === 'wild' ? 1 : b.partySize}</td>
+            </tr>
+          );
+        })}
+      </tbody>
+    </table>
+  </div>
+
+  {bosses.map((b) => {
+    const loc = b.locationSlug ? locBySlug.get(b.locationSlug) : null;
+    const mon = b.species ? speciesByInternal.get(b.species) : null;
+    return (
+      <>
+        <h2 id={b.slug}>{b.order}. {b.title}</h2>
+        <p class="bossmeta">
+          {b.battleKind === 'wild'
+            ? (b.recurring ? 'Recurring enemy' : 'Boss Pokémon')
+            : (b.trainerType ? `${b.trainerType}` : 'Trainer')}
+          {' · '}
+          {loc ? <a href={`${base}/locations/${loc.slug}`}>{b.mapName}</a> : b.mapName}
+          {b.regionName && <> · {b.regionName}</>}
+          {' '}· level {levelText(b)}
+          {b.name && b.name !== b.title && <> · shown in game as “{b.name}”</>}
+          {b.partner && <> · fought alongside {b.partner}</>}
+          {b.helper === 'twoAgainstOneBattle' && <> · two against one</>}
+        </p>
+        {b.quote && <p class="quote">“{b.quote}”</p>}
+
+        {b.battleKind === 'wild' ? (
+          <>
+            {mon && (
+              <p class="wildmon">
+                <img class="game-sprite" src={`${base}/sprites/${mon.slug}.png`}
+                     alt={mon.displayName} width="96" height="96" loading="lazy" />
+                <span>
+                  <a href={`${base}/pokedex/${mon.slug}`}>{mon.displayName}</a>{' '}
+                  {mon.types.map((t) => <TypeBadge type={t} size={1} link={false} />)}
+                  <br />
+                  <span class="dim">
+                    {mon.effectiveStatTotal} total stats
+                    {mon.abilities.length > 0 && <> · {mon.abilities
+                      .map((a) => abilitiesByInternal.get(a)?.displayName ?? a)
+                      .join(', ')}</>}
+                  </span>
+                </span>
+              </p>
+            )}
+            {b.encounters && b.encounters.length > 1 && (
+              <>
+                <p class="dim">Fought in {b.encounters.length} places:</p>
+                <table class="wikitable">
+                  <thead><tr><th>Location</th><th class="num">Level</th></tr></thead>
+                  <tbody>
+                    {b.encounters.map((e) => (
+                      <tr>
+                        <td>{e.slug
+                          ? <a href={`${base}/locations/${e.slug}`}>{e.mapName}</a>
+                          : e.mapName}</td>
+                        <td class="num">{e.level}</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </>
+            )}
+          </>
+        ) : (
+          <PartyTable party={b.party ?? []} />
+        )}
+      </>
+    );
+  })}
+</StarlightPage>
+
+<style>
+  .num { text-align: right; font-variant-numeric: tabular-nums; }
+  .dim { color: var(--sl-color-gray-2); font-size: .84rem; }
+  .bossmeta { font-size: .85rem; color: var(--sl-color-gray-2); margin-bottom: .3rem; }
+  .quote { font-style: italic; color: var(--sl-color-gray-3); font-size: .88rem; margin: .2rem 0 .5rem; }
+  .wildmon { display: flex; align-items: center; gap: .8rem; margin: .3rem 0 .6rem; }
+  .wildmon img { image-rendering: pixelated; }
+</style>

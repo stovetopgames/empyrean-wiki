@@ -1,0 +1,158 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import TypeBadge from '../../components/TypeBadge.astro';
+import {
+  realItems, movesByInternal, species, itemSlug, moveSlug, type Item,
+} from '../../lib/game';
+
+// Card items get one shared table at /cards/ instead of 2,570 near-identical
+// pages; everything else gets its own page.
+export async function getStaticPaths() {
+  return realItems.map((i) => ({ params: { slug: itemSlug(i) }, props: { i } }));
+}
+
+const { i } = Astro.props as { i: Item };
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const move = i.machine ? movesByInternal.get(i.machine) : null;
+const learners = move ? species.filter((s) => s.machineMoves.includes(move.internal)) : [];
+const evoUsers = species.filter((s) => s.evolutions.some((e) => e.param === i.internal));
+const heldBy = species.filter((s) => s.wildItems.includes(i.internal));
+---
+
+<StarlightPage
+  frontmatter={{ title: i.displayName, description: i.description.slice(0, 160), tableOfContents: false }}
+>
+  <div class="itemhead">
+    {i.hasIcon && <img class="game-sprite" src={`${base}/items/${i.id}.png`} alt="" width="72" height="72" />}
+    <div>
+      <p class="pocket">
+        {i.pocketName}{i.price > 0 && <> · ${i.price.toLocaleString('en-US')}</>}
+        {i.exclusive && <span class="newtag">New in Empyrean</span>}
+      </p>
+      <blockquote>{i.description}</blockquote>
+    </div>
+  </div>
+
+  {move && (
+    <>
+      <h2>Move taught</h2>
+      <p class="movehead">
+        <a href={`${base}/moves/${moveSlug(move)}`}><strong>{move.name}</strong></a>
+        <TypeBadge type={move.type} /> <span>{move.category}</span>
+        <span class="muted">
+          {move.power ? `${move.power} power` : 'Status'} ·
+          {move.accuracy ? ` ${move.accuracy}% accuracy` : ' never misses'} · {move.pp} PP
+        </span>
+      </p>
+      <h2>Compatible Pokémon <span class="count">({learners.length})</span></h2>
+      <div class="grid">
+        {learners.map((s) => (
+          <a class="mon" href={`${base}/pokedex/${s.slug}`}>
+            <img class="game-sprite" src={`${base}/icons/${s.slug}.png`} alt="" width="32" height="32" loading="lazy" />
+            <span>{s.displayName}</span>
+          </a>
+        ))}
+      </div>
+    </>
+  )}
+
+  {(i.foundAt.length > 0 || i.soldAt.length > 0) && (
+    <>
+      <h2>Where to find</h2>
+      {i.foundAt.length > 0 && (
+        <table class="wikitable src">
+          <thead><tr><th>Location</th><th>How</th><th class="num">Qty</th></tr></thead>
+          <tbody>
+            {i.foundAt.map((f) => (
+              <tr>
+                <td>
+                  {f.slug ? <a href={`${base}/locations/${f.slug}`}>{f.mapName}</a> : f.mapName}
+                  {f.mapCount > 1 && <span class="dim"> ({f.mapCount} areas)</span>}
+                </td>
+                <td class="dim">
+                  {f.method}
+                  {f.conditional && <span class="tag">conditional</span>}
+                </td>
+                <td class="num">{f.quantity && f.quantity > 1 ? `×${f.quantity}` : ''}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      )}
+      {i.soldAt.length > 0 && (
+        <>
+          <h3>Sold at</h3>
+          <p class="chips">
+            {i.soldAt.map((f) => (
+              f.slug ? <a href={`${base}/locations/${f.slug}`}>{f.mapName}</a>
+                     : <span class="chip">{f.mapName}</span>
+            ))}
+          </p>
+        </>
+      )}
+    </>
+  )}
+
+  {i.foundAt.length === 0 && i.soldAt.length === 0 && !i.isCard && (
+    <>
+      <h2>Where to find</h2>
+      <p class="muted">
+        Not found lying around or sold in any shop. It may come from an event, a
+        reward, crafting, or be unused.
+      </p>
+    </>
+  )}
+
+  {evoUsers.length > 0 && (
+    <>
+      <h2>Used to evolve</h2>
+      <ul>
+        {evoUsers.map((s) => (
+          <li>
+            <a href={`${base}/pokedex/${s.slug}`}>{s.displayName}</a>
+            {' — '}
+            {s.evolutions.filter((e) => e.param === i.internal).map((e) => e.text).join(', ')}
+          </li>
+        ))}
+      </ul>
+    </>
+  )}
+
+  {heldBy.length > 0 && (
+    <>
+      <h2>Held by wild Pokémon</h2>
+      <div class="grid">
+        {heldBy.map((s) => (
+          <a class="mon" href={`${base}/pokedex/${s.slug}`}>
+            <img class="game-sprite" src={`${base}/icons/${s.slug}.png`} alt="" width="32" height="32" loading="lazy" />
+            <span>{s.displayName}</span>
+          </a>
+        ))}
+      </div>
+    </>
+  )}
+</StarlightPage>
+
+<style>
+  .itemhead { display: flex; gap: 1rem; align-items: flex-start; margin-top: 1rem; }
+  .itemhead img { image-rendering: pixelated; flex: none; }
+  .pocket { margin: 0 0 .3rem; font-size: .85rem; color: var(--sl-color-gray-3); }
+  .newtag { background: var(--sl-color-accent-low); color: var(--sl-color-accent-high);
+            padding: .1rem .5rem; border-radius: 999px; font-size: .72rem; font-weight: 600;
+            margin-left: .4rem; }
+  .movehead { display: flex; align-items: center; gap: .5rem; flex-wrap: wrap; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr)); gap: .15rem .5rem; }
+  .mon { display: flex; align-items: center; gap: .35rem; text-decoration: none; font-size: .85rem; padding: .1rem .2rem; border-radius: 4px; }
+  .mon:hover { background: var(--sl-color-gray-6); }
+  .mon img { image-rendering: pixelated; }
+  .muted { color: var(--sl-color-gray-3); font-size: .85rem; }
+  table.src { width: auto; min-width: 24rem; font-size: .85rem; }
+  .num { text-align: right; font-variant-numeric: tabular-nums; }
+  .dim { color: var(--sl-color-gray-2); font-size: .82rem; }
+  .tag { font-size: .68rem; background: var(--sl-color-gray-6); border-radius: 3px;
+         padding: 0 .3rem; margin-left: .35rem; }
+  .chips { display: flex; flex-wrap: wrap; gap: .3rem .4rem; }
+  .chips a, .chips .chip { background: var(--sl-color-gray-6); padding: .1rem .5rem;
+         border-radius: 999px; font-size: .8rem; text-decoration: none; }
+  .count { font-weight: 400; color: var(--sl-color-gray-3); font-size: .85rem; }
+</style>

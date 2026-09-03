@@ -1,0 +1,121 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import TypeBadge from '../../components/TypeBadge.astro';
+import { moves, moveSlug, learners, type Move } from '../../lib/game';
+
+export async function getStaticPaths() {
+  const seen = new Set<string>();
+  return moves
+    .filter((m) => {
+      const s = moveSlug(m);
+      if (seen.has(s)) return false;
+      seen.add(s);
+      return true;
+    })
+    .map((m) => ({ params: { slug: moveSlug(m) }, props: { m } }));
+}
+
+const { m } = Astro.props as { m: Move };
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const { byLevel, byEgg, byMachine } = learners(m);
+
+const FLAGS: [keyof Move, string][] = [
+  ['makesContact', 'Makes contact'],
+  ['protectable', 'Blocked by Protect'],
+  ['magicCoatable', 'Reflected by Magic Coat'],
+  ['snatchable', 'Stealable by Snatch'],
+  ['mirrorMoveable', 'Copyable by Mirror Move'],
+  ['kingsRockable', "Triggers King's Rock"],
+  ['thawsUser', 'Thaws the user'],
+  ['highCritRate', 'High critical-hit ratio'],
+  ['biteMove', 'Bite move (Strong Jaw)'],
+  ['punchingMove', 'Punching move (Iron Fist)'],
+  ['soundMove', 'Sound move'],
+  ['powderMove', 'Powder move'],
+  ['pulseMove', 'Pulse move (Mega Launcher)'],
+  ['bombMove', 'Bomb move (Bulletproof)'],
+];
+const activeFlags = FLAGS.filter(([k]) => m[k]);
+---
+
+<StarlightPage
+  frontmatter={{
+    title: m.displayName,
+    description: m.description.slice(0, 160),
+    tableOfContents: false,
+  }}
+>
+  <p class="movehead">
+    <TypeBadge type={m.type} /> <span class="cat">{m.category}</span>
+    {m.machine && <span class="tmtag">{m.machine}</span>}
+  </p>
+
+  <blockquote>{m.description}</blockquote>
+
+  <table class="kv">
+    <tbody>
+      <tr><th>Power</th><td>{m.power || '—'}</td></tr>
+      <tr><th>Accuracy</th><td>{m.accuracy ? `${m.accuracy}%` : 'Never misses'}</td></tr>
+      <tr><th>PP</th><td>{m.pp}</td></tr>
+      <tr><th>Priority</th><td>{m.priority > 0 ? `+${m.priority}` : m.priority}</td></tr>
+      {m.effectChance > 0 && <tr><th>Effect chance</th><td>{m.effectChance}%</td></tr>}
+      <tr><th>Target</th><td>{m.targetText}</td></tr>
+      {m.machine && <tr><th>Machine</th><td>{m.machine}</td></tr>}
+      {activeFlags.length > 0 && (
+        <tr><th>Properties</th><td>{activeFlags.map(([, label]) => label).join(' · ')}</td></tr>
+      )}
+    </tbody>
+  </table>
+
+  <h2>Learned by level up <span class="count">({byLevel.length})</span></h2>
+  {byLevel.length === 0 ? <p class="muted">No Pokémon learns this by levelling up.</p> : (
+    <div class="tablewrap short">
+      <table class="wikitable">
+        <thead><tr><th>Lv.</th><th></th><th>Pokémon</th></tr></thead>
+        <tbody>
+          {byLevel.map(({ s, level }) => (
+            <tr>
+              <td class="num">{level === 0 ? '—' : level}</td>
+              <td class="iconcell">
+                <img class="game-sprite" src={`${base}/icons/${s.slug}.png`} alt="" width="32" height="32" loading="lazy" />
+              </td>
+              <td><a href={`${base}/pokedex/${s.slug}`}>{s.displayName}</a></td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  )}
+
+  {byMachine.length > 0 && (
+    <>
+      <h2>{m.machine ? 'Taught by machine' : 'Taught by tutor'} <span class="count">({byMachine.length})</span></h2>
+      <p class="chips">
+        {byMachine.map((s) => <a href={`${base}/pokedex/${s.slug}`}>{s.displayName}</a>)}
+      </p>
+    </>
+  )}
+
+  {byEgg.length > 0 && (
+    <>
+      <h2>Egg move for <span class="count">({byEgg.length})</span></h2>
+      <p class="chips">
+        {byEgg.map((s) => <a href={`${base}/pokedex/${s.slug}`}>{s.displayName}</a>)}
+      </p>
+    </>
+  )}
+</StarlightPage>
+
+<style>
+  .movehead { display: flex; align-items: center; gap: .6rem; margin-top: 1rem; }
+  .cat { font-weight: 600; }
+  .tmtag { background: var(--sl-color-accent-low); padding: .1rem .5rem; border-radius: 4px; font-size: .8rem; }
+  table.kv { width: auto; min-width: 20rem; font-size: .9rem; }
+  table.kv th { text-align: left; padding-right: 1.5rem; color: var(--sl-color-gray-2); font-weight: 500; }
+  .chips { display: flex; flex-wrap: wrap; gap: .3rem .4rem; }
+  .chips a { background: var(--sl-color-gray-6); padding: .1rem .5rem; border-radius: 999px; font-size: .8rem; text-decoration: none; }
+  .tablewrap.short { max-height: 30rem; }
+  .iconcell { width: 2.5rem; padding: 0 !important; text-align: center; }
+  .muted { color: var(--sl-color-gray-3); }
+  .count { font-weight: 400; color: var(--sl-color-gray-3); font-size: .85rem; }
+</style>

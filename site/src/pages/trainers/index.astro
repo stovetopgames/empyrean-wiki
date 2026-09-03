@@ -1,0 +1,89 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import TableTools from '../../components/TableTools.astro';
+import { trainers, speciesByInternal, meta } from '../../lib/game';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const rows = [...trainers].sort((a, b) => a.maxLevel - b.maxLevel || a.displayName.localeCompare(b.displayName));
+const types = [...new Set(trainers.map((t) => t.trainerType))].sort();
+const areas = [...new Set(trainers.map((t) => t.mapName ?? 'Unknown'))].sort();
+---
+
+<StarlightPage
+  frontmatter={{
+    title: 'Trainers',
+    description: `All ${trainers.length} trainer battles in Pokémon Empyrean with their full teams, levels and held items.`,
+    tableOfContents: false,
+  }}
+>
+  <p>
+    {trainers.length} trainer battles mined from the game's map events, with
+    {' '}{meta.counts.trainerPokemon} Pokémon between them. Gym leaders have their own
+    {' '}<a href={`${base}/gyms/`}>Gyms &amp; badges</a> page.
+  </p>
+
+  <div data-table-tools>
+    <div class="filterbar">
+      <input type="search" placeholder="Search trainer, area or Pokémon…" aria-label="Search trainers" />
+      <select data-filter="ttype" aria-label="Filter by trainer class">
+        <option value="">All classes</option>
+        {types.map((t) => <option value={t}>{t}</option>)}
+      </select>
+      <select data-filter="area" aria-label="Filter by area">
+        <option value="">All areas</option>
+        {areas.map((a) => <option value={a}>{a}</option>)}
+      </select>
+      <span class="resultcount" data-count></span>
+    </div>
+
+    <div class="tablewrap">
+      <table class="wikitable">
+        <thead>
+          <tr>
+            <th data-sort="text">Trainer</th>
+            <th data-sort="text">Class</th>
+            <th data-sort="text">Area</th>
+            <th data-sort="num">Team</th>
+            <th data-sort="num">Max Lv.</th>
+            <th>Pokémon</th>
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map((t) => {
+            const names = t.party.map((p) => speciesByInternal.get(p.species)?.displayName ?? p.species);
+            return (
+              <tr
+                data-search={`${t.displayName} ${t.mapName ?? ''} ${names.join(' ')}`.toLowerCase()}
+                data-ttype={t.trainerType}
+                data-area={t.mapName ?? 'Unknown'}
+              >
+                <td><a href={`${base}/trainers/${t.slug}`}>{t.name || t.trainerType}</a></td>
+                <td class="dim">{t.trainerType}</td>
+                <td class="dim">{t.mapName ?? '—'}</td>
+                <td class="num">{t.partySize}</td>
+                <td class="num">{t.maxLevel}</td>
+                <td class="teamcell">
+                  {t.party.map((p) => {
+                    const s = speciesByInternal.get(p.species);
+                    return s ? (
+                      <img class="game-sprite" src={`${base}/icons/${s.slug}.png`} alt={s.displayName}
+                           title={`${s.displayName} Lv${p.level}`} width="28" height="28" loading="lazy" />
+                    ) : null;
+                  })}
+                </td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <TableTools />
+</StarlightPage>
+
+<style>
+  .dim { font-size: .8rem; color: var(--sl-color-gray-2); }
+  .num { text-align: right; font-variant-numeric: tabular-nums; }
+  .teamcell { white-space: nowrap; line-height: 0; min-width: 9rem; }
+  .teamcell img { image-rendering: pixelated; }
+</style>

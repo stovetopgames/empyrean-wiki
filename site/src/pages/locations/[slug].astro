@@ -1,0 +1,223 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import TypeBadge from '../../components/TypeBadge.astro';
+import RegionMap from '../../components/RegionMap.astro';
+import { locations, speciesByInternal, itemsByInternal, itemSlug, trainersAt,
+         pickupsAt, shopsAt, regionFor, type Location } from '../../lib/game';
+
+export async function getStaticPaths() {
+  return locations.map((l) => ({ params: { slug: l.slug }, props: { l } }));
+}
+
+const { l } = Astro.props as { l: Location };
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+const here = trainersAt(l.mapId);
+const loot = pickupsAt(l.mapId);
+const marts = shopsAt(l.mapId);
+const onMap = regionFor(l.slug);
+const siblings = locations.filter((o) => o.name === l.name && o.slug !== l.slug);
+const totalSpecies = new Set(
+  l.tables.flatMap((t) => t.entries.map((e) => e.species)),
+).size;
+
+const headings = [
+  ...(onMap ? [{ depth: 2, slug: 'map', text: 'On the map' }] : []),
+  ...l.tables.map((t) => ({ depth: 2, slug: t.type.toLowerCase(), text: t.method })),
+  ...(loot.length ? [{ depth: 2, slug: 'items', text: 'Items' }] : []),
+  ...(marts.length ? [{ depth: 2, slug: 'shops', text: 'Shops' }] : []),
+  ...(here.length ? [{ depth: 2, slug: 'trainers', text: 'Trainers' }] : []),
+];
+
+const bits = [
+  l.regionName,
+  totalSpecies ? `${totalSpecies} wild species` : null,
+  loot.length ? `${loot.length} item${loot.length === 1 ? '' : 's'}` : null,
+  here.length ? `${here.length} trainer${here.length === 1 ? '' : 's'}` : null,
+];
+const summary = bits.filter(Boolean).join(' · ');
+---
+
+<StarlightPage
+  frontmatter={{
+    title: l.name,
+    description: `${l.name}${l.regionName ? ` in ${l.regionName}` : ''} — ${summary || 'a location in Pokémon Empyrean'}.`,
+    tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 2 },
+  }}
+  headings={headings}
+>
+  <p class="locmeta">
+    {l.regionName && <><strong>{l.regionName}</strong> · </>}
+    Map {l.mapId}
+    {totalSpecies > 0 && <> · {totalSpecies} wild species in {l.tables.length} table{l.tables.length === 1 ? '' : 's'}</>}
+    {loot.length > 0 && <> · {loot.length} item{loot.length === 1 ? '' : 's'}</>}
+    {here.length > 0 && <> · {here.length} trainer{here.length === 1 ? '' : 's'}</>}
+  </p>
+
+  {onMap?.place?.description && <p class="desc">{onMap.place.description}</p>}
+
+  {siblings.length > 0 && (
+    <p class="siblings">
+      Other areas named {l.name}:{' '}
+      {siblings.map((s, i) => (
+        <>
+          {i > 0 && ', '}
+          <a href={`${base}/locations/${s.slug}`}>
+            {/* A name can repeat across regions (Asutra City exists in both
+                Omuran and Year 3030), so say which one. */}
+            {s.regionName && s.regionName !== l.regionName ? s.regionName : `map ${s.mapId}`}
+          </a>
+        </>
+      ))}
+    </p>
+  )}
+
+  {onMap && (
+    <>
+      <h2 id="map">On the map</h2>
+      <RegionMap region={onMap.region} scale={2} highlight={l.slug} />
+    </>
+  )}
+
+  {l.tables.length === 0 && (
+    <p class="muted">No wild Pokémon are found here.</p>
+  )}
+
+  {l.tables.map((t) => (
+    <>
+      <h2 id={t.type.toLowerCase()}>{t.method}</h2>
+      {t.density !== null && <p class="density">Encounter density: {t.density}</p>}
+      <table class="wikitable">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Pokémon</th>
+            <th>Type</th>
+            <th class="num">Levels</th>
+            <th class="num">Chance</th>
+          </tr>
+        </thead>
+        <tbody>
+          {t.entries.map((e) => {
+            const s = speciesByInternal.get(e.species);
+            return (
+              <tr>
+                <td class="iconcell">
+                  {s && <img class="game-sprite" src={`${base}/icons/${s.slug}.png`} alt="" width="32" height="32" loading="lazy" />}
+                </td>
+                <td>{s ? <a href={`${base}/pokedex/${s.slug}`}>{s.displayName}</a> : e.species}</td>
+                <td class="typecell">{s?.types.map((ty) => <TypeBadge type={ty} size={1} link={false} />)}</td>
+                <td class="num">{e.minLevel === e.maxLevel ? e.minLevel : `${e.minLevel}–${e.maxLevel}`}</td>
+                <td class="num"><strong>{e.chance}%</strong></td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </>
+  ))}
+
+  {loot.length > 0 && (
+    <>
+      <h2 id="items">Items</h2>
+      <table class="wikitable">
+        <thead><tr><th></th><th>Item</th><th>How</th><th class="num">Qty</th></tr></thead>
+        <tbody>
+          {loot.map((p) => {
+            const item = itemsByInternal.get(p.item);
+            return (
+              <tr>
+                <td class="iconcell">
+                  {item?.hasIcon && <img class="game-sprite" src={`${base}/items/${item.id}.png`} alt="" width="26" height="26" loading="lazy" />}
+                </td>
+                <td>{item
+                  ? <a href={item.isCard ? `${base}/cards/#${item.slug}` : `${base}/items/${itemSlug(item)}`}>{item.displayName}</a>
+                  : p.item}</td>
+                <td class="dim">{p.method}{p.conditional && <span class="tag">conditional</span>}</td>
+                <td class="num">{p.quantity > 1 ? `×${p.quantity}` : ''}</td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </>
+  )}
+
+  {marts.length > 0 && (
+    <>
+      <h2 id="shops">Shops</h2>
+      {marts.map((sh) => (
+        <>
+          {sh.greeting && <p class="greeting">“{sh.greeting}”</p>}
+          <table class="wikitable">
+            <thead><tr><th></th><th>Item</th><th class="num">Price</th></tr></thead>
+            <tbody>
+              {sh.items.map((key) => {
+                const item = itemsByInternal.get(key);
+                return (
+                  <tr>
+                    <td class="iconcell">
+                      {item?.hasIcon && <img class="game-sprite" src={`${base}/items/${item.id}.png`} alt="" width="26" height="26" loading="lazy" />}
+                    </td>
+                    <td>{item
+                      ? <a href={item.isCard ? `${base}/cards/#${item.slug}` : `${base}/items/${itemSlug(item)}`}>{item.displayName}</a>
+                      : key}</td>
+                    <td class="num">{item && item.price > 0 ? item.price.toLocaleString('en-US') : '—'}</td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </>
+      ))}
+    </>
+  )}
+
+  {here.length > 0 && (
+    <>
+      <h2 id="trainers">Trainers</h2>
+      <table class="wikitable">
+        <thead>
+          <tr><th>Trainer</th><th>Class</th><th class="num">Team</th><th class="num">Max Lv.</th><th>Pokémon</th></tr>
+        </thead>
+        <tbody>
+          {here.map((t) => (
+            <tr>
+              <td><a href={`${base}/trainers/${t.slug}`}>{t.name || t.trainerType}</a></td>
+              <td class="dim">{t.trainerType}</td>
+              <td class="num">{t.partySize}</td>
+              <td class="num">{t.maxLevel}</td>
+              <td class="teamcell">
+                {t.party.map((p) => {
+                  const s = speciesByInternal.get(p.species);
+                  return s ? (
+                    <img class="game-sprite" src={`${base}/icons/${s.slug}.png`} alt={s.displayName}
+                         title={`${s.displayName} Lv${p.level}`} width="26" height="26" loading="lazy" />
+                  ) : null;
+                })}
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </>
+  )}
+</StarlightPage>
+
+<style>
+  .locmeta { color: var(--sl-color-gray-2); font-size: .9rem; margin-top: 1rem; }
+  .desc { font-size: .9rem; font-style: italic; color: var(--sl-color-gray-2); }
+  .siblings { font-size: .85rem; color: var(--sl-color-gray-3); }
+  .density { font-size: .8rem; color: var(--sl-color-gray-3); margin: .25rem 0 .6rem; }
+  .muted { color: var(--sl-color-gray-3); font-size: .9rem; }
+  .iconcell { width: 2.5rem; padding: 0 !important; text-align: center; }
+  .typecell { white-space: nowrap; line-height: 0; }
+  .typecell :global(.type-badge) { margin-right: 2px; }
+  .num { text-align: right; font-variant-numeric: tabular-nums; }
+  .dim { font-size: .8rem; color: var(--sl-color-gray-2); }
+  .greeting { font-style: italic; color: var(--sl-color-gray-2); font-size: .88rem; margin-bottom: .3rem; }
+  .tag { font-size: .68rem; background: var(--sl-color-gray-6); border-radius: 3px;
+         padding: 0 .3rem; margin-left: .35rem; }
+  .teamcell { white-space: nowrap; line-height: 0; }
+  .teamcell img { image-rendering: pixelated; }
+</style>

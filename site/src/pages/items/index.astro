@@ -1,0 +1,93 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import TableTools from '../../components/TableTools.astro';
+import { realItems, itemSlug, cardItems } from '../../lib/game';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const order = (a: typeof realItems[0], b: typeof realItems[0]) =>
+  a.pocket - b.pocket || a.displayName.localeCompare(b.displayName);
+const exclusive = realItems.filter((i) => i.exclusive).sort(order);
+const standard = realItems.filter((i) => !i.exclusive).sort(order);
+const pockets = [...new Set(realItems.map((i) => i.pocketName))];
+
+const headings = [
+  { depth: 2, slug: 'exclusive', text: 'Empyrean items' },
+  { depth: 2, slug: 'standard', text: 'Standard items' },
+];
+---
+
+<StarlightPage
+  frontmatter={{
+    title: 'Items',
+    description: `All ${realItems.length} items in Pokémon Empyrean by bag pocket, including the ${exclusive.length} that are new to the game.`,
+    tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 2 },
+  }}
+  headings={headings}
+>
+  <p>
+    {realItems.length} items across {pockets.length} bag pockets. {exclusive.length} are
+    Empyrean's own; the rest are the standard set. The {cardItems.length.toLocaleString('en-US')}
+    {' '}collectible cards live on their own <a href={`${base}/cards/`}>Cards page</a>.
+  </p>
+
+  <div data-table-tools>
+    <div class="filterbar">
+      <input type="search" placeholder="Search items…" aria-label="Search items" />
+      <select data-filter="pocket" aria-label="Filter by pocket">
+        <option value="">All pockets</option>
+        {pockets.map((p) => <option value={p}>{p}</option>)}
+      </select>
+      <span class="resultcount" data-count></span>
+    </div>
+
+    {[
+      { id: 'exclusive', title: 'Empyrean items', note: "New in Empyrean — these do not exist in the official games.", rows: exclusive },
+      { id: 'standard', title: 'Standard items', note: null, rows: standard },
+    ].map((group) => (
+      <section data-table-section>
+        <h2 id={group.id}>
+          {group.title} <span class="count">(<span data-section-count>{group.rows.length}</span>)</span>
+        </h2>
+        {group.note && <p class="muted">{group.note}</p>}
+        <div class="tablewrap">
+          <table class="wikitable">
+            <thead>
+              <tr>
+                <th></th>
+                <th data-sort="text">Item</th>
+                <th data-sort="text">Pocket</th>
+                <th data-sort="num">Price</th>
+                <th>Effect</th>
+              </tr>
+            </thead>
+            <tbody>
+              {group.rows.map((i) => (
+                <tr data-search={`${i.displayName} ${i.pocketName} ${i.description}`.toLowerCase()} data-pocket={i.pocketName}>
+                  <td class="iconcell">
+                    {i.hasIcon && (
+                      <img class="game-sprite" src={`${base}/items/${i.id}.png`} alt="" width="28" height="28" loading="lazy" />
+                    )}
+                  </td>
+                  <td><a href={`${base}/items/${itemSlug(i)}`}>{i.displayName}</a></td>
+                  <td class="pocketcell">{i.pocketName}</td>
+                  <td class="num" data-value={i.price}>{i.price > 0 ? i.price.toLocaleString('en-US') : '—'}</td>
+                  <td class="desccell">{i.description}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    ))}
+  </div>
+  <TableTools />
+</StarlightPage>
+
+<style>
+  .iconcell { width: 2.2rem; padding: 0 !important; text-align: center; }
+  .pocketcell { font-size: .8rem; white-space: nowrap; }
+  .desccell { font-size: .78rem; color: var(--sl-color-gray-2); min-width: 20rem; }
+  .num { text-align: right; font-variant-numeric: tabular-nums; }
+  .muted { color: var(--sl-color-gray-3); font-size: .85rem; margin-top: -.3rem; }
+  .count { font-weight: 400; color: var(--sl-color-gray-3); font-size: .85rem; }
+</style>

@@ -1,0 +1,99 @@
+---
+// Shared client behaviour for the big index tables: free-text filter, <select>
+// filters bound to data- attributes, and click-to-sort headers. Rows are
+// server-rendered, so the page works before this script runs and Pagefind can
+// still index the content.
+//
+// A container may hold more than one table (the Empyrean-exclusive split on the
+// items and abilities pages). One filter bar then drives them all, each table's
+// own heading shows its live count, and a table with nothing left is hidden.
+---
+<script is:inline>
+  (() => {
+    const norm = (v) => (v ?? '').toString().toLowerCase();
+
+    document.querySelectorAll('[data-table-tools]').forEach((root) => {
+      const tables = Array.from(root.querySelectorAll('table.wikitable'));
+      if (!tables.length) return;
+      const search = root.querySelector('input[type="search"]');
+      const selects = Array.from(root.querySelectorAll('select[data-filter]'));
+      const count = root.querySelector('[data-count]');
+
+      const groups = tables.map((table) => ({
+        table,
+        rows: Array.from(table.tBodies[0].rows),
+        // Optional wrapper to hide when the table empties out.
+        section: table.closest('[data-table-section]'),
+        counter: null,
+      }));
+      for (const g of groups) {
+        if (g.section) g.counter = g.section.querySelector('[data-section-count]');
+      }
+      const total = groups.reduce((n, g) => n + g.rows.length, 0);
+
+      const apply = () => {
+        const q = norm(search && search.value).trim();
+        const terms = q ? q.split(/\s+/) : [];
+        let shown = 0;
+        for (const g of groups) {
+          let visible = 0;
+          for (const row of g.rows) {
+            let ok = true;
+            if (terms.length) {
+              const hay = row.dataset.search || norm(row.textContent);
+              ok = terms.every((t) => hay.includes(t));
+            }
+            if (ok) {
+              for (const sel of selects) {
+                const want = sel.value;
+                if (!want) continue;
+                const field = sel.dataset.filter;
+                const have = row.dataset[field] || '';
+                if (field === 'types' || field === 'multi') {
+                  if (!have.split('|').includes(want)) { ok = false; break; }
+                } else if (have !== want) { ok = false; break; }
+              }
+            }
+            row.hidden = !ok;
+            if (ok) visible++;
+          }
+          shown += visible;
+          if (g.counter) g.counter.textContent = visible;
+          if (g.section) g.section.hidden = visible === 0;
+        }
+        if (count) count.textContent = shown === total ? `${total} entries` : `${shown} of ${total}`;
+      };
+
+      if (search) search.addEventListener('input', apply);
+      selects.forEach((s) => s.addEventListener('change', apply));
+
+      for (const g of groups) {
+        g.table.querySelectorAll('th[data-sort]').forEach((th) => {
+          const colIndex = Array.from(th.parentNode.children).indexOf(th);
+          th.addEventListener('click', () => {
+            const numeric = th.dataset.sort === 'num';
+            const dir = th.dataset.dir === 'asc' ? 'desc' : 'asc';
+            g.table.querySelectorAll('th[data-sort]').forEach((o) => (o.dataset.dir = ''));
+            th.dataset.dir = dir;
+            const key = (row) => {
+              const cell = row.cells[colIndex];
+              const raw = cell?.dataset.value ?? cell?.textContent ?? '';
+              return numeric ? parseFloat(raw.replace(/[^0-9.\-]/g, '')) || 0 : norm(raw).trim();
+            };
+            const sorted = [...g.rows].sort((a, b) => {
+              const ka = key(a), kb = key(b);
+              if (ka < kb) return dir === 'asc' ? -1 : 1;
+              if (ka > kb) return dir === 'asc' ? 1 : -1;
+              return 0;
+            });
+            const frag = document.createDocumentFragment();
+            sorted.forEach((r) => frag.appendChild(r));
+            g.table.tBodies[0].appendChild(frag);
+          });
+        });
+      }
+
+      apply();
+    });
+  })();
+</script>

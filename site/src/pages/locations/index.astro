@@ -1,0 +1,148 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import TableTools from '../../components/TableTools.astro';
+import RegionMap from '../../components/RegionMap.astro';
+import { locations, locationsByRegion, speciesByInternal, regions, meta } from '../../lib/game';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const groups = locationsByRegion();
+const methods = [...new Set(locations.flatMap((l) => l.tables.map((t) => t.method)))].sort();
+
+// Region 3 ("Unknown") and 5 ("Baltia") have a single point each; still worth
+// showing, but the big two lead.
+const mappable = regions.filter((r) => r.image && r.points.length > 0);
+
+const rows = locations.map((l) => {
+  const species = [...new Set(l.tables.flatMap((t) => t.entries.map((e) => e.species)))];
+  const names = species
+    .map((s) => speciesByInternal.get(s)?.displayName ?? s)
+    .sort((a, b) => a.localeCompare(b));
+  const levels = l.tables.flatMap((t) => t.entries.flatMap((e) => [e.minLevel, e.maxLevel]));
+  return {
+    l,
+    count: species.length,
+    names,
+    methods: l.tables.map((t) => t.method),
+    lo: levels.length ? Math.min(...levels) : 0,
+    hi: levels.length ? Math.max(...levels) : 0,
+  };
+});
+
+const headings = [
+  { depth: 2, slug: 'maps', text: 'Region maps' },
+  { depth: 2, slug: 'areas', text: 'All areas' },
+];
+---
+
+<StarlightPage
+  frontmatter={{
+    title: 'Locations',
+    description: `Clickable region maps and wild encounter tables for all ${locations.length} areas in Pokémon Empyrean.`,
+    tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 2 },
+  }}
+  headings={headings}
+>
+  <h2 id="maps">Region maps</h2>
+  <p class="muted">
+    The game's own town maps. Hover a square to see the place, click to open it.
+    {' '}{meta.counts.mappedPlaces} places are marked across {mappable.length} maps.
+  </p>
+
+  <div class="maptabs" data-maptabs>
+    <div class="tabbar" role="tablist">
+      {mappable.map((r, i) => (
+        <button role="tab" class:list={['tab', { active: i === 0 }]}
+                data-tab={r.index} aria-selected={i === 0}>
+          {r.displayName}
+        </button>
+      ))}
+    </div>
+    {mappable.map((r, i) => (
+      <div class="tabpanel" data-panel={r.index} hidden={i !== 0}>
+        <RegionMap region={r} />
+      </div>
+    ))}
+  </div>
+
+  <h2 id="areas">All areas</h2>
+  <p>
+    {locations.length} areas, of which {locations.filter((l) => l.hasEncounters).length}
+    {' '}have wild encounters covering {meta.counts.speciesWithEncounters} catchable species.
+    Areas that share a name are separate maps — route segments, cave floors and so on.
+  </p>
+
+  <div data-table-tools>
+    <div class="filterbar">
+      <input type="search" placeholder="Search area or Pokémon…" aria-label="Search locations" />
+      <select data-filter="region" aria-label="Filter by region">
+        <option value="">All regions</option>
+        {groups.map(([name]) => <option value={name}>{name}</option>)}
+      </select>
+      <select data-filter="multi" aria-label="Filter by method">
+        <option value="">Any method</option>
+        {methods.map((m) => <option value={m}>{m}</option>)}
+      </select>
+      <span class="resultcount" data-count></span>
+    </div>
+
+    <div class="tablewrap">
+      <table class="wikitable">
+        <thead>
+          <tr>
+            <th data-sort="text">Area</th>
+            <th data-sort="text">Region</th>
+            <th data-sort="num">Species</th>
+            <th data-sort="num">Levels</th>
+            <th>Methods</th>
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map((r) => (
+            <tr
+              data-search={`${r.l.name} ${r.l.regionName ?? ''} ${r.names.join(' ')}`.toLowerCase()}
+              data-region={r.l.regionName ?? 'Other'}
+              data-multi={r.methods.join('|')}
+            >
+              <td><a href={`${base}/locations/${r.l.slug}`}>{r.l.name}</a></td>
+              <td class="regioncell">{r.l.regionName ?? '—'}</td>
+              <td class="num">{r.count || '—'}</td>
+              <td class="num" data-value={r.lo}>{r.lo === 0 ? '—' : r.lo === r.hi ? r.lo : `${r.lo}–${r.hi}`}</td>
+              <td class="methodcell">{r.methods.join(', ') || '—'}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <TableTools />
+</StarlightPage>
+
+<style>
+  .regioncell { white-space: nowrap; font-size: .85rem; }
+  .methodcell { font-size: .78rem; color: var(--sl-color-gray-2); }
+  .muted { color: var(--sl-color-gray-3); font-size: .9rem; }
+  .tabbar { display: flex; flex-wrap: wrap; gap: .3rem; margin-bottom: .6rem; }
+  .tab {
+    font: inherit; font-size: .82rem; padding: .25rem .7rem; cursor: pointer;
+    border: 1px solid var(--sl-color-gray-5); border-radius: 999px;
+    background: transparent; color: var(--sl-color-white);
+  }
+  .tab.active { background: var(--sl-color-accent); border-color: var(--sl-color-accent); color: var(--sl-color-white); }
+</style>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-maptabs]').forEach((root) => {
+    const tabs = Array.from(root.querySelectorAll<HTMLButtonElement>('.tab'));
+    const panels = Array.from(root.querySelectorAll<HTMLElement>('.tabpanel'));
+    tabs.forEach((tab) => {
+      tab.addEventListener('click', () => {
+        tabs.forEach((t) => {
+          const on = t === tab;
+          t.classList.toggle('active', on);
+          t.setAttribute('aria-selected', String(on));
+        });
+        panels.forEach((p) => { p.hidden = p.dataset.panel !== tab.dataset.tab; });
+      });
+    });
+  });
+</script>

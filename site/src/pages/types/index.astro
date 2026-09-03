@@ -1,0 +1,169 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import TypeBadge from '../../components/TypeBadge.astro';
+import { types, typeChart, species, slug, typeName } from '../../lib/game';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const real = types.filter((t) => !t.isPseudoType);
+const counts = new Map<string, number>();
+for (const s of species) for (const t of s.types) counts.set(t, (counts.get(t) ?? 0) + 1);
+
+const CUSTOM = new Set(['LIGHT', 'DATA', 'GOLD', 'FIREGROUND', 'ELECTROLIGHT', 'WATERGROUND', 'LIGHTDARK']);
+const headings = [
+  { depth: 2, slug: 'chart', text: 'Full chart' },
+  { depth: 2, slug: 'calculator', text: 'Defensive calculator' },
+  { depth: 2, slug: 'types', text: 'Every type' },
+];
+const label = (m: number) => (m === 0 ? '0' : m === 0.5 ? '½' : m === 2 ? '2' : '');
+const cls = (m: number) => (m === 0 ? 'z' : m === 0.5 ? 'r' : m === 2 ? 'w' : 'n');
+---
+
+<StarlightPage
+  frontmatter={{
+    title: 'Type chart',
+    description: 'Full type effectiveness chart for Pokémon Empyrean, including the custom Light, Data, Gold, Electrolight and fused types.',
+    tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 2 },
+  }}
+  headings={headings}
+>
+  <p>
+    Empyrean has {real.length} types &mdash; the 18 official ones plus seven of its own:
+    {' '}<strong>Light</strong>, <strong>Data</strong>, <strong>Gold</strong>,
+    {' '}<strong>Electrolight</strong>, and the fused <strong>Fire/Ground</strong>,
+    {' '}<strong>Water/Ground</strong> and <strong>Light/Dark</strong>.
+  </p>
+
+  <h2 id="chart">Full chart</h2>
+  <p class="muted">
+    Rows are the attacking type, columns the defending type.
+    <span class="key w">2</span> super effective ·
+    <span class="key r">½</span> not very effective ·
+    <span class="key z">0</span> no effect.
+  </p>
+
+  <div class="chartwrap">
+    <table class="chart">
+      <thead>
+        <tr>
+          <th class="corner"><span>ATK ＼ DEF</span></th>
+          {real.map((d) => (
+            <th class="colhead"><span>{d.name}</span></th>
+          ))}
+        </tr>
+      </thead>
+      <tbody>
+        {real.map((a) => (
+          <tr>
+            <th class="rowhead"><TypeBadge type={a.internal} size={1} /></th>
+            {real.map((d) => {
+              const m = typeChart[a.internal]?.[d.internal] ?? 1;
+              return <td class={cls(m)} title={`${a.name} → ${d.name}: ${m}×`}>{label(m)}</td>;
+            })}
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  <h2 id="calculator">Defensive calculator</h2>
+  <p class="muted">Pick one or two types to see what a Pokémon with that typing takes.</p>
+  <div class="calc" data-calc>
+    <select data-calc-a aria-label="First type">
+      {real.map((t) => <option value={t.internal}>{t.name}</option>)}
+    </select>
+    <select data-calc-b aria-label="Second type">
+      <option value="">(none)</option>
+      {real.map((t) => <option value={t.internal}>{t.name}</option>)}
+    </select>
+    <div data-calc-out class="calcout"></div>
+  </div>
+
+  <h2 id="types">Every type</h2>
+  {real.map((t) => (
+    <section class="typecard" id={slug(t.internal)}>
+      <h3>
+        <TypeBadge type={t.internal} link={false} />
+        <span>{t.name}</span>
+        {CUSTOM.has(t.internal) && <span class="newtag">Empyrean original</span>}
+        <span class="mons">{counts.get(t.internal) ?? 0} Pokémon</span>
+      </h3>
+      <dl>
+        <dt>Weak to</dt>
+        <dd>{t.weaknesses.length
+          ? t.weaknesses.filter((w) => !t.resistances.includes(w)).map((w) => <TypeBadge type={w} size={1} />)
+          : <span class="muted">nothing</span>}</dd>
+        <dt>Resists</dt>
+        <dd>{t.resistances.length ? t.resistances.map((w) => <TypeBadge type={w} size={1} />) : <span class="muted">nothing</span>}</dd>
+        <dt>Immune to</dt>
+        <dd>{t.immunities.length ? t.immunities.map((w) => <TypeBadge type={w} size={1} />) : <span class="muted">nothing</span>}</dd>
+      </dl>
+    </section>
+  ))}
+</StarlightPage>
+
+<script is:inline define:vars={{ chart: typeChart, names: Object.fromEntries(types.map((t) => [t.internal, t.name])) }}>
+  (() => {
+    const root = document.querySelector('[data-calc]');
+    if (!root) return;
+    const a = root.querySelector('[data-calc-a]');
+    const b = root.querySelector('[data-calc-b]');
+    const out = root.querySelector('[data-calc-out]');
+    const render = () => {
+      const def = [a.value, b.value].filter(Boolean);
+      const buckets = {};
+      for (const atk of Object.keys(chart)) {
+        const m = def.reduce((acc, d) => acc * (chart[atk]?.[d] ?? 1), 1);
+        if (m === 1) continue;
+        (buckets[m] = buckets[m] || []).push(names[atk] || atk);
+      }
+      const order = [4, 2, 0.5, 0.25, 0];
+      out.innerHTML = order
+        .filter((k) => buckets[k]?.length)
+        .map((k) => {
+          const cls = k > 1 ? 'w' : k === 0 ? 'z' : 'r';
+          const lbl = k === 0 ? 'Immune' : k + '×';
+          return `<div class="crow"><span class="key ${cls}">${lbl}</span><span>${buckets[k].join(', ')}</span></div>`;
+        })
+        .join('') || '<p class="muted">Neutral against everything.</p>';
+    };
+    a.addEventListener('change', render);
+    b.addEventListener('change', render);
+    render();
+  })();
+</script>
+
+<style>
+  .chartwrap { overflow: auto; max-height: 80vh; border: 1px solid var(--sl-color-gray-6); border-radius: 8px; }
+  table.chart { border-collapse: collapse; font-size: .7rem; }
+  table.chart th, table.chart td { border: 1px solid var(--sl-color-gray-6); }
+  table.chart td { width: 1.35rem; height: 1.35rem; text-align: center; font-weight: 700; }
+  .corner { position: sticky; left: 0; top: 0; z-index: 3; background: var(--sl-color-bg); font-size: .6rem;
+            padding: .2rem; white-space: nowrap; }
+  .colhead { position: sticky; top: 0; z-index: 2; background: var(--sl-color-bg); height: 6rem; padding: 0 .1rem; vertical-align: bottom; }
+  .colhead span { display: block; writing-mode: vertical-rl; transform: rotate(180deg); font-size: .68rem;
+                  font-weight: 500; white-space: nowrap; padding-bottom: .2rem; }
+  .rowhead { position: sticky; left: 0; z-index: 1; background: var(--sl-color-bg); padding: 0 .2rem; line-height: 0; }
+  td.w { background: rgba(220, 60, 60, .78); color: #fff; }
+  td.r { background: rgba(40, 150, 110, .72); color: #fff; }
+  td.z { background: rgba(90, 90, 100, .9); color: #fff; }
+  td.n { background: transparent; }
+  .key { display: inline-block; min-width: 1.4rem; text-align: center; border-radius: 3px; padding: 0 .25rem;
+         font-weight: 700; font-size: .8rem; color: #fff; }
+  .key.w { background: rgba(220, 60, 60, .78); }
+  .key.r { background: rgba(40, 150, 110, .72); }
+  .key.z { background: rgba(90, 90, 100, .9); }
+  .calc { display: flex; flex-wrap: wrap; gap: .5rem; align-items: flex-start; margin: 1rem 0; }
+  .calc select { padding: .35rem .6rem; border: 1px solid var(--sl-color-gray-5); border-radius: 6px;
+                 background: var(--sl-color-black); color: var(--sl-color-white); font: inherit; font-size: .875rem; }
+  .calcout { flex: 1 1 100%; display: flex; flex-direction: column; gap: .3rem; }
+  .calcout :global(.crow) { display: flex; gap: .6rem; align-items: baseline; font-size: .85rem; }
+  .typecard { border-top: 1px solid var(--sl-color-gray-6); padding-top: .6rem; margin-top: 1rem; }
+  .typecard h3 { display: flex; align-items: center; gap: .5rem; margin: 0 0 .4rem; font-size: 1rem; }
+  .newtag { background: var(--sl-color-accent-low); color: var(--sl-color-accent-high); padding: .05rem .45rem;
+            border-radius: 999px; font-size: .68rem; font-weight: 600; }
+  .mons { margin-left: auto; font-size: .75rem; color: var(--sl-color-gray-3); font-weight: 400; }
+  .typecard dl { display: grid; grid-template-columns: 6rem 1fr; gap: .2rem .75rem; margin: 0; }
+  .typecard dt { font-size: .8rem; color: var(--sl-color-gray-2); }
+  .typecard dd { margin: 0; display: flex; flex-wrap: wrap; gap: .25rem; align-items: center; }
+  .muted { color: var(--sl-color-gray-3); font-size: .85rem; }
+</style>

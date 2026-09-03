@@ -1,0 +1,102 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import TableTools from '../../components/TableTools.astro';
+import { abilities, species, abilitySlug } from '../../lib/game';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const counts = new Map<string, number>();
+for (const s of species) {
+  for (const a of s.abilities) counts.set(a, (counts.get(a) ?? 0) + 1);
+  if (s.hiddenAbility) counts.set(s.hiddenAbility, (counts.get(s.hiddenAbility) ?? 0) + 1);
+}
+
+const byName = (a: { displayName: string }, b: { displayName: string }) =>
+  a.displayName.localeCompare(b.displayName);
+const exclusive = abilities.filter((a) => a.exclusive).sort(byName);
+const standard = abilities.filter((a) => !a.exclusive).sort(byName);
+
+const headings = [
+  { depth: 2, slug: 'exclusive', text: 'Empyrean abilities' },
+  { depth: 2, slug: 'standard', text: 'Standard abilities' },
+];
+---
+
+<StarlightPage
+  frontmatter={{
+    title: 'Abilities',
+    description: `All ${abilities.length} abilities in Pokémon Empyrean, including the ${exclusive.length} that are new to the game.`,
+    tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 2 },
+  }}
+  headings={headings}
+>
+  <p>
+    {abilities.length} abilities. {exclusive.length} of them are Empyrean's own; the rest
+    are the standard set. One search box filters both tables.
+  </p>
+
+  <div data-table-tools>
+    <div class="filterbar">
+      <input type="search" placeholder="Search abilities…" aria-label="Search abilities" />
+      <span class="resultcount" data-count></span>
+    </div>
+
+    <section data-table-section>
+      <h2 id="exclusive">
+        Empyrean abilities <span class="count">(<span data-section-count>{exclusive.length}</span>)</span>
+      </h2>
+      <p class="muted">New in Empyrean — these do not exist in the official games.</p>
+      <table class="wikitable">
+        <thead>
+          <tr>
+            <th data-sort="text">Ability</th>
+            <th data-sort="num">Pokémon</th>
+            <th>Effect</th>
+          </tr>
+        </thead>
+        <tbody>
+          {exclusive.map((a) => (
+            <tr data-search={`${a.displayName} ${a.description}`.toLowerCase()}>
+              <td><a href={`${base}/abilities/${abilitySlug(a)}`}>{a.displayName}</a></td>
+              <td class="num">{counts.get(a.internal) ?? 0}</td>
+              <td class="desccell">{a.description}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </section>
+
+    <section data-table-section>
+      <h2 id="standard">
+        Standard abilities <span class="count">(<span data-section-count>{standard.length}</span>)</span>
+      </h2>
+      <div class="tablewrap">
+        <table class="wikitable">
+          <thead>
+            <tr>
+              <th data-sort="text">Ability</th>
+              <th data-sort="num">Pokémon</th>
+              <th>Effect</th>
+            </tr>
+          </thead>
+          <tbody>
+            {standard.map((a) => (
+              <tr data-search={`${a.displayName} ${a.description}`.toLowerCase()}>
+                <td><a href={`${base}/abilities/${abilitySlug(a)}`}>{a.displayName}</a></td>
+                <td class="num">{counts.get(a.internal) ?? 0}</td>
+                <td class="desccell">{a.description}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+  <TableTools />
+</StarlightPage>
+
+<style>
+  .desccell { font-size: .8rem; color: var(--sl-color-gray-2); }
+  .num { text-align: right; font-variant-numeric: tabular-nums; }
+  .muted { color: var(--sl-color-gray-3); font-size: .85rem; margin-top: -.3rem; }
+  .count { font-weight: 400; color: var(--sl-color-gray-3); font-size: .85rem; }
+</style>

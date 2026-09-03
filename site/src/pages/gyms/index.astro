@@ -1,0 +1,72 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import PartyTable from '../../components/PartyTable.astro';
+import { gyms, itemsByInternal, itemSlug, locations } from '../../lib/game';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const headings = gyms.map((g) => ({
+  depth: 2, slug: `gym-${g.gym}`,
+  text: `${g.gym}. ${g.leader ?? 'Unknown'} — ${g.badge ?? '?'} Badge`,
+}));
+const locBySlug = new Map(locations.map((l) => [l.mapId, l]));
+---
+
+<StarlightPage
+  frontmatter={{
+    title: 'Gyms & badges',
+    description: 'All eight gym leaders in Pokémon Empyrean with their badges, level caps, rewards and full teams on both Normal and Extreme difficulty.',
+    tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 2 },
+  }}
+  headings={headings}
+>
+  <p>
+    Eight gyms. Each badge raises the soft level cap. Teams are shown for both
+    difficulties — <strong>Extreme</strong> gives leaders extra Pokémon, better
+    movesets, held items and cards.
+  </p>
+
+  <table class="wikitable summary">
+    <thead>
+      <tr><th class="num">#</th><th>Leader</th><th>Badge</th><th>Location</th><th class="num">Level cap</th><th>Reward</th></tr>
+    </thead>
+    <tbody>
+      {gyms.map((g) => (
+        <tr>
+          <td class="num">{g.gym}</td>
+          <td><a href={`#gym-${g.gym}`}>{g.leader ?? 'Unknown'}</a></td>
+          <td>{g.badge ? `${g.badge} Badge` : '—'}</td>
+          <td class="dim">{g.mapName ?? '—'}</td>
+          <td class="num">{g.levelCap ?? '—'}</td>
+          <td class="dim">{g.reward ? (itemsByInternal.get(g.reward)?.displayName ?? g.reward) : '—'}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+
+  {gyms.map((g) => {
+    const reward = g.reward ? itemsByInternal.get(g.reward) : null;
+    const loc = g.mapId !== null ? locBySlug.get(g.mapId) : null;
+    return (
+      <>
+        <h2 id={`gym-${g.gym}`}>
+          Gym {g.gym}: {g.leader ?? 'Unknown'}{g.badge && ` — ${g.badge} Badge`}
+        </h2>
+        <p class="gymmeta">
+          {g.trainerType && <>{g.trainerType} · </>}
+          {loc ? <a href={`${base}/locations/${loc.slug}`}>{g.mapName}</a> : g.mapName}
+          {g.levelCap && <> · raises the level cap to <strong>{g.levelCap}</strong></>}
+          {reward && <> · rewards <a href={`${base}/items/${itemSlug(reward)}`}>{reward.displayName}</a></>}
+        </p>
+        <PartyTable party={g.normal} caption="Normal difficulty" />
+        <PartyTable party={g.extreme} caption="Extreme difficulty" />
+      </>
+    );
+  })}
+</StarlightPage>
+
+<style>
+  table.summary { width: 100%; font-size: .85rem; margin-bottom: 1rem; }
+  .num { text-align: right; font-variant-numeric: tabular-nums; }
+  .dim { color: var(--sl-color-gray-2); font-size: .82rem; }
+  .gymmeta { font-size: .85rem; color: var(--sl-color-gray-2); margin-bottom: .5rem; }
+</style>

@@ -1,0 +1,101 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import TypeBadge from '../../components/TypeBadge.astro';
+import TableTools from '../../components/TableTools.astro';
+import { species, types, abilitiesByInternal, typeName, meta } from '../../lib/game';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const rows = [...species].sort((a, b) =>
+  a.number - b.number || a.formNumber - b.formNumber,
+);
+const realTypes = types.filter((t) => !t.isPseudoType).sort((a, b) => a.name.localeCompare(b.name));
+---
+
+<StarlightPage
+  frontmatter={{
+    title: 'Pokédex',
+    description: `All ${meta.counts.species} species and ${meta.counts.forms} alternate forms in Pokémon Empyrean, with base stats, types and abilities.`,
+    tableOfContents: false,
+  }}
+>
+  <p>
+    {meta.counts.species} species and {meta.counts.forms} alternate forms. Click a column
+    heading to sort. Regional variants are labelled <em>Omuran</em> and <em>Deshret</em>.
+  </p>
+
+  <div data-table-tools>
+    <div class="filterbar">
+      <input type="search" placeholder="Search name, ability or type…" aria-label="Search Pokédex" />
+      <select data-filter="types" aria-label="Filter by type">
+        <option value="">All types</option>
+        {realTypes.map((t) => <option value={t.internal}>{t.name}</option>)}
+      </select>
+      <select data-filter="variant" aria-label="Filter by variant">
+        <option value="">All forms</option>
+        <option value="base">Base species only</option>
+        <option value="Omuran">Omuran variants</option>
+        <option value="Deshret">Deshret variants</option>
+        <option value="form">Alternate forms</option>
+      </select>
+      <span class="resultcount" data-count></span>
+    </div>
+
+    <div class="tablewrap">
+      <table class="wikitable">
+        <thead>
+          <tr>
+            <th data-sort="num">#</th>
+            <th></th>
+            <th data-sort="text">Name</th>
+            <th>Types</th>
+            <th data-sort="num">HP</th>
+            <th data-sort="num">Atk</th>
+            <th data-sort="num">Def</th>
+            <th data-sort="num">SpA</th>
+            <th data-sort="num">SpD</th>
+            <th data-sort="num">Spe</th>
+            <th data-sort="num">BST</th>
+            <th data-sort="text">Abilities</th>
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map((s) => {
+            const abil = [...s.abilities, ...(s.hiddenAbility ? [s.hiddenAbility] : [])]
+              .map((a) => abilitiesByInternal.get(a)?.name ?? a);
+            const variantKey = s.formNumber ? 'form' : s.variant ?? 'base';
+            return (
+              <tr
+                data-search={`${s.displayName} ${s.types.map(typeName).join(' ')} ${abil.join(' ')}`.toLowerCase()}
+                data-types={s.types.join('|')}
+                data-variant={variantKey}
+              >
+                <td class="num">{s.number}</td>
+                <td class="iconcell">
+                  <img class="game-sprite" src={`${base}/icons/${s.slug}.png`} alt="" width="32" height="32" loading="lazy" />
+                </td>
+                <td><a href={`${base}/pokedex/${s.slug}`}>{s.displayName}</a></td>
+                <td class="typecell">{s.types.map((t) => <TypeBadge type={t} size={1} link={false} />)}</td>
+                <td class="num">{s.effectiveStats.hp}</td>
+                <td class="num">{s.effectiveStats.attack}</td>
+                <td class="num">{s.effectiveStats.defense}</td>
+                <td class="num">{s.effectiveStats.spatk}</td>
+                <td class="num">{s.effectiveStats.spdef}</td>
+                <td class="num">{s.effectiveStats.speed}</td>
+                <td class="num"><strong>{s.effectiveStatTotal}</strong></td>
+                <td class="abilcell">{abil.join(', ')}</td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <TableTools />
+</StarlightPage>
+
+<style>
+  .iconcell { width: 2.5rem; padding: 0 !important; text-align: center; }
+  .typecell { white-space: nowrap; line-height: 0; }
+  .typecell :global(.type-badge) { margin-right: 2px; }
+  .abilcell { font-size: .78rem; color: var(--sl-color-gray-2); min-width: 10rem; }
+</style>

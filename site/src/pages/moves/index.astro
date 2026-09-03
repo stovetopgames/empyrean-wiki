@@ -1,0 +1,86 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import TypeBadge from '../../components/TypeBadge.astro';
+import TableTools from '../../components/TableTools.astro';
+import { moves, types, moveSlug, typeName } from '../../lib/game';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const rows = [...moves].sort((a, b) => a.name.localeCompare(b.name));
+const realTypes = types.filter((t) => !t.isPseudoType).sort((a, b) => a.name.localeCompare(b.name));
+---
+
+<StarlightPage
+  frontmatter={{
+    title: 'Moves',
+    description: `All ${moves.length} moves in Pokémon Empyrean with power, accuracy, PP and priority.`,
+    tableOfContents: false,
+  }}
+>
+  <p>{moves.length} moves. Click a column heading to sort.</p>
+
+  <div data-table-tools>
+    <div class="filterbar">
+      <input type="search" placeholder="Search moves…" aria-label="Search moves" />
+      <select data-filter="type" aria-label="Filter by type">
+        <option value="">All types</option>
+        {realTypes.map((t) => <option value={t.internal}>{t.name}</option>)}
+      </select>
+      <select data-filter="category" aria-label="Filter by category">
+        <option value="">All categories</option>
+        <option value="Physical">Physical</option>
+        <option value="Special">Special</option>
+        <option value="Status">Status</option>
+      </select>
+      <select data-filter="source" aria-label="Filter by source">
+        <option value="">Any source</option>
+        <option value="machine">TM / HM</option>
+        <option value="tutor">Tutor only</option>
+      </select>
+      <span class="resultcount" data-count></span>
+    </div>
+
+    <div class="tablewrap">
+      <table class="wikitable">
+        <thead>
+          <tr>
+            <th data-sort="text">Move</th>
+            <th>Type</th>
+            <th data-sort="text">Cat.</th>
+            <th data-sort="num">Pwr</th>
+            <th data-sort="num">Acc</th>
+            <th data-sort="num">PP</th>
+            <th data-sort="num">Pri</th>
+            <th data-sort="text">TM</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map((m) => (
+            <tr
+              data-search={`${m.displayName} ${typeName(m.type)} ${m.category} ${m.machine ?? ''} ${m.description}`.toLowerCase()}
+              data-type={m.type}
+              data-category={m.category}
+              data-source={m.machine ? 'machine' : m.taughtTo.length ? 'tutor' : ''}
+            >
+              <td><a href={`${base}/moves/${moveSlug(m)}`}>{m.displayName}</a></td>
+              <td class="typecell"><TypeBadge type={m.type} size={1} link={false} /></td>
+              <td>{m.category}</td>
+              <td class="num" data-value={m.power}>{m.power || '—'}</td>
+              <td class="num" data-value={m.accuracy}>{m.accuracy || '—'}</td>
+              <td class="num">{m.pp}</td>
+              <td class="num" data-value={m.priority}>{m.priority !== 0 ? (m.priority > 0 ? `+${m.priority}` : m.priority) : ''}</td>
+              <td>{m.machine ?? ''}</td>
+              <td class="desccell">{m.description}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <TableTools />
+</StarlightPage>
+
+<style>
+  .typecell { line-height: 0; white-space: nowrap; }
+  .desccell { font-size: .78rem; color: var(--sl-color-gray-2); min-width: 20rem; }
+</style>

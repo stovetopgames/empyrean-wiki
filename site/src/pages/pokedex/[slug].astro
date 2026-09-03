@@ -1,0 +1,410 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import TypeBadge from '../../components/TypeBadge.astro';
+import Sprite from '../../components/Sprite.astro';
+import StatBar from '../../components/StatBar.astro';
+import {
+  species, speciesByInternal, movesByInternal, abilitiesByInternal, itemsByInternal,
+  moveSlug, abilitySlug, itemSlug, matchups, family, STAT_LABELS, meta,
+  type Species,
+} from '../../lib/game';
+
+export async function getStaticPaths() {
+  return species.map((s) => ({ params: { slug: s.slug }, props: { s } }));
+}
+
+const { s } = Astro.props as { s: Species };
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const mu = matchups(s.types);
+const fam = family(s);
+const card = s.card ? itemsByInternal.get(s.card) : null;
+const dexNo = String(s.number).padStart(3, '0');
+const stone = s.megaStone ? itemsByInternal.get(s.megaStone) : null;
+
+// Abilities, resolved once for the dedicated section below.
+const abilityList = [
+  ...s.abilities.map((a) => ({ a: abilitiesByInternal.get(a), key: a, hidden: false })),
+  ...(s.hiddenAbility
+    ? [{ a: abilitiesByInternal.get(s.hiddenAbility), key: s.hiddenAbility, hidden: true }]
+    : []),
+];
+
+// Bosses and mutants have their stats multiplied in battle by Generation
+// Power: (1 + GP_BOOST) ^ gp, where a boss's gp is 10% of the player's party
+// total, capped at MAXIMUM_GP. So the numbers below are the base, not what you
+// actually face.
+const gpBoost = meta.gp?.gpBoost ?? 0.101;
+const maxGP = meta.gp?.maxGP ?? 5;
+const maxMult = Math.pow(1 + gpBoost, maxGP);
+
+// Boss stats run into the thousands, so the bars need a scale that fits them
+// rather than pinning every bar to the 200 default.
+const statMax = Math.max(200, ...Object.values(s.effectiveStats as any).map(Number));
+
+const levelMoves = [...s.levelMoves].sort((a, b) => a.level - b.level);
+const machineMoves = s.machineMoves
+  .map((m) => movesByInternal.get(m))
+  .filter(Boolean)
+  .sort((a, b) => a!.name.localeCompare(b!.name));
+const eggMoves = s.eggMoves.map((m) => movesByInternal.get(m)).filter(Boolean);
+
+const genderText =
+  s.malePercent === null
+    ? 'Genderless'
+    : `${s.malePercent}% male / ${s.femalePercent}% female`;
+
+const variants = species.filter(
+  (o) => o.internal !== s.internal && o.name === s.name && !o.formNumber,
+);
+const forms = species.filter((o) => o.baseSpecies === s.internal && o.formNumber);
+
+const headings = [
+  { depth: 2, slug: 'locations', text: 'Location' },
+  { depth: 2, slug: 'base-stats', text: 'Base stats' },
+  { depth: 2, slug: 'abilities', text: 'Abilities' },
+  { depth: 2, slug: 'type-matchups', text: 'Type matchups' },
+  ...(fam.length > 1 ? [{ depth: 2, slug: 'evolution', text: 'Evolution' }] : []),
+  ...(variants.length + forms.length > 0
+    ? [{ depth: 2, slug: 'other-forms', text: 'Other forms' }] : []),
+  ...(s.trainers.length ? [{ depth: 2, slug: 'trainers', text: 'Trainers' }] : []),
+  { depth: 2, slug: 'moves', text: 'Moves' },
+];
+
+const moveRow = (m: any) => ({
+  name: m.name, type: m.type, category: m.category,
+  power: m.power || '—', accuracy: m.accuracy || '—', pp: m.pp,
+  href: `${base}/moves/${moveSlug(m)}`,
+});
+---
+
+<StarlightPage
+  frontmatter={{
+    title: s.displayName,
+    description: (s.pokedex || '').slice(0, 160) || `${s.displayName} — Pokémon Empyrean`,
+    tableOfContents: { minHeadingLevel: 2, maxHeadingLevel: 2 },
+  }}
+  headings={headings}
+>
+  <div class="dexhead">
+    <div class="dexsprites">
+      <figure>
+        <Sprite slug={s.slug} alt={s.displayName} />
+        <figcaption>Normal</figcaption>
+      </figure>
+      <figure>
+        <Sprite slug={s.slug} alt={`Shiny ${s.displayName}`} shiny />
+        <figcaption>Shiny</figcaption>
+      </figure>
+    </div>
+    <div class="dexmeta">
+      <p class="dexno">#{dexNo}{s.formName ? ` · ${s.formName}` : ''}{s.variant ? ` · ${s.variant} variant` : ''}</p>
+      <p class="dextypes">{s.types.map((t) => <TypeBadge type={t} />)}</p>
+      {s.kind && <p class="dexkind">The {s.kind} Pokémon</p>}
+      {s.pokedex && <blockquote class="dexentry">{s.pokedex}</blockquote>}
+      {s.isFusion && stone && (
+        <p class="megaline">
+          Fuses from <a href={`${base}/pokedex/${(speciesByInternal.get(s.baseSpecies) ?? s).slug}`}>
+            {(speciesByInternal.get(s.baseSpecies) ?? s).displayName}
+          </a> with <a href={`${base}/items/${itemSlug(stone)}`}>{stone.displayName}</a>
+          {s.fusionMove && movesByInternal.get(s.fusionMove) && (
+            <>, gaining <a href={`${base}/moves/${moveSlug(movesByInternal.get(s.fusionMove)!)}`}>
+              {movesByInternal.get(s.fusionMove)!.displayName}</a></>
+          )}.
+        </p>
+      )}
+      {s.isMega && stone && (
+        <p class="megaline">
+          Mega Evolves from <a href={`${base}/pokedex/${(speciesByInternal.get(s.baseSpecies) ?? s).slug}`}>
+            {(speciesByInternal.get(s.baseSpecies) ?? s).displayName}
+          </a> holding <a href={`${base}/items/${itemSlug(stone)}`}>{stone.displayName}</a>.
+        </p>
+      )}
+      {!s.implemented && (
+        <aside class="notimpl">
+          <strong>Not obtainable.</strong> This species exists in the game data but has no
+          sprite and is excluded from the randomizer, so it does not appear in normal play.
+        </aside>
+      )}
+    </div>
+  </div>
+
+  <h2 id="locations">Location</h2>
+  {s.encounters.length === 0 ? (
+    <p class="muted">
+      Not found in any wild encounter table. It may be obtained by evolution, as a gift
+      or static encounter, or from an event.
+    </p>
+  ) : (
+    <>
+      <p class="muted">
+        Wild encounter rates, highest first. A Pokémon that fills several slots in one
+        table has them added together here.
+      </p>
+      <table class="movetable">
+        <thead>
+          <tr><th>Area</th><th>Region</th><th>Method</th><th>Levels</th><th>Chance</th></tr>
+        </thead>
+        <tbody>
+          {s.encounters.map((e) => (
+            <tr>
+              <td>
+                <a href={`${base}/locations/${e.slug}`}>{e.location}</a>
+                {e.mapCount > 1 && <span class="dim"> ({e.mapCount} areas)</span>}
+              </td>
+              <td class="dim">{e.regionName ?? '—'}</td>
+              <td class="dim">{e.method}</td>
+              <td class="num">{e.minLevel === e.maxLevel ? e.minLevel : `${e.minLevel}–${e.maxLevel}`}</td>
+              <td class="num"><strong>{e.chance}%</strong></td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </>
+  )}
+
+  <h2 id="base-stats">Base stats</h2>
+  <div class="statgrid">
+    <div>
+      {STAT_LABELS.map(([k, label]) => <StatBar label={label} value={(s.effectiveStats as any)[k]} max={statMax} />)}
+      <p class="bst">Total <strong>{s.effectiveStatTotal}</strong></p>
+      {s.difficultyPercent && (
+        <p class="diffnote">
+          On <strong>Easy</strong> these are {Math.abs(s.difficultyPercent.easy)}% lower and on
+          {' '}<strong>Extreme</strong> {Math.abs(s.difficultyPercent.extreme)}% higher.
+          {s.fixedHP && <> HP is fixed at {s.fixedHP} and does not change with difficulty.</>}
+        </p>
+      )}
+      {!s.difficultyPercent && s.fixedHP && (
+        <p class="diffnote">HP is fixed at {s.fixedHP} regardless of level or difficulty.</p>
+      )}
+      {s.isBoss && (
+        <p class="diffnote">
+          As a boss, its stats are raised further in battle by up to
+          {' '}{maxMult.toFixed(2)}×, scaling with your own party's strength.
+        </p>
+      )}
+    </div>
+    <table class="kv">
+      <tbody>
+        <tr><th>Height / Weight</th><td>{s.height} m · {s.weight} kg</td></tr>
+        <tr><th>EV yield</th><td>
+          {STAT_LABELS.filter(([k]) => (s.effortPoints as any)[k] > 0)
+            .map(([k, l]) => `${(s.effortPoints as any)[k]} ${l}`).join(', ') || 'None'}
+        </td></tr>
+        <tr><th>Catch rate</th><td>{s.catchRate}</td></tr>
+        <tr><th>Base EXP</th><td>{s.baseEXP}</td></tr>
+        <tr><th>Growth rate</th><td>{s.growthRate}</td></tr>
+        <tr><th>Gender</th><td>{genderText}</td></tr>
+        <tr><th>Egg groups</th><td>{s.eggGroups.join(', ') || '—'}</td></tr>
+        <tr><th>Hatch time</th><td>{s.stepsToHatch.toLocaleString('en-US')} steps</td></tr>
+        <tr><th>Base friendship</th><td>{s.baseHappiness}</td></tr>
+        {card && <tr><th>Card</th><td><a href={`${base}/cards/#${card.slug}`}>{card.displayName}</a></td></tr>}
+        {s.wildItems.length > 0 && (
+          <tr><th>Wild held items</th><td>{s.wildItems.map((w) => itemsByInternal.get(w)?.name ?? w).join(', ')}</td></tr>
+        )}
+      </tbody>
+    </table>
+  </div>
+
+  <h2 id="abilities">Abilities</h2>
+  {abilityList.length === 0 ? <p class="muted">This Pokémon has no ability.</p> : (
+    <table class="movetable">
+      <thead><tr><th>Ability</th><th>Slot</th><th>Effect</th></tr></thead>
+      <tbody>
+        {abilityList.map(({ a, key, hidden }) => (
+          <tr>
+            <td>
+              {a ? <a href={`${base}/abilities/${abilitySlug(a)}`}>{a.displayName}</a> : key}
+              {a?.exclusive && <span class="tag new">New</span>}
+            </td>
+            <td class="dim">{hidden ? 'Hidden' : 'Standard'}</td>
+            <td class="dim">{a?.description ?? ''}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  )}
+
+  <h2 id="type-matchups">Type matchups</h2>
+  <p class="muted">Damage this Pokémon takes, accounting for its {s.types.length > 1 ? 'dual typing' : 'typing'}.</p>
+  <div class="matchups">
+    {(['4', '2', '0.5', '0.25', '0'] as const).map((k) =>
+      mu[k] && mu[k].length > 0 ? (
+        <div class="mrow">
+          <span class={`mx mx${k.replace('.', '')}`}>{k === '0' ? 'Immune' : `${k}×`}</span>
+          <span class="mtypes">{mu[k].map((t) => <TypeBadge type={t} />)}</span>
+        </div>
+      ) : null,
+    )}
+  </div>
+
+  {fam.length > 1 && (
+    <>
+      <h2 id="evolution">Evolution</h2>
+      <div class="evoline">
+        {fam.map((f, i) => (
+          <>
+            {i > 0 && (
+              <span class="evoarrow">
+                <span class="evotext">
+                  {speciesByInternal.get(f.preEvolutions[0]?.from ?? '')
+                    ? f.preEvolutions[0].text : ''}
+                </span>
+                <span aria-hidden="true">→</span>
+              </span>
+            )}
+            <a class="evomon" href={`${base}/pokedex/${f.slug}`}>
+              <Sprite slug={f.slug} alt={f.displayName} size={96} />
+              <span>{f.displayName}</span>
+            </a>
+          </>
+        ))}
+      </div>
+    </>
+  )}
+
+  {(variants.length > 0 || forms.length > 0) && (
+    <>
+      <h2 id="other-forms">Other forms</h2>
+      <div class="formlist">
+        {[...variants, ...forms].map((f) => (
+          <a class="evomon" href={`${base}/pokedex/${f.slug}`}>
+            <Sprite slug={f.slug} alt={f.displayName} size={80} />
+            <span>{f.displayName}</span>
+          </a>
+        ))}
+      </div>
+    </>
+  )}
+
+  {s.trainers.length > 0 && (
+    <>
+      <h2 id="trainers">Trainers</h2>
+      <p class="muted">
+        {s.trainers.length} trainer{s.trainers.length === 1 ? '' : 's'} use this Pokémon.
+      </p>
+      <table class="movetable">
+        <thead><tr><th>Trainer</th><th>Area</th><th>Level</th></tr></thead>
+        <tbody>
+          {s.trainers
+            .slice()
+            .sort((a, b) => a.level - b.level)
+            .map((tr) => (
+              <tr>
+                <td>
+                  {tr.slug.startsWith('gym-')
+                    ? <a href={`${base}/gyms/#${tr.slug}`}>{tr.trainer}</a>
+                    : <a href={`${base}/trainers/${tr.slug}`}>{tr.trainer}</a>}
+                </td>
+                <td class="dim">{tr.mapName ?? '—'}</td>
+                <td class="num">{tr.level}</td>
+              </tr>
+            ))}
+        </tbody>
+      </table>
+    </>
+  )}
+
+  <h2 id="moves">Moves</h2>
+  <h3>By level up</h3>
+  {levelMoves.length === 0 ? <p class="muted">None.</p> : (
+    <table class="movetable">
+      <thead><tr><th>Lv.</th><th>Move</th><th>Type</th><th>Cat.</th><th>Pwr</th><th>Acc</th><th>PP</th></tr></thead>
+      <tbody>
+        {levelMoves.map(({ level, move }) => {
+          const m = movesByInternal.get(move);
+          if (!m) return <tr><td>{level}</td><td colspan="6">{move}</td></tr>;
+          const r = moveRow(m);
+          return (
+            <tr>
+              <td class="num">{level === 0 ? '—' : level}</td>
+              <td><a href={r.href}>{r.name}</a></td>
+              <td><TypeBadge type={r.type} size={1} /></td>
+              <td>{r.category}</td>
+              <td class="num">{r.power}</td>
+              <td class="num">{r.accuracy}</td>
+              <td class="num">{r.pp}</td>
+            </tr>
+          );
+        })}
+      </tbody>
+    </table>
+  )}
+
+  <h3>Egg moves</h3>
+  {eggMoves.length === 0 ? <p class="muted">None.</p> : (
+    <p class="movechips">
+      {eggMoves.map((m) => <a href={`${base}/moves/${moveSlug(m!)}`}>{m!.name}</a>)}
+    </p>
+  )}
+
+  <h3>TMs, HMs and tutors <span class="count">({machineMoves.length})</span></h3>
+  {machineMoves.length === 0 ? <p class="muted">None.</p> : (
+    <table class="movetable">
+      <thead><tr><th>Move</th><th>Type</th><th>Cat.</th><th>Pwr</th><th>Acc</th><th>PP</th><th>Source</th></tr></thead>
+      <tbody>
+        {machineMoves.map((m) => {
+          const r = moveRow(m);
+          return (
+            <tr>
+              <td><a href={r.href}>{r.name}</a></td>
+              <td><TypeBadge type={r.type} size={1} /></td>
+              <td>{r.category}</td>
+              <td class="num">{r.power}</td>
+              <td class="num">{r.accuracy}</td>
+              <td class="num">{r.pp}</td>
+              <td>{m!.machine ?? 'Tutor'}</td>
+            </tr>
+          );
+        })}
+      </tbody>
+    </table>
+  )}
+</StarlightPage>
+
+<style>
+  .dexhead { display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: flex-start; margin-top: 1rem; }
+  .dexsprites { display: flex; gap: .75rem; }
+  .dexsprites figure { margin: 0; text-align: center; }
+  .dexsprites figcaption { font-size: .7rem; color: var(--sl-color-gray-3); margin-top: -.4rem; }
+  .dexmeta { flex: 1 1 18rem; }
+  .dexno { font-variant-numeric: tabular-nums; color: var(--sl-color-gray-3); margin: 0 0 .35rem; font-size: .9rem; }
+  .dextypes { display: flex; gap: .4rem; margin: 0 0 .5rem; }
+  .dexkind { margin: 0 0 .5rem; color: var(--sl-color-gray-2); font-style: italic; }
+  .dexentry { margin: .5rem 0 0; font-size: .95rem; }
+  .notimpl { margin-top: .75rem; border-left: 3px solid var(--sl-color-orange); padding: .5rem .75rem;
+             background: var(--sl-color-gray-7); font-size: .875rem; border-radius: 0 4px 4px 0; }
+  .statgrid { display: grid; grid-template-columns: minmax(16rem, 1fr) minmax(16rem, 1fr); gap: 1.5rem; align-items: start; }
+  @media (max-width: 50rem) { .statgrid { grid-template-columns: 1fr; } }
+  .bst { margin: .5rem 0 0; font-size: .85rem; color: var(--sl-color-gray-2); }
+  table.kv { width: 100%; font-size: .85rem; }
+  table.kv th { text-align: left; width: 9rem; color: var(--sl-color-gray-2); font-weight: 500; }
+  .matchups { display: flex; flex-direction: column; gap: .35rem; }
+  .mrow { display: flex; gap: .6rem; align-items: center; flex-wrap: wrap; }
+  .mx { min-width: 3.5rem; font-weight: 700; font-size: .85rem; }
+  .mx4 { color: #d33; } .mx2 { color: #e67; } .mx05 { color: #3a9; }
+  .mx025 { color: #1a7; } .mx0 { color: var(--sl-color-gray-3); }
+  .mtypes { display: flex; gap: .3rem; flex-wrap: wrap; }
+  .evoline, .formlist { display: flex; align-items: center; gap: .75rem; flex-wrap: wrap; }
+  .evomon { display: flex; flex-direction: column; align-items: center; text-decoration: none; font-size: .8rem; text-align: center; max-width: 7rem; }
+  .evoarrow { display: flex; flex-direction: column; align-items: center; font-size: .7rem; color: var(--sl-color-gray-3); max-width: 9rem; text-align: center; }
+  .evotext { line-height: 1.15; }
+  table.movetable { width: 100%; font-size: .85rem; }
+  table.movetable td, table.movetable th { padding: .25rem .5rem; }
+  .num { text-align: right; font-variant-numeric: tabular-nums; }
+  .movechips { display: flex; flex-wrap: wrap; gap: .3rem .5rem; }
+  .movechips a { background: var(--sl-color-gray-6); padding: .1rem .5rem; border-radius: 999px; font-size: .8rem; text-decoration: none; }
+  .muted { color: var(--sl-color-gray-3); font-size: .9rem; }
+  .dim { color: var(--sl-color-gray-2); font-size: .82rem; }
+  .megaline { font-size: .88rem; margin: .4rem 0 0; }
+  .diffnote { font-size: .78rem; color: var(--sl-color-gray-3); margin: .45rem 0 0; line-height: 1.4; }
+  .tag { font-size: .66rem; background: var(--sl-color-gray-6); border-radius: 3px;
+         padding: 0 .3rem; margin-left: .35rem; }
+  .tag.new { font-size: .66rem; background: var(--sl-color-accent-low);
+             color: var(--sl-color-accent-high); border-radius: 999px;
+             padding: 0 .4rem; margin-left: .35rem; font-weight: 600; }
+  .scalenote { margin-top: .6rem; border-left: 3px solid var(--sl-color-orange);
+               padding: .45rem .7rem; background: var(--sl-color-gray-7);
+               font-size: .8rem; border-radius: 0 4px 4px 0; }
+  .count { font-weight: 400; color: var(--sl-color-gray-3); font-size: .85rem; }
+</style>

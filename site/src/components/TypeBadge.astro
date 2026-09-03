@@ -1,0 +1,20 @@
+---
+// Uses the game's own types.png badges, sliced by export_assets.py. Authentic,
+// and it keeps the custom types (Light, Data, Gold, Electrolight...) correct
+// without inventing colours for them.
+import { typeName, slug } from '../lib/game';
+interface Props { type: string; size?: number; link?: boolean }
+const { type, size = 2, link = true } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const name = typeName(type);
+const Tag = link ? 'a' : 'span';
+const href = link ? `${base}/types/#${slug(type)}` : undefined;
+---
+<Tag class="type-badge" href={href} title={name} data-type={type}>
+  <img src={`${base}/types/${slug(type)}.png`} alt={name} width={64 * size} height={28 * size} />
+</Tag>
+<style>
+  .type-badge { display: inline-block; line-height: 0; text-decoration: none; }
+  .type-badge img { image-rendering: pixelated; vertical-align: middle; }
+  a.type-badge:hover img { filter: brightness(1.15); }
+</style>

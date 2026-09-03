@@ -1,0 +1,64 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import TableTools from '../../components/TableTools.astro';
+import { cardItems, speciesByInternal, slug } from '../../lib/game';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const rows = cardItems
+  .map((i) => ({ item: i, mon: speciesByInternal.get(i.internal.replace(/_CARD$/, '')) }))
+  .sort((a, b) => a.item.displayName.localeCompare(b.item.displayName));
+const matched = rows.filter((r) => r.mon).length;
+---
+
+<StarlightPage
+  frontmatter={{
+    title: 'Cards',
+    description: `All ${cardItems.length} collectible cards in Pokémon Empyrean and the Pokémon they attach to.`,
+    tableOfContents: false,
+  }}
+>
+  <p>
+    {cardItems.length} cards. A card can only be equipped to its own species and boosts
+    its stats. {matched} of them map to a Pokémon in the Pokédex.
+  </p>
+
+  <div data-table-tools>
+    <div class="filterbar">
+      <input type="search" placeholder="Search cards…" aria-label="Search cards" />
+      <span class="resultcount" data-count></span>
+    </div>
+    <div class="tablewrap">
+      <table class="wikitable">
+        <thead>
+          <tr>
+            <th></th>
+            <th data-sort="text">Card</th>
+            <th data-sort="text">Pokémon</th>
+            <th data-sort="num">Price</th>
+            <th>Effect</th>
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map(({ item, mon }) => (
+            <tr id={item.slug} data-search={`${item.name} ${mon?.displayName ?? ''} ${item.description}`.toLowerCase()}>
+              <td class="iconcell">
+                {mon && <img class="game-sprite" src={`${base}/icons/${mon.slug}.png`} alt="" width="28" height="28" loading="lazy" />}
+              </td>
+              <td>{item.displayName}</td>
+              <td>{mon ? <a href={`${base}/pokedex/${mon.slug}`}>{mon.displayName}</a> : <span class="muted">—</span>}</td>
+              <td class="num" data-value={item.price}>{item.price > 0 ? item.price.toLocaleString('en-US') : '—'}</td>
+              <td class="desccell">{item.description}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <TableTools />
+</StarlightPage>
+
+<style>
+  .iconcell { width: 2.2rem; padding: 0 !important; text-align: center; }
+  .desccell { font-size: .78rem; color: var(--sl-color-gray-2); min-width: 18rem; }
+  .muted { color: var(--sl-color-gray-3); }
+</style>

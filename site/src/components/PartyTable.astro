@@ -1,0 +1,77 @@
+---
+// One trainer's team: sprite, level, held item, moves and any card.
+import TypeBadge from './TypeBadge.astro';
+import { speciesByInternal, movesByInternal, itemsByInternal, itemSlug, moveSlug } from '../lib/game';
+import type { PartyMon } from '../lib/game';
+
+interface Props { party: PartyMon[]; caption?: string }
+const { party, caption } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const anyMoves = party.some((p) => p.moves.length > 0);
+const anyItems = party.some((p) => p.item || p.card);
+---
+<table class="wikitable party">
+  {caption && <caption>{caption}</caption>}
+  <thead>
+    <tr>
+      <th></th>
+      <th>Pokémon</th>
+      <th>Type</th>
+      <th class="num">Lv.</th>
+      {anyItems && <th>Held item</th>}
+      {anyMoves && <th>Moves</th>}
+    </tr>
+  </thead>
+  <tbody>
+    {party.map((p) => {
+      const s = speciesByInternal.get(p.species);
+      const item = p.item ? itemsByInternal.get(p.item) : null;
+      const card = p.card ? itemsByInternal.get(p.card) : null;
+      return (
+        <tr>
+          <td class="iconcell">
+            {s && <img class="game-sprite" src={`${base}/icons/${s.slug}.png`} alt="" width="32" height="32" loading="lazy" />}
+          </td>
+          <td>
+            {s ? <a href={`${base}/pokedex/${s.slug}`}>{s.displayName}</a> : p.species}
+            {p.shiny && <span class="tag shiny">Shiny</span>}
+            {p.gender && <span class="tag">{p.gender === 'male' ? '♂' : '♀'}</span>}
+            {p.abilityIndex !== null && <span class="tag">Ability {p.abilityIndex + 1}</span>}
+          </td>
+          <td class="typecell">{s?.types.map((t) => <TypeBadge type={t} size={1} link={false} />)}</td>
+          <td class="num">{p.level}</td>
+          {anyItems && (
+            <td class="dim">
+              {item ? <a href={`${base}/items/${itemSlug(item)}`}>{item.displayName}</a> : (p.item ?? '')}
+              {card && <><br /><span class="cardtag">{card.displayName}</span></>}
+            </td>
+          )}
+          {anyMoves && (
+            <td class="dim moves">
+              {p.moves.length === 0 ? <span class="auto">level-up moveset</span> :
+                p.moves.map((mv, i) => {
+                  const m = movesByInternal.get(mv);
+                  return <>{i > 0 && ', '}{m ? <a href={`${base}/moves/${moveSlug(m)}`}>{m.displayName}</a> : mv}</>;
+                })}
+            </td>
+          )}
+        </tr>
+      );
+    })}
+  </tbody>
+</table>
+<style>
+  table.party { width: 100%; font-size: .85rem; }
+  table.party caption { text-align: left; font-weight: 600; padding: .3rem 0; }
+  .iconcell { width: 2.5rem; padding: 0 !important; text-align: center; }
+  .typecell { white-space: nowrap; line-height: 0; }
+  .typecell :global(.type-badge) { margin-right: 2px; }
+  .num { text-align: right; font-variant-numeric: tabular-nums; }
+  .dim { font-size: .8rem; color: var(--sl-color-gray-2); }
+  .moves { min-width: 14rem; }
+  .auto { color: var(--sl-color-gray-3); font-style: italic; }
+  .tag { font-size: .68rem; background: var(--sl-color-gray-6); border-radius: 3px;
+         padding: 0 .3rem; margin-left: .3rem; white-space: nowrap; }
+  .tag.shiny { background: var(--sl-color-accent-low); color: var(--sl-color-accent-high); }
+  .cardtag { font-size: .72rem; color: var(--sl-color-gray-3); }
+</style>

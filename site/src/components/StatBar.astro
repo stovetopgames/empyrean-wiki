@@ -1,0 +1,19 @@
+---
+interface Props { label: string; value: number; max?: number }
+const { label, value, max = 200 } = Astro.props;
+const pct = Math.min(100, (value / max) * 100);
+// Red through green, so a glance at the colour reads as weak/strong.
+const hue = Math.min(120, Math.round((value / (max * 0.9)) * 120));
+---
+<div class="statrow">
+  <span class="statlabel">{label}</span>
+  <span class="statval">{value}</span>
+  <span class="stattrack"><span class="statfill" style={`width:${pct}%;background:hsl(${hue} 70% 45%)`}></span></span>
+</div>
+<style>
+  .statrow { display: grid; grid-template-columns: 4.5rem 2.5rem 1fr; align-items: center; gap: .5rem; margin: .18rem 0; }
+  .statlabel { font-size: .8rem; color: var(--sl-color-gray-2); }
+  .statval { font-variant-numeric: tabular-nums; font-weight: 600; text-align: right; font-size: .85rem; }
+  .stattrack { background: var(--sl-color-gray-6); border-radius: 3px; height: .55rem; overflow: hidden; }
+  .statfill { display: block; height: 100%; border-radius: 3px; }
+</style>

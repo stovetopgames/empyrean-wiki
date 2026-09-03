@@ -1,0 +1,6548 @@
+[
+ {
+  "index": 0,
+  "name": "Omuran",
+  "slug": "omuran",
+  "filename": "mapRegion0.png",
+  "image": "regions/0.png",
+  "width": 480,
+  "height": 320,
+  "square": 16,
+  "points": [
+   {
+    "x": 25,
+    "y": 10,
+    "name": "Seaside Vista",
+    "description": null,
+    "flyMapId": 11,
+    "flyX": 35,
+    "flyY": 22,
+    "switch": null,
+    "slug": "seaside-vista",
+    "mapId": 11,
+    "left": 400,
+    "top": 160,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 24,
+    "y": 10,
+    "name": "Selene Town",
+    "description": null,
+    "flyMapId": 6,
+    "flyX": 17,
+    "flyY": 8,
+    "switch": null,
+    "slug": "selene-town",
+    "mapId": 6,
+    "left": 384,
+    "top": 160,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 24,
+    "y": 8,
+    "name": "Mera Town",
+    "description": null,
+    "flyMapId": 22,
+    "flyX": 10,
+    "flyY": 27,
+    "switch": null,
+    "slug": "mera-town",
+    "mapId": 22,
+    "left": 384,
+    "top": 128,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 23,
+    "y": 8,
+    "name": "Route 101",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-101",
+    "mapId": 25,
+    "left": 368,
+    "top": 128,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 22,
+    "y": 8,
+    "name": "Route 101",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-101",
+    "mapId": 25,
+    "left": 352,
+    "top": 128,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 22,
+    "y": 9,
+    "name": "Route 101",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-101",
+    "mapId": 25,
+    "left": 352,
+    "top": 144,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 22,
+    "y": 10,
+    "name": "Calistern Town",
+    "description": null,
+    "flyMapId": 36,
+    "flyX": 47,
+    "flyY": 14,
+    "switch": null,
+    "slug": "calistern-town",
+    "mapId": 36,
+    "left": 352,
+    "top": 160,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 22,
+    "y": 7,
+    "name": "Shawmonk Forest",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "shawmonk-forest",
+    "mapId": 8,
+    "left": 352,
+    "top": 112,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 22,
+    "y": 6,
+    "name": "Route 102",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-102",
+    "mapId": 28,
+    "left": 352,
+    "top": 96,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 21,
+    "y": 6,
+    "name": "Route 102",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-102",
+    "mapId": 28,
+    "left": 336,
+    "top": 96,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 23,
+    "y": 6,
+    "name": "Shawmonk Town",
+    "description": null,
+    "flyMapId": 584,
+    "flyX": 10,
+    "flyY": 11,
+    "switch": null,
+    "slug": "shawmonk-town",
+    "mapId": 14,
+    "left": 368,
+    "top": 96,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 24,
+    "y": 9,
+    "name": "Route 100",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-100",
+    "mapId": 21,
+    "left": 384,
+    "top": 144,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 23,
+    "y": 5,
+    "name": "Shawmonk Calm",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "shawmonk-calm",
+    "mapId": 20,
+    "left": 368,
+    "top": 80,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 20,
+    "y": 6,
+    "name": "Dooriver City",
+    "description": null,
+    "flyMapId": 68,
+    "flyX": 60,
+    "flyY": 21,
+    "switch": null,
+    "slug": "dooriver-city",
+    "mapId": 68,
+    "left": 320,
+    "top": 96,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 19,
+    "y": 6,
+    "name": "Dooriver City",
+    "description": null,
+    "flyMapId": 68,
+    "flyX": 60,
+    "flyY": 21,
+    "switch": null,
+    "slug": "dooriver-city",
+    "mapId": 68,
+    "left": 304,
+    "top": 96,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 20,
+    "y": 7,
+    "name": "Shian Swamp",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "shian-swamp",
+    "mapId": 13,
+    "left": 320,
+    "top": 112,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 20,
+    "y": 8,
+    "name": "Shian Swamp",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "shian-swamp",
+    "mapId": 13,
+    "left": 320,
+    "top": 128,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 19,
+    "y": 8,
+    "name": "Route 104",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-104",
+    "mapId": 77,
+    "left": 304,
+    "top": 128,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 18,
+    "y": 8,
+    "name": "Training Safari",
+    "description": null,
+    "flyMapId": 80,
+    "flyX": 43,
+    "flyY": 7,
+    "switch": null,
+    "slug": "training-safari",
+    "mapId": 80,
+    "left": 288,
+    "top": 128,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 17,
+    "y": 8,
+    "name": "River Overpass",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "river-overpass",
+    "mapId": 110,
+    "left": 272,
+    "top": 128,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 17,
+    "y": 6,
+    "name": "Route 105",
+    "description": null,
+    "flyMapId": 116,
+    "flyX": 25,
+    "flyY": 31,
+    "switch": null,
+    "slug": "route-105",
+    "mapId": 115,
+    "left": 272,
+    "top": 96,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 17,
+    "y": 5,
+    "name": "Route 105",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-105",
+    "mapId": 115,
+    "left": 272,
+    "top": 80,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 19,
+    "y": 17,
+    "name": "Roarin Plateau",
+    "description": null,
+    "flyMapId": 367,
+    "flyX": 37,
+    "flyY": 32,
+    "switch": null,
+    "slug": "roarin-plateau",
+    "mapId": 367,
+    "left": 304,
+    "top": 272,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 17,
+    "y": 7,
+    "name": "Empral Town",
+    "description": null,
+    "flyMapId": 97,
+    "flyX": 27,
+    "flyY": 27,
+    "switch": null,
+    "slug": "empral-town",
+    "mapId": 97,
+    "left": 272,
+    "top": 112,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 16,
+    "y": 5,
+    "name": "Route 107",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-107",
+    "mapId": 244,
+    "left": 256,
+    "top": 80,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 15,
+    "y": 5,
+    "name": "Route 107",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-107",
+    "mapId": 244,
+    "left": 240,
+    "top": 80,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 15,
+    "y": 6,
+    "name": "Route 107",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-107",
+    "mapId": 244,
+    "left": 240,
+    "top": 96,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 13,
+    "y": 8,
+    "name": "Asutra City",
+    "description": null,
+    "flyMapId": 287,
+    "flyX": 37,
+    "flyY": 29,
+    "switch": null,
+    "slug": "asutra-city",
+    "mapId": 287,
+    "left": 208,
+    "top": 128,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 13,
+    "y": 9,
+    "name": "Asutra City",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "asutra-city",
+    "mapId": 287,
+    "left": 208,
+    "top": 144,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 13,
+    "y": 10,
+    "name": "Delta Overpass",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "delta-overpass",
+    "mapId": 298,
+    "left": 208,
+    "top": 160,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 14,
+    "y": 10,
+    "name": "Delta Overpass",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "delta-overpass",
+    "mapId": 298,
+    "left": 224,
+    "top": 160,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 15,
+    "y": 10,
+    "name": "Route 108",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-108",
+    "mapId": 340,
+    "left": 240,
+    "top": 160,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 16,
+    "y": 10,
+    "name": "Route 108",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-108",
+    "mapId": 340,
+    "left": 256,
+    "top": 160,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 16,
+    "y": 9,
+    "name": "Route 108",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-108",
+    "mapId": 340,
+    "left": 256,
+    "top": 144,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 17,
+    "y": 9,
+    "name": "Route 108",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-108",
+    "mapId": 340,
+    "left": 272,
+    "top": 144,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 19,
+    "y": 4,
+    "name": "Route 106",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-106",
+    "mapId": 180,
+    "left": 304,
+    "top": 64,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 20,
+    "y": 4,
+    "name": "Route 106",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-106",
+    "mapId": 180,
+    "left": 320,
+    "top": 64,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 20,
+    "y": 3,
+    "name": "Route 106",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-106",
+    "mapId": 180,
+    "left": 320,
+    "top": 48,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 21,
+    "y": 3,
+    "name": "Road to Mt. Mesmer",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "road-to-mt-mesmer",
+    "mapId": 186,
+    "left": 336,
+    "top": 48,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 24,
+    "y": 3,
+    "name": "Mesmer Town",
+    "description": null,
+    "flyMapId": 211,
+    "flyX": 31,
+    "flyY": 35,
+    "switch": null,
+    "slug": "mesmer-town",
+    "mapId": 211,
+    "left": 384,
+    "top": 48,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 17,
+    "y": 4,
+    "name": "Sylen City",
+    "description": null,
+    "flyMapId": 127,
+    "flyX": 33,
+    "flyY": 50,
+    "switch": null,
+    "slug": "sylen-city",
+    "mapId": 127,
+    "left": 272,
+    "top": 64,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 18,
+    "y": 4,
+    "name": "Sylen City",
+    "description": null,
+    "flyMapId": 129,
+    "flyX": 10,
+    "flyY": 21,
+    "switch": null,
+    "slug": "sylen-city",
+    "mapId": 127,
+    "left": 288,
+    "top": 64,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 14,
+    "y": 6,
+    "name": "Naraku Village",
+    "description": null,
+    "flyMapId": 255,
+    "flyX": 39,
+    "flyY": 26,
+    "switch": null,
+    "slug": "naraku-village",
+    "mapId": 255,
+    "left": 224,
+    "top": 96,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 5,
+    "y": 10,
+    "name": "Factorial Town",
+    "description": null,
+    "flyMapId": 324,
+    "flyX": 49,
+    "flyY": 22,
+    "switch": null,
+    "slug": "factorial-town",
+    "mapId": 324,
+    "left": 80,
+    "top": 160,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 3,
+    "y": 11,
+    "name": "C000 Junction",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "c000-junction",
+    "mapId": 632,
+    "left": 48,
+    "top": 176,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 3,
+    "y": 10,
+    "name": "Route B001",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-b001",
+    "mapId": 399,
+    "left": 48,
+    "top": 160,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 3,
+    "y": 9,
+    "name": "Route B000",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-b000",
+    "mapId": 403,
+    "left": 48,
+    "top": 144,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 3,
+    "y": 8,
+    "name": "Route B000",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-b000",
+    "mapId": 403,
+    "left": 48,
+    "top": 128,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 4,
+    "y": 10,
+    "name": "Route B001",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-b001",
+    "mapId": 399,
+    "left": 64,
+    "top": 160,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 16,
+    "y": 11,
+    "name": "Krystolny Town",
+    "description": null,
+    "flyMapId": 347,
+    "flyX": 17,
+    "flyY": 12,
+    "switch": null,
+    "slug": "krystolny-town",
+    "mapId": 347,
+    "left": 256,
+    "top": 176,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 4,
+    "y": 8,
+    "name": "Iron Port",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 64,
+    "top": 128,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 3,
+    "y": 7,
+    "name": "Dead End",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "dead-end",
+    "mapId": 404,
+    "left": 48,
+    "top": 112,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 2,
+    "y": 11,
+    "name": "Ruins of Isfet",
+    "description": null,
+    "flyMapId": 634,
+    "flyX": 9,
+    "flyY": 25,
+    "switch": null,
+    "slug": "ruins-of-isfet",
+    "mapId": 634,
+    "left": 32,
+    "top": 176,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 22,
+    "y": 4,
+    "name": "Omuran River",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 352,
+    "top": 64,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 21,
+    "y": 4,
+    "name": "Secluded Meadow",
+    "description": null,
+    "flyMapId": 332,
+    "flyX": 37,
+    "flyY": 25,
+    "switch": null,
+    "slug": "secluded-meadow",
+    "mapId": 332,
+    "left": 336,
+    "top": 64,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 20,
+    "y": 5,
+    "name": "Omuran River",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 320,
+    "top": 80,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 21,
+    "y": 5,
+    "name": "Omuran River",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 336,
+    "top": 80,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 19,
+    "y": 5,
+    "name": "Omuran River",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 304,
+    "top": 80,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 18,
+    "y": 5,
+    "name": "Omuran River",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 288,
+    "top": 80,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 18,
+    "y": 6,
+    "name": "Omuran River",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 288,
+    "top": 96,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 18,
+    "y": 7,
+    "name": "Omuran River",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 288,
+    "top": 112,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 16,
+    "y": 8,
+    "name": "Omuran River",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 256,
+    "top": 128,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 15,
+    "y": 9,
+    "name": "Omuran River",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 240,
+    "top": 144,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 21,
+    "y": 7,
+    "name": "Shawmonk Lake",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "shawmonk-lake",
+    "mapId": 29,
+    "left": 336,
+    "top": 112,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 24,
+    "y": 2,
+    "name": "Route 113",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-113",
+    "mapId": 213,
+    "left": 384,
+    "top": 32,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 25,
+    "y": 2,
+    "name": "Route 113",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-113",
+    "mapId": 213,
+    "left": 400,
+    "top": 32,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 25,
+    "y": 1,
+    "name": "Victory Road",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "victory-road",
+    "mapId": 585,
+    "left": 400,
+    "top": 16,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 26,
+    "y": 1,
+    "name": "Pokemon League",
+    "description": null,
+    "flyMapId": 593,
+    "flyX": 18,
+    "flyY": 12,
+    "switch": null,
+    "slug": "pokemon-league",
+    "mapId": 593,
+    "left": 416,
+    "top": 16,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 23,
+    "y": 4,
+    "name": "Omuran River",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 368,
+    "top": 64,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 23,
+    "y": 3,
+    "name": "Omuran River",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 368,
+    "top": 48,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 16,
+    "y": 7,
+    "name": "Empral Factory",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "empral-factory",
+    "mapId": 98,
+    "left": 256,
+    "top": 112,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 25,
+    "y": 16,
+    "name": "Route 112",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-112",
+    "mapId": 628,
+    "left": 400,
+    "top": 256,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 16,
+    "y": 12,
+    "name": "Route 109",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-109",
+    "mapId": 348,
+    "left": 256,
+    "top": 192,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 16,
+    "y": 13,
+    "name": "Waterway Stop",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "waterway-stop",
+    "mapId": 349,
+    "left": 256,
+    "top": 208,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 16,
+    "y": 14,
+    "name": "Route 109",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-109",
+    "mapId": 348,
+    "left": 256,
+    "top": 224,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 16,
+    "y": 15,
+    "name": "Route 109",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-109",
+    "mapId": 348,
+    "left": 256,
+    "top": 240,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 16,
+    "y": 16,
+    "name": "Route 109",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-109",
+    "mapId": 348,
+    "left": 256,
+    "top": 256,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 16,
+    "y": 17,
+    "name": "Route 109",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-109",
+    "mapId": 348,
+    "left": 256,
+    "top": 272,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 16,
+    "y": 18,
+    "name": "Route 109",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-109",
+    "mapId": 348,
+    "left": 256,
+    "top": 288,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 17,
+    "y": 18,
+    "name": "Route 109",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-109",
+    "mapId": 348,
+    "left": 272,
+    "top": 288,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 18,
+    "y": 18,
+    "name": "Route 110",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-110",
+    "mapId": 365,
+    "left": 288,
+    "top": 288,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 19,
+    "y": 18,
+    "name": "Route 110",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-110",
+    "mapId": 365,
+    "left": 304,
+    "top": 288,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 3,
+    "y": 6,
+    "name": "Mt. Dynamo",
+    "description": null,
+    "flyMapId": 411,
+    "flyX": 57,
+    "flyY": 8,
+    "switch": null,
+    "slug": "mt-dynamo",
+    "mapId": 405,
+    "left": 48,
+    "top": 96,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 3,
+    "y": 5,
+    "name": "Mt. Dynamo Summit",
+    "description": null,
+    "flyMapId": 640,
+    "flyX": 14,
+    "flyY": 8,
+    "switch": null,
+    "slug": "mt-dynamo-summit",
+    "mapId": 640,
+    "left": 48,
+    "top": 80,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 20,
+    "y": 18,
+    "name": "Route 111",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-111",
+    "mapId": 624,
+    "left": 320,
+    "top": 288,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 21,
+    "y": 18,
+    "name": "Route 111",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-111",
+    "mapId": 624,
+    "left": 336,
+    "top": 288,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 22,
+    "y": 18,
+    "name": "Route 111",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-111",
+    "mapId": 624,
+    "left": 352,
+    "top": 288,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 22,
+    "y": 17,
+    "name": "Route 112",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-112",
+    "mapId": 628,
+    "left": 352,
+    "top": 272,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 23,
+    "y": 17,
+    "name": "Route 112",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-112",
+    "mapId": 628,
+    "left": 368,
+    "top": 272,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 24,
+    "y": 17,
+    "name": "Route 112",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-112",
+    "mapId": 628,
+    "left": 384,
+    "top": 272,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 20,
+    "y": 17,
+    "name": "Roarin Volcano",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 320,
+    "top": 272,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 24,
+    "y": 16,
+    "name": "Cloudy Ruin",
+    "description": null,
+    "flyMapId": 631,
+    "flyX": 25,
+    "flyY": 23,
+    "switch": null,
+    "slug": "cloudy-ruin",
+    "mapId": 631,
+    "left": 384,
+    "top": 256,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 13,
+    "y": 6,
+    "name": "Naraku Forest",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "naraku-forest",
+    "mapId": 271,
+    "left": 208,
+    "top": 96,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 12,
+    "y": 6,
+    "name": "Cycling Highway",
+    "description": null,
+    "flyMapId": 278,
+    "flyX": 23,
+    "flyY": 20,
+    "switch": null,
+    "slug": "cycling-highway",
+    "mapId": 279,
+    "left": 192,
+    "top": 96,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 11,
+    "y": 6,
+    "name": "Cycling Highway",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "cycling-highway",
+    "mapId": 279,
+    "left": 176,
+    "top": 96,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 11,
+    "y": 7,
+    "name": "Cycling Highway",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "cycling-highway",
+    "mapId": 279,
+    "left": 176,
+    "top": 112,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 12,
+    "y": 7,
+    "name": "Cycling Highway",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "cycling-highway",
+    "mapId": 279,
+    "left": 192,
+    "top": 112,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 13,
+    "y": 7,
+    "name": "Cycling Highway",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "cycling-highway",
+    "mapId": 279,
+    "left": 208,
+    "top": 112,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 11,
+    "y": 5,
+    "name": "Cape Precipice",
+    "description": null,
+    "flyMapId": 292,
+    "flyX": 24,
+    "flyY": 48,
+    "switch": null,
+    "slug": "cape-precipice",
+    "mapId": 292,
+    "left": 176,
+    "top": 80,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 17,
+    "y": 15,
+    "name": "Trainer Tower",
+    "description": null,
+    "flyMapId": 357,
+    "flyX": 37,
+    "flyY": 11,
+    "switch": null,
+    "slug": "trainer-tower",
+    "mapId": 382,
+    "left": 272,
+    "top": 240,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 17,
+    "y": 14,
+    "name": "Top of the Tower",
+    "description": null,
+    "flyMapId": 383,
+    "flyX": 15,
+    "flyY": 8,
+    "switch": null,
+    "slug": "top-of-the-tower",
+    "mapId": 383,
+    "left": 272,
+    "top": 224,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 15,
+    "y": 17,
+    "name": "Islet of Horus",
+    "description": null,
+    "flyMapId": 358,
+    "flyX": 18,
+    "flyY": 13,
+    "switch": null,
+    "slug": "islet-of-horus",
+    "mapId": 358,
+    "left": 240,
+    "top": 272,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 24,
+    "y": 4,
+    "name": "Falls of Mesmer",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "falls-of-mesmer",
+    "mapId": 334,
+    "left": 384,
+    "top": 64,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 3,
+    "y": 12,
+    "name": "Route C000",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 48,
+    "top": 192,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 4,
+    "y": 12,
+    "name": "Route C000",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 64,
+    "top": 192,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 4,
+    "y": 13,
+    "name": "Route C000",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 64,
+    "top": 208,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 5,
+    "y": 13,
+    "name": "Route C000",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 80,
+    "top": 208,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 6,
+    "y": 13,
+    "name": "Sand Harbor",
+    "description": null,
+    "flyMapId": 653,
+    "flyX": 33,
+    "flyY": 11,
+    "switch": null,
+    "slug": "sand-harbor",
+    "mapId": 653,
+    "left": 96,
+    "top": 208,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 8,
+    "y": 17,
+    "name": "Zirconium Tower",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 128,
+    "top": 272,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 8,
+    "y": 18,
+    "name": "Road to Ruin",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 128,
+    "top": 288,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 7,
+    "y": 18,
+    "name": "Road to Ruin",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 112,
+    "top": 288,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 7,
+    "y": 19,
+    "name": "Road to Ruin",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 112,
+    "top": 304,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 4,
+    "y": 18,
+    "name": "Ruins of Ma'at",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 64,
+    "top": 288,
+    "width": 16,
+    "height": 16
+   }
+  ],
+  "places": [
+   {
+    "name": "Asutra City",
+    "slug": "asutra-city",
+    "mapId": 287,
+    "description": null,
+    "squares": [
+     {
+      "x": 13,
+      "y": 8
+     },
+     {
+      "x": 13,
+      "y": 9
+     }
+    ]
+   },
+   {
+    "name": "C000 Junction",
+    "slug": "c000-junction",
+    "mapId": 632,
+    "description": null,
+    "squares": [
+     {
+      "x": 3,
+      "y": 11
+     }
+    ]
+   },
+   {
+    "name": "Calistern Town",
+    "slug": "calistern-town",
+    "mapId": 36,
+    "description": null,
+    "squares": [
+     {
+      "x": 22,
+      "y": 10
+     }
+    ]
+   },
+   {
+    "name": "Cape Precipice",
+    "slug": "cape-precipice",
+    "mapId": 292,
+    "description": null,
+    "squares": [
+     {
+      "x": 11,
+      "y": 5
+     }
+    ]
+   },
+   {
+    "name": "Cloudy Ruin",
+    "slug": "cloudy-ruin",
+    "mapId": 631,
+    "description": null,
+    "squares": [
+     {
+      "x": 24,
+      "y": 16
+     }
+    ]
+   },
+   {
+    "name": "Cycling Highway",
+    "slug": "cycling-highway",
+    "mapId": 279,
+    "description": null,
+    "squares": [
+     {
+      "x": 12,
+      "y": 6
+     },
+     {
+      "x": 11,
+      "y": 6
+     },
+     {
+      "x": 11,
+      "y": 7
+     },
+     {
+      "x": 12,
+      "y": 7
+     },
+     {
+      "x": 13,
+      "y": 7
+     }
+    ]
+   },
+   {
+    "name": "Dead End",
+    "slug": "dead-end",
+    "mapId": 404,
+    "description": null,
+    "squares": [
+     {
+      "x": 3,
+      "y": 7
+     }
+    ]
+   },
+   {
+    "name": "Delta Overpass",
+    "slug": "delta-overpass",
+    "mapId": 298,
+    "description": null,
+    "squares": [
+     {
+      "x": 13,
+      "y": 10
+     },
+     {
+      "x": 14,
+      "y": 10
+     }
+    ]
+   },
+   {
+    "name": "Dooriver City",
+    "slug": "dooriver-city",
+    "mapId": 68,
+    "description": null,
+    "squares": [
+     {
+      "x": 20,
+      "y": 6
+     },
+     {
+      "x": 19,
+      "y": 6
+     }
+    ]
+   },
+   {
+    "name": "Empral Factory",
+    "slug": "empral-factory",
+    "mapId": 98,
+    "description": null,
+    "squares": [
+     {
+      "x": 16,
+      "y": 7
+     }
+    ]
+   },
+   {
+    "name": "Empral Town",
+    "slug": "empral-town",
+    "mapId": 97,
+    "description": null,
+    "squares": [
+     {
+      "x": 17,
+      "y": 7
+     }
+    ]
+   },
+   {
+    "name": "Factorial Town",
+    "slug": "factorial-town",
+    "mapId": 324,
+    "description": null,
+    "squares": [
+     {
+      "x": 5,
+      "y": 10
+     }
+    ]
+   },
+   {
+    "name": "Falls of Mesmer",
+    "slug": "falls-of-mesmer",
+    "mapId": 334,
+    "description": null,
+    "squares": [
+     {
+      "x": 24,
+      "y": 4
+     }
+    ]
+   },
+   {
+    "name": "Iron Port",
+    "slug": null,
+    "mapId": null,
+    "description": null,
+    "squares": [
+     {
+      "x": 4,
+      "y": 8
+     }
+    ]
+   },
+   {
+    "name": "Islet of Horus",
+    "slug": "islet-of-horus",
+    "mapId": 358,
+    "description": null,
+    "squares": [
+     {
+      "x": 15,
+      "y": 17
+     }
+    ]
+   },
+   {
+    "name": "Krystolny Town",
+    "slug": "krystolny-town",
+    "mapId": 347,
+    "description": null,
+    "squares": [
+     {
+      "x": 16,
+      "y": 11
+     }
+    ]
+   },
+   {
+    "name": "Mera Town",
+    "slug": "mera-town",
+    "mapId": 22,
+    "description": null,
+    "squares": [
+     {
+      "x": 24,
+      "y": 8
+     }
+    ]
+   },
+   {
+    "name": "Mesmer Town",
+    "slug": "mesmer-town",
+    "mapId": 211,
+    "description": null,
+    "squares": [
+     {
+      "x": 24,
+      "y": 3
+     }
+    ]
+   },
+   {
+    "name": "Mt. Dynamo",
+    "slug": "mt-dynamo",
+    "mapId": 405,
+    "description": null,
+    "squares": [
+     {
+      "x": 3,
+      "y": 6
+     }
+    ]
+   },
+   {
+    "name": "Mt. Dynamo Summit",
+    "slug": "mt-dynamo-summit",
+    "mapId": 640,
+    "description": null,
+    "squares": [
+     {
+      "x": 3,
+      "y": 5
+     }
+    ]
+   },
+   {
+    "name": "Naraku Forest",
+    "slug": "naraku-forest",
+    "mapId": 271,
+    "description": null,
+    "squares": [
+     {
+      "x": 13,
+      "y": 6
+     }
+    ]
+   },
+   {
+    "name": "Naraku Village",
+    "slug": "naraku-village",
+    "mapId": 255,
+    "description": null,
+    "squares": [
+     {
+      "x": 14,
+      "y": 6
+     }
+    ]
+   },
+   {
+    "name": "Omuran River",
+    "slug": null,
+    "mapId": null,
+    "description": null,
+    "squares": [
+     {
+      "x": 22,
+      "y": 4
+     },
+     {
+      "x": 20,
+      "y": 5
+     },
+     {
+      "x": 21,
+      "y": 5
+     },
+     {
+      "x": 19,
+      "y": 5
+     },
+     {
+      "x": 18,
+      "y": 5
+     },
+     {
+      "x": 18,
+      "y": 6
+     },
+     {
+      "x": 18,
+      "y": 7
+     },
+     {
+      "x": 16,
+      "y": 8
+     },
+     {
+      "x": 15,
+      "y": 9
+     },
+     {
+      "x": 23,
+      "y": 4
+     },
+     {
+      "x": 23,
+      "y": 3
+     }
+    ]
+   },
+   {
+    "name": "Pokemon League",
+    "slug": "pokemon-league",
+    "mapId": 593,
+    "description": null,
+    "squares": [
+     {
+      "x": 26,
+      "y": 1
+     }
+    ]
+   },
+   {
+    "name": "River Overpass",
+    "slug": "river-overpass",
+    "mapId": 110,
+    "description": null,
+    "squares": [
+     {
+      "x": 17,
+      "y": 8
+     }
+    ]
+   },
+   {
+    "name": "Road to Mt. Mesmer",
+    "slug": "road-to-mt-mesmer",
+    "mapId": 186,
+    "description": null,
+    "squares": [
+     {
+      "x": 21,
+      "y": 3
+     }
+    ]
+   },
+   {
+    "name": "Road to Ruin",
+    "slug": null,
+    "mapId": null,
+    "description": null,
+    "squares": [
+     {
+      "x": 8,
+      "y": 18
+     },
+     {
+      "x": 7,
+      "y": 18
+     },
+     {
+      "x": 7,
+      "y": 19
+     }
+    ]
+   },
+   {
+    "name": "Roarin Plateau",
+    "slug": "roarin-plateau",
+    "mapId": 367,
+    "description": null,
+    "squares": [
+     {
+      "x": 19,
+      "y": 17
+     }
+    ]
+   },
+   {
+    "name": "Roarin Volcano",
+    "slug": null,
+    "mapId": null,
+    "description": null,
+    "squares": [
+     {
+      "x": 20,
+      "y": 17
+     }
+    ]
+   },
+   {
+    "name": "Route 100",
+    "slug": "route-100",
+    "mapId": 21,
+    "description": null,
+    "squares": [
+     {
+      "x": 24,
+      "y": 9
+     }
+    ]
+   },
+   {
+    "name": "Route 101",
+    "slug": "route-101",
+    "mapId": 25,
+    "description": null,
+    "squares": [
+     {
+      "x": 23,
+      "y": 8
+     },
+     {
+      "x": 22,
+      "y": 8
+     },
+     {
+      "x": 22,
+      "y": 9
+     }
+    ]
+   },
+   {
+    "name": "Route 102",
+    "slug": "route-102",
+    "mapId": 28,
+    "description": null,
+    "squares": [
+     {
+      "x": 22,
+      "y": 6
+     },
+     {
+      "x": 21,
+      "y": 6
+     }
+    ]
+   },
+   {
+    "name": "Route 104",
+    "slug": "route-104",
+    "mapId": 77,
+    "description": null,
+    "squares": [
+     {
+      "x": 19,
+      "y": 8
+     }
+    ]
+   },
+   {
+    "name": "Route 105",
+    "slug": "route-105",
+    "mapId": 115,
+    "description": null,
+    "squares": [
+     {
+      "x": 17,
+      "y": 6
+     },
+     {
+      "x": 17,
+      "y": 5
+     }
+    ]
+   },
+   {
+    "name": "Route 106",
+    "slug": "route-106",
+    "mapId": 180,
+    "description": null,
+    "squares": [
+     {
+      "x": 19,
+      "y": 4
+     },
+     {
+      "x": 20,
+      "y": 4
+     },
+     {
+      "x": 20,
+      "y": 3
+     }
+    ]
+   },
+   {
+    "name": "Route 107",
+    "slug": "route-107",
+    "mapId": 244,
+    "description": null,
+    "squares": [
+     {
+      "x": 16,
+      "y": 5
+     },
+     {
+      "x": 15,
+      "y": 5
+     },
+     {
+      "x": 15,
+      "y": 6
+     }
+    ]
+   },
+   {
+    "name": "Route 108",
+    "slug": "route-108",
+    "mapId": 340,
+    "description": null,
+    "squares": [
+     {
+      "x": 15,
+      "y": 10
+     },
+     {
+      "x": 16,
+      "y": 10
+     },
+     {
+      "x": 16,
+      "y": 9
+     },
+     {
+      "x": 17,
+      "y": 9
+     }
+    ]
+   },
+   {
+    "name": "Route 109",
+    "slug": "route-109",
+    "mapId": 348,
+    "description": null,
+    "squares": [
+     {
+      "x": 16,
+      "y": 12
+     },
+     {
+      "x": 16,
+      "y": 14
+     },
+     {
+      "x": 16,
+      "y": 15
+     },
+     {
+      "x": 16,
+      "y": 16
+     },
+     {
+      "x": 16,
+      "y": 17
+     },
+     {
+      "x": 16,
+      "y": 18
+     },
+     {
+      "x": 17,
+      "y": 18
+     }
+    ]
+   },
+   {
+    "name": "Route 110",
+    "slug": "route-110",
+    "mapId": 365,
+    "description": null,
+    "squares": [
+     {
+      "x": 18,
+      "y": 18
+     },
+     {
+      "x": 19,
+      "y": 18
+     }
+    ]
+   },
+   {
+    "name": "Route 111",
+    "slug": "route-111",
+    "mapId": 624,
+    "description": null,
+    "squares": [
+     {
+      "x": 20,
+      "y": 18
+     },
+     {
+      "x": 21,
+      "y": 18
+     },
+     {
+      "x": 22,
+      "y": 18
+     }
+    ]
+   },
+   {
+    "name": "Route 112",
+    "slug": "route-112",
+    "mapId": 628,
+    "description": null,
+    "squares": [
+     {
+      "x": 25,
+      "y": 16
+     },
+     {
+      "x": 22,
+      "y": 17
+     },
+     {
+      "x": 23,
+      "y": 17
+     },
+     {
+      "x": 24,
+      "y": 17
+     }
+    ]
+   },
+   {
+    "name": "Route 113",
+    "slug": "route-113",
+    "mapId": 213,
+    "description": null,
+    "squares": [
+     {
+      "x": 24,
+      "y": 2
+     },
+     {
+      "x": 25,
+      "y": 2
+     }
+    ]
+   },
+   {
+    "name": "Route B000",
+    "slug": "route-b000",
+    "mapId": 403,
+    "description": null,
+    "squares": [
+     {
+      "x": 3,
+      "y": 9
+     },
+     {
+      "x": 3,
+      "y": 8
+     }
+    ]
+   },
+   {
+    "name": "Route B001",
+    "slug": "route-b001",
+    "mapId": 399,
+    "description": null,
+    "squares": [
+     {
+      "x": 3,
+      "y": 10
+     },
+     {
+      "x": 4,
+      "y": 10
+     }
+    ]
+   },
+   {
+    "name": "Route C000",
+    "slug": null,
+    "mapId": null,
+    "description": null,
+    "squares": [
+     {
+      "x": 3,
+      "y": 12
+     },
+     {
+      "x": 4,
+      "y": 12
+     },
+     {
+      "x": 4,
+      "y": 13
+     },
+     {
+      "x": 5,
+      "y": 13
+     }
+    ]
+   },
+   {
+    "name": "Ruins of Isfet",
+    "slug": "ruins-of-isfet",
+    "mapId": 634,
+    "description": null,
+    "squares": [
+     {
+      "x": 2,
+      "y": 11
+     }
+    ]
+   },
+   {
+    "name": "Ruins of Ma'at",
+    "slug": null,
+    "mapId": null,
+    "description": null,
+    "squares": [
+     {
+      "x": 4,
+      "y": 18
+     }
+    ]
+   },
+   {
+    "name": "Sand Harbor",
+    "slug": "sand-harbor",
+    "mapId": 653,
+    "description": null,
+    "squares": [
+     {
+      "x": 6,
+      "y": 13
+     }
+    ]
+   },
+   {
+    "name": "Seaside Vista",
+    "slug": "seaside-vista",
+    "mapId": 11,
+    "description": null,
+    "squares": [
+     {
+      "x": 25,
+      "y": 10
+     }
+    ]
+   },
+   {
+    "name": "Secluded Meadow",
+    "slug": "secluded-meadow",
+    "mapId": 332,
+    "description": null,
+    "squares": [
+     {
+      "x": 21,
+      "y": 4
+     }
+    ]
+   },
+   {
+    "name": "Selene Town",
+    "slug": "selene-town",
+    "mapId": 6,
+    "description": null,
+    "squares": [
+     {
+      "x": 24,
+      "y": 10
+     }
+    ]
+   },
+   {
+    "name": "Shawmonk Calm",
+    "slug": "shawmonk-calm",
+    "mapId": 20,
+    "description": null,
+    "squares": [
+     {
+      "x": 23,
+      "y": 5
+     }
+    ]
+   },
+   {
+    "name": "Shawmonk Forest",
+    "slug": "shawmonk-forest",
+    "mapId": 8,
+    "description": null,
+    "squares": [
+     {
+      "x": 22,
+      "y": 7
+     }
+    ]
+   },
+   {
+    "name": "Shawmonk Lake",
+    "slug": "shawmonk-lake",
+    "mapId": 29,
+    "description": null,
+    "squares": [
+     {
+      "x": 21,
+      "y": 7
+     }
+    ]
+   },
+   {
+    "name": "Shawmonk Town",
+    "slug": "shawmonk-town",
+    "mapId": 14,
+    "description": null,
+    "squares": [
+     {
+      "x": 23,
+      "y": 6
+     }
+    ]
+   },
+   {
+    "name": "Shian Swamp",
+    "slug": "shian-swamp",
+    "mapId": 13,
+    "description": null,
+    "squares": [
+     {
+      "x": 20,
+      "y": 7
+     },
+     {
+      "x": 20,
+      "y": 8
+     }
+    ]
+   },
+   {
+    "name": "Sylen City",
+    "slug": "sylen-city",
+    "mapId": 127,
+    "description": null,
+    "squares": [
+     {
+      "x": 17,
+      "y": 4
+     },
+     {
+      "x": 18,
+      "y": 4
+     }
+    ]
+   },
+   {
+    "name": "Top of the Tower",
+    "slug": "top-of-the-tower",
+    "mapId": 383,
+    "description": null,
+    "squares": [
+     {
+      "x": 17,
+      "y": 14
+     }
+    ]
+   },
+   {
+    "name": "Trainer Tower",
+    "slug": "trainer-tower",
+    "mapId": 382,
+    "description": null,
+    "squares": [
+     {
+      "x": 17,
+      "y": 15
+     }
+    ]
+   },
+   {
+    "name": "Training Safari",
+    "slug": "training-safari",
+    "mapId": 80,
+    "description": null,
+    "squares": [
+     {
+      "x": 18,
+      "y": 8
+     }
+    ]
+   },
+   {
+    "name": "Victory Road",
+    "slug": "victory-road",
+    "mapId": 585,
+    "description": null,
+    "squares": [
+     {
+      "x": 25,
+      "y": 1
+     }
+    ]
+   },
+   {
+    "name": "Waterway Stop",
+    "slug": "waterway-stop",
+    "mapId": 349,
+    "description": null,
+    "squares": [
+     {
+      "x": 16,
+      "y": 13
+     }
+    ]
+   },
+   {
+    "name": "Zirconium Tower",
+    "slug": null,
+    "mapId": null,
+    "description": null,
+    "squares": [
+     {
+      "x": 8,
+      "y": 17
+     }
+    ]
+   }
+  ],
+  "displayName": "Omuran"
+ },
+ {
+  "index": 1,
+  "name": "Year 3030",
+  "slug": "year-3030-1",
+  "filename": "mapRegion1.png",
+  "image": "regions/1.png",
+  "width": 480,
+  "height": 320,
+  "square": 16,
+  "points": [
+   {
+    "x": 3,
+    "y": 6,
+    "name": "Mt. Dynamo",
+    "description": null,
+    "flyMapId": 417,
+    "flyX": 57,
+    "flyY": 8,
+    "switch": null,
+    "slug": "mt-dynamo",
+    "mapId": 405,
+    "left": 48,
+    "top": 96,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 19,
+    "y": 17,
+    "name": "Ruins of Roarin",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 304,
+    "top": 272,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 20,
+    "y": 17,
+    "name": "Dry Crater",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 320,
+    "top": 272,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 17,
+    "y": 15,
+    "name": "Prism Tower",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "prism-tower-2",
+    "mapId": 565,
+    "left": 272,
+    "top": 240,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 7,
+    "y": 16,
+    "name": "Sand Abyss",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 112,
+    "top": 256,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 17,
+    "y": 11,
+    "name": "Great Chasm",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 272,
+    "top": 176,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 16,
+    "y": 11,
+    "name": "Ruins of Krystolny",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 256,
+    "top": 176,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 22,
+    "y": 10,
+    "name": "UF South Fort",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 352,
+    "top": 160,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 14,
+    "y": 6,
+    "name": "UF North Fort",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 224,
+    "top": 96,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 16,
+    "y": 7,
+    "name": "The Generator",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "the-generator",
+    "mapId": 476,
+    "left": 256,
+    "top": 112,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 17,
+    "y": 7,
+    "name": "Astarr Town",
+    "description": null,
+    "flyMapId": 475,
+    "flyX": 17,
+    "flyY": 15,
+    "switch": null,
+    "slug": "astarr-town",
+    "mapId": 474,
+    "left": 272,
+    "top": 112,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 13,
+    "y": 8,
+    "name": "Asutra City",
+    "description": null,
+    "flyMapId": 447,
+    "flyX": 37,
+    "flyY": 29,
+    "switch": null,
+    "slug": "asutra-city-3",
+    "mapId": 447,
+    "left": 208,
+    "top": 128,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 13,
+    "y": 9,
+    "name": "Asutra City",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "asutra-city-3",
+    "mapId": 447,
+    "left": 208,
+    "top": 144,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 5,
+    "y": 10,
+    "name": "Factorial Town",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 80,
+    "top": 160,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 8,
+    "y": 11,
+    "name": "Tower Ruins",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 128,
+    "top": 176,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 24,
+    "y": 10,
+    "name": "Saleen Town",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 384,
+    "top": 160,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 25,
+    "y": 10,
+    "name": "Seaside Haven",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 400,
+    "top": 160,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 24,
+    "y": 8,
+    "name": "Monkshawon",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 384,
+    "top": 128,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 17,
+    "y": 5,
+    "name": "NSC Gate",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "nsc-gate",
+    "mapId": 501,
+    "left": 272,
+    "top": 80,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 16,
+    "y": 4,
+    "name": "Neo Sylen City",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "neo-sylen-city",
+    "mapId": 494,
+    "left": 256,
+    "top": 64,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 17,
+    "y": 4,
+    "name": "Neo Sylen City",
+    "description": null,
+    "flyMapId": 494,
+    "flyX": 12,
+    "flyY": 60,
+    "switch": null,
+    "slug": "neo-sylen-city",
+    "mapId": 494,
+    "left": 272,
+    "top": 64,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 18,
+    "y": 4,
+    "name": "Neo Sylen City",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "neo-sylen-city",
+    "mapId": 494,
+    "left": 288,
+    "top": 64,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 17,
+    "y": 3,
+    "name": "Neo Sylen City",
+    "description": null,
+    "flyMapId": 519,
+    "flyX": 10,
+    "flyY": 43,
+    "switch": null,
+    "slug": "neo-sylen-city",
+    "mapId": 494,
+    "left": 272,
+    "top": 48,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 18,
+    "y": 3,
+    "name": "NSC Boundary",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 288,
+    "top": 48,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 11,
+    "y": 5,
+    "name": "Cape Paradise",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 176,
+    "top": 80,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 20,
+    "y": 6,
+    "name": "Lake Empyrean",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 320,
+    "top": 96,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 19,
+    "y": 6,
+    "name": "Lake Empyrean",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 304,
+    "top": 96,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 24,
+    "y": 2,
+    "name": "Great Mesmer Alps",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 384,
+    "top": 32,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 25,
+    "y": 2,
+    "name": "Great Mesmer Alps",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 400,
+    "top": 32,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 24,
+    "y": 1,
+    "name": "Great Mesmer Alps",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 384,
+    "top": 16,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 25,
+    "y": 1,
+    "name": "Great Mesmer Alps",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 400,
+    "top": 16,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 26,
+    "y": 2,
+    "name": "Great Mesmer Alps",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 416,
+    "top": 32,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 26,
+    "y": 1,
+    "name": "Great Mesmer Alps",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 416,
+    "top": 16,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 19,
+    "y": 4,
+    "name": "NO Route 1",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 304,
+    "top": 64,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 20,
+    "y": 4,
+    "name": "NO Route 1",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 320,
+    "top": 64,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 20,
+    "y": 3,
+    "name": "NO Route 2",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 320,
+    "top": 48,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 21,
+    "y": 3,
+    "name": "North Outpost",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 336,
+    "top": 48,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 16,
+    "y": 5,
+    "name": "Route 0",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 256,
+    "top": 80,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 15,
+    "y": 5,
+    "name": "Route 1",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 240,
+    "top": 80,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 15,
+    "y": 6,
+    "name": "Route 2",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 240,
+    "top": 96,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 13,
+    "y": 6,
+    "name": "Void Forest",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 208,
+    "top": 96,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 11,
+    "y": 7,
+    "name": "Lost Summer Road",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "lost-summer-road",
+    "mapId": 454,
+    "left": 176,
+    "top": 112,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 12,
+    "y": 7,
+    "name": "Lost Summer Road",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "lost-summer-road",
+    "mapId": 454,
+    "left": 192,
+    "top": 112,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 13,
+    "y": 7,
+    "name": "Lost Summer Road",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "lost-summer-road",
+    "mapId": 454,
+    "left": 208,
+    "top": 112,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 13,
+    "y": 10,
+    "name": "Delta Highway",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "delta-highway",
+    "mapId": 490,
+    "left": 208,
+    "top": 160,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 14,
+    "y": 10,
+    "name": "Delta Highway",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "delta-highway",
+    "mapId": 490,
+    "left": 224,
+    "top": 160,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 15,
+    "y": 10,
+    "name": "Delta Highway",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "delta-highway",
+    "mapId": 490,
+    "left": 240,
+    "top": 160,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 16,
+    "y": 10,
+    "name": "Delta Highway",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "delta-highway",
+    "mapId": 490,
+    "left": 256,
+    "top": 160,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 16,
+    "y": 9,
+    "name": "Drowned Route",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 256,
+    "top": 144,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 3,
+    "y": 6,
+    "name": "Mt. Dynamo",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "mt-dynamo",
+    "mapId": 405,
+    "left": 48,
+    "top": 96,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 3,
+    "y": 5,
+    "name": "Mt. Dynamo",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "mt-dynamo",
+    "mapId": 405,
+    "left": 48,
+    "top": 80,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 3,
+    "y": 7,
+    "name": "Steel Road",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "steel-road",
+    "mapId": 439,
+    "left": 48,
+    "top": 112,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 3,
+    "y": 8,
+    "name": "Steel Road",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "steel-road",
+    "mapId": 439,
+    "left": 48,
+    "top": 128,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 3,
+    "y": 9,
+    "name": "Steel Road",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "steel-road",
+    "mapId": 439,
+    "left": 48,
+    "top": 144,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 3,
+    "y": 10,
+    "name": "Steel Road",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "steel-road",
+    "mapId": 439,
+    "left": 48,
+    "top": 160,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 4,
+    "y": 10,
+    "name": "Steel Road",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "steel-road",
+    "mapId": 439,
+    "left": 64,
+    "top": 160,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 3,
+    "y": 11,
+    "name": "Steel Road",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "steel-road",
+    "mapId": 439,
+    "left": 48,
+    "top": 176,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 3,
+    "y": 12,
+    "name": "Forbidden Road",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 48,
+    "top": 192,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 3,
+    "y": 13,
+    "name": "Forbidden Road",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 48,
+    "top": 208,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 4,
+    "y": 13,
+    "name": "Forbidden Road",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 64,
+    "top": 208,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 4,
+    "y": 14,
+    "name": "Forbidden Road",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 64,
+    "top": 224,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 5,
+    "y": 14,
+    "name": "Forbidden Road",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 80,
+    "top": 224,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 6,
+    "y": 14,
+    "name": "Forbidden Road",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 96,
+    "top": 224,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 6,
+    "y": 13,
+    "name": "Forbidden Road",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 96,
+    "top": 208,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 7,
+    "y": 13,
+    "name": "Forbidden Road",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 112,
+    "top": 208,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 7,
+    "y": 12,
+    "name": "Forbidden Road",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 112,
+    "top": 192,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 8,
+    "y": 12,
+    "name": "Forbidden Road",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 128,
+    "top": 192,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 15,
+    "y": 17,
+    "name": "Iggy's Alcove",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 240,
+    "top": 272,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 16,
+    "y": 12,
+    "name": "Oceanway 1",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 256,
+    "top": 192,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 16,
+    "y": 13,
+    "name": "Oceanway 1",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 256,
+    "top": 208,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 16,
+    "y": 14,
+    "name": "Oceanway 1",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 256,
+    "top": 224,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 16,
+    "y": 15,
+    "name": "Oceanway 1",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 256,
+    "top": 240,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 22,
+    "y": 7,
+    "name": "Burned Forest",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 352,
+    "top": 112,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 24,
+    "y": 9,
+    "name": "Route 2",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 384,
+    "top": 144,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 23,
+    "y": 8,
+    "name": "Route 3",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 368,
+    "top": 128,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 22,
+    "y": 8,
+    "name": "Route 3",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 352,
+    "top": 128,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 22,
+    "y": 9,
+    "name": "Route 3",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 352,
+    "top": 144,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 22,
+    "y": 6,
+    "name": "Route 4",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 352,
+    "top": 96,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 21,
+    "y": 6,
+    "name": "Route 4",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 336,
+    "top": 96,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 20,
+    "y": 7,
+    "name": "Route 5",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 320,
+    "top": 112,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 20,
+    "y": 8,
+    "name": "Route 5",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 320,
+    "top": 128,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 19,
+    "y": 8,
+    "name": "Route 6",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 304,
+    "top": 128,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 18,
+    "y": 8,
+    "name": "Route 6",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 288,
+    "top": 128,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 15,
+    "y": 8,
+    "name": "Treetops Checkpoint",
+    "description": null,
+    "flyMapId": 466,
+    "flyX": 18,
+    "flyY": 24,
+    "switch": null,
+    "slug": "treetops-checkpoint",
+    "mapId": 466,
+    "left": 240,
+    "top": 128,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 17,
+    "y": 6,
+    "name": "Teren Desert",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "teren-desert",
+    "mapId": 479,
+    "left": 272,
+    "top": 96,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 4,
+    "y": 8,
+    "name": "Iron Port",
+    "description": null,
+    "flyMapId": 441,
+    "flyX": 48,
+    "flyY": 15,
+    "switch": null,
+    "slug": "iron-port",
+    "mapId": 441,
+    "left": 64,
+    "top": 128,
+    "width": 16,
+    "height": 16
+   }
+  ],
+  "places": [
+   {
+    "name": "Astarr Town",
+    "slug": "astarr-town",
+    "mapId": 474,
+    "description": null,
+    "squares": [
+     {
+      "x": 17,
+      "y": 7
+     }
+    ]
+   },
+   {
+    "name": "Asutra City",
+    "slug": "asutra-city-3",
+    "mapId": 447,
+    "description": null,
+    "squares": [
+     {
+      "x": 13,
+      "y": 8
+     },
+     {
+      "x": 13,
+      "y": 9
+     }
+    ]
+   },
+   {
+    "name": "Burned Forest",
+    "slug": null,
+    "mapId": null,
+    "description": null,
+    "squares": [
+     {
+      "x": 22,
+      "y": 7
+     }
+    ]
+   },
+   {
+    "name": "Cape Paradise",
+    "slug": null,
+    "mapId": null,
+    "description": null,
+    "squares": [
+     {
+      "x": 11,
+      "y": 5
+     }
+    ]
+   },
+   {
+    "name": "Delta Highway",
+    "slug": "delta-highway",
+    "mapId": 490,
+    "description": null,
+    "squares": [
+     {
+      "x": 13,
+      "y": 10
+     },
+     {
+      "x": 14,
+      "y": 10
+     },
+     {
+      "x": 15,
+      "y": 10
+     },
+     {
+      "x": 16,
+      "y": 10
+     }
+    ]
+   },
+   {
+    "name": "Drowned Route",
+    "slug": null,
+    "mapId": null,
+    "description": null,
+    "squares": [
+     {
+      "x": 16,
+      "y": 9
+     }
+    ]
+   },
+   {
+    "name": "Dry Crater",
+    "slug": null,
+    "mapId": null,
+    "description": null,
+    "squares": [
+     {
+      "x": 20,
+      "y": 17
+     }
+    ]
+   },
+   {
+    "name": "Factorial Town",
+    "slug": null,
+    "mapId": null,
+    "description": null,
+    "squares": [
+     {
+      "x": 5,
+      "y": 10
+     }
+    ]
+   },
+   {
+    "name": "Forbidden Road",
+    "slug": null,
+    "mapId": null,
+    "description": null,
+    "squares": [
+     {
+      "x": 3,
+      "y": 12
+     },
+     {
+      "x": 3,
+      "y": 13
+     },
+     {
+      "x": 4,
+      "y": 13
+     },
+     {
+      "x": 4,
+      "y": 14
+     },
+     {
+      "x": 5,
+      "y": 14
+     },
+     {
+      "x": 6,
+      "y": 14
+     },
+     {
+      "x": 6,
+      "y": 13
+     },
+     {
+      "x": 7,
+      "y": 13
+     },
+     {
+      "x": 7,
+      "y": 12
+     },
+     {
+      "x": 8,
+      "y": 12
+     }
+    ]
+   },
+   {
+    "name": "Great Chasm",
+    "slug": null,
+    "mapId": null,
+    "description": null,
+    "squares": [
+     {
+      "x": 17,
+      "y": 11
+     }
+    ]
+   },
+   {
+    "name": "Great Mesmer Alps",
+    "slug": null,
+    "mapId": null,
+    "description": null,
+    "squares": [
+     {
+      "x": 24,
+      "y": 2
+     },
+     {
+      "x": 25,
+      "y": 2
+     },
+     {
+      "x": 24,
+      "y": 1
+     },
+     {
+      "x": 25,
+      "y": 1
+     },
+     {
+      "x": 26,
+      "y": 2
+     },
+     {
+      "x": 26,
+      "y": 1
+     }
+    ]
+   },
+   {
+    "name": "Iggy's Alcove",
+    "slug": null,
+    "mapId": null,
+    "description": null,
+    "squares": [
+     {
+      "x": 15,
+      "y": 17
+     }
+    ]
+   },
+   {
+    "name": "Iron Port",
+    "slug": "iron-port",
+    "mapId": 441,
+    "description": null,
+    "squares": [
+     {
+      "x": 4,
+      "y": 8
+     }
+    ]
+   },
+   {
+    "name": "Lake Empyrean",
+    "slug": null,
+    "mapId": null,
+    "description": null,
+    "squares": [
+     {
+      "x": 20,
+      "y": 6
+     },
+     {
+      "x": 19,
+      "y": 6
+     }
+    ]
+   },
+   {
+    "name": "Lost Summer Road",
+    "slug": "lost-summer-road",
+    "mapId": 454,
+    "description": null,
+    "squares": [
+     {
+      "x": 11,
+      "y": 7
+     },
+     {
+      "x": 12,
+      "y": 7
+     },
+     {
+      "x": 13,
+      "y": 7
+     }
+    ]
+   },
+   {
+    "name": "Monkshawon",
+    "slug": null,
+    "mapId": null,
+    "description": null,
+    "squares": [
+     {
+      "x": 24,
+      "y": 8
+     }
+    ]
+   },
+   {
+    "name": "Mt. Dynamo",
+    "slug": "mt-dynamo",
+    "mapId": 405,
+    "description": null,
+    "squares": [
+     {
+      "x": 3,
+      "y": 6
+     },
+     {
+      "x": 3,
+      "y": 6
+     },
+     {
+      "x": 3,
+      "y": 5
+     }
+    ]
+   },
+   {
+    "name": "NO Route 1",
+    "slug": null,
+    "mapId": null,
+    "description": null,
+    "squares": [
+     {
+      "x": 19,
+      "y": 4
+     },
+     {
+      "x": 20,
+      "y": 4
+     }
+    ]
+   },
+   {
+    "name": "NO Route 2",
+    "slug": null,
+    "mapId": null,
+    "description": null,
+    "squares": [
+     {
+      "x": 20,
+      "y": 3
+     }
+    ]
+   },
+   {
+    "name": "NSC Boundary",
+    "slug": null,
+    "mapId": null,
+    "description": null,
+    "squares": [
+     {
+      "x": 18,
+      "y": 3
+     }
+    ]
+   },
+   {
+    "name": "NSC Gate",
+    "slug": "nsc-gate",
+    "mapId": 501,
+    "description": null,
+    "squares": [
+     {
+      "x": 17,
+      "y": 5
+     }
+    ]
+   },
+   {
+    "name": "Neo Sylen City",
+    "slug": "neo-sylen-city",
+    "mapId": 494,
+    "description": null,
+    "squares": [
+     {
+      "x": 16,
+      "y": 4
+     },
+     {
+      "x": 17,
+      "y": 4
+     },
+     {
+      "x": 18,
+      "y": 4
+     },
+     {
+      "x": 17,
+      "y": 3
+     }
+    ]
+   },
+   {
+    "name": "North Outpost",
+    "slug": null,
+    "mapId": null,
+    "description": null,
+    "squares": [
+     {
+      "x": 21,
+      "y": 3
+     }
+    ]
+   },
+   {
+    "name": "Oceanway 1",
+    "slug": null,
+    "mapId": null,
+    "description": null,
+    "squares": [
+     {
+      "x": 16,
+      "y": 12
+     },
+     {
+      "x": 16,
+      "y": 13
+     },
+     {
+      "x": 16,
+      "y": 14
+     },
+     {
+      "x": 16,
+      "y": 15
+     }
+    ]
+   },
+   {
+    "name": "Prism Tower",
+    "slug": "prism-tower-2",
+    "mapId": 565,
+    "description": null,
+    "squares": [
+     {
+      "x": 17,
+      "y": 15
+     }
+    ]
+   },
+   {
+    "name": "Route 0",
+    "slug": null,
+    "mapId": null,
+    "description": null,
+    "squares": [
+     {
+      "x": 16,
+      "y": 5
+     }
+    ]
+   },
+   {
+    "name": "Route 1",
+    "slug": null,
+    "mapId": null,
+    "description": null,
+    "squares": [
+     {
+      "x": 15,
+      "y": 5
+     }
+    ]
+   },
+   {
+    "name": "Route 2",
+    "slug": null,
+    "mapId": null,
+    "description": null,
+    "squares": [
+     {
+      "x": 15,
+      "y": 6
+     },
+     {
+      "x": 24,
+      "y": 9
+     }
+    ]
+   },
+   {
+    "name": "Route 3",
+    "slug": null,
+    "mapId": null,
+    "description": null,
+    "squares": [
+     {
+      "x": 23,
+      "y": 8
+     },
+     {
+      "x": 22,
+      "y": 8
+     },
+     {
+      "x": 22,
+      "y": 9
+     }
+    ]
+   },
+   {
+    "name": "Route 4",
+    "slug": null,
+    "mapId": null,
+    "description": null,
+    "squares": [
+     {
+      "x": 22,
+      "y": 6
+     },
+     {
+      "x": 21,
+      "y": 6
+     }
+    ]
+   },
+   {
+    "name": "Route 5",
+    "slug": null,
+    "mapId": null,
+    "description": null,
+    "squares": [
+     {
+      "x": 20,
+      "y": 7
+     },
+     {
+      "x": 20,
+      "y": 8
+     }
+    ]
+   },
+   {
+    "name": "Route 6",
+    "slug": null,
+    "mapId": null,
+    "description": null,
+    "squares": [
+     {
+      "x": 19,
+      "y": 8
+     },
+     {
+      "x": 18,
+      "y": 8
+     }
+    ]
+   },
+   {
+    "name": "Ruins of Krystolny",
+    "slug": null,
+    "mapId": null,
+    "description": null,
+    "squares": [
+     {
+      "x": 16,
+      "y": 11
+     }
+    ]
+   },
+   {
+    "name": "Ruins of Roarin",
+    "slug": null,
+    "mapId": null,
+    "description": null,
+    "squares": [
+     {
+      "x": 19,
+      "y": 17
+     }
+    ]
+   },
+   {
+    "name": "Saleen Town",
+    "slug": null,
+    "mapId": null,
+    "description": null,
+    "squares": [
+     {
+      "x": 24,
+      "y": 10
+     }
+    ]
+   },
+   {
+    "name": "Sand Abyss",
+    "slug": null,
+    "mapId": null,
+    "description": null,
+    "squares": [
+     {
+      "x": 7,
+      "y": 16
+     }
+    ]
+   },
+   {
+    "name": "Seaside Haven",
+    "slug": null,
+    "mapId": null,
+    "description": null,
+    "squares": [
+     {
+      "x": 25,
+      "y": 10
+     }
+    ]
+   },
+   {
+    "name": "Steel Road",
+    "slug": "steel-road",
+    "mapId": 439,
+    "description": null,
+    "squares": [
+     {
+      "x": 3,
+      "y": 7
+     },
+     {
+      "x": 3,
+      "y": 8
+     },
+     {
+      "x": 3,
+      "y": 9
+     },
+     {
+      "x": 3,
+      "y": 10
+     },
+     {
+      "x": 4,
+      "y": 10
+     },
+     {
+      "x": 3,
+      "y": 11
+     }
+    ]
+   },
+   {
+    "name": "Teren Desert",
+    "slug": "teren-desert",
+    "mapId": 479,
+    "description": null,
+    "squares": [
+     {
+      "x": 17,
+      "y": 6
+     }
+    ]
+   },
+   {
+    "name": "The Generator",
+    "slug": "the-generator",
+    "mapId": 476,
+    "description": null,
+    "squares": [
+     {
+      "x": 16,
+      "y": 7
+     }
+    ]
+   },
+   {
+    "name": "Tower Ruins",
+    "slug": null,
+    "mapId": null,
+    "description": null,
+    "squares": [
+     {
+      "x": 8,
+      "y": 11
+     }
+    ]
+   },
+   {
+    "name": "Treetops Checkpoint",
+    "slug": "treetops-checkpoint",
+    "mapId": 466,
+    "description": null,
+    "squares": [
+     {
+      "x": 15,
+      "y": 8
+     }
+    ]
+   },
+   {
+    "name": "UF North Fort",
+    "slug": null,
+    "mapId": null,
+    "description": null,
+    "squares": [
+     {
+      "x": 14,
+      "y": 6
+     }
+    ]
+   },
+   {
+    "name": "UF South Fort",
+    "slug": null,
+    "mapId": null,
+    "description": null,
+    "squares": [
+     {
+      "x": 22,
+      "y": 10
+     }
+    ]
+   },
+   {
+    "name": "Void Forest",
+    "slug": null,
+    "mapId": null,
+    "description": null,
+    "squares": [
+     {
+      "x": 13,
+      "y": 6
+     }
+    ]
+   }
+  ],
+  "displayName": "Year 3030 (1)"
+ },
+ {
+  "index": 2,
+  "name": "Year 3030",
+  "slug": "year-3030-2",
+  "filename": "mapRegion2.png",
+  "image": "regions/2.png",
+  "width": 480,
+  "height": 320,
+  "square": 16,
+  "points": [
+   {
+    "x": 13,
+    "y": 11,
+    "name": "Jungle Haven",
+    "description": null,
+    "flyMapId": 550,
+    "flyX": 31,
+    "flyY": 15,
+    "switch": null,
+    "slug": "jungle-haven",
+    "mapId": 550,
+    "left": 208,
+    "top": 176,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 14,
+    "y": 11,
+    "name": "Warp Gate",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "warp-gate",
+    "mapId": 552,
+    "left": 224,
+    "top": 176,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 17,
+    "y": 8,
+    "name": "The Plantation",
+    "description": null,
+    "flyMapId": 551,
+    "flyX": 21,
+    "flyY": 21,
+    "switch": null,
+    "slug": "the-plantation",
+    "mapId": 551,
+    "left": 272,
+    "top": 128,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 15,
+    "y": 17,
+    "name": "Oceanway 1",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "oceanway-1",
+    "mapId": 560,
+    "left": 240,
+    "top": 272,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 15,
+    "y": 18,
+    "name": "Oceanway 1",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "oceanway-1",
+    "mapId": 560,
+    "left": 240,
+    "top": 288,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 15,
+    "y": 19,
+    "name": "Oceanway 1",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "oceanway-1",
+    "mapId": 560,
+    "left": 240,
+    "top": 304,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 16,
+    "y": 19,
+    "name": "Prism Tower",
+    "description": null,
+    "flyMapId": 563,
+    "flyX": 45,
+    "flyY": 13,
+    "switch": null,
+    "slug": "prism-tower",
+    "mapId": 563,
+    "left": 256,
+    "top": 304,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 15,
+    "y": 16,
+    "name": "South Shore",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "south-shore",
+    "mapId": 559,
+    "left": 240,
+    "top": 256,
+    "width": 16,
+    "height": 16
+   }
+  ],
+  "places": [
+   {
+    "name": "Jungle Haven",
+    "slug": "jungle-haven",
+    "mapId": 550,
+    "description": null,
+    "squares": [
+     {
+      "x": 13,
+      "y": 11
+     }
+    ]
+   },
+   {
+    "name": "Oceanway 1",
+    "slug": "oceanway-1",
+    "mapId": 560,
+    "description": null,
+    "squares": [
+     {
+      "x": 15,
+      "y": 17
+     },
+     {
+      "x": 15,
+      "y": 18
+     },
+     {
+      "x": 15,
+      "y": 19
+     }
+    ]
+   },
+   {
+    "name": "Prism Tower",
+    "slug": "prism-tower",
+    "mapId": 563,
+    "description": null,
+    "squares": [
+     {
+      "x": 16,
+      "y": 19
+     }
+    ]
+   },
+   {
+    "name": "South Shore",
+    "slug": "south-shore",
+    "mapId": 559,
+    "description": null,
+    "squares": [
+     {
+      "x": 15,
+      "y": 16
+     }
+    ]
+   },
+   {
+    "name": "The Plantation",
+    "slug": "the-plantation",
+    "mapId": 551,
+    "description": null,
+    "squares": [
+     {
+      "x": 17,
+      "y": 8
+     }
+    ]
+   },
+   {
+    "name": "Warp Gate",
+    "slug": "warp-gate",
+    "mapId": 552,
+    "description": null,
+    "squares": [
+     {
+      "x": 14,
+      "y": 11
+     }
+    ]
+   }
+  ],
+  "displayName": "Year 3030 (2)"
+ },
+ {
+  "index": 3,
+  "name": "Unknown",
+  "slug": "unknown",
+  "filename": "mapRegionUnknown.png",
+  "image": "regions/3.png",
+  "width": 480,
+  "height": 320,
+  "square": 16,
+  "points": [
+   {
+    "x": 0,
+    "y": 0,
+    "name": "Rainbow Island",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "rainbow-island",
+    "mapId": 645,
+    "left": 0,
+    "top": 0,
+    "width": 16,
+    "height": 16
+   }
+  ],
+  "places": [
+   {
+    "name": "Rainbow Island",
+    "slug": "rainbow-island",
+    "mapId": 645,
+    "description": null,
+    "squares": [
+     {
+      "x": 0,
+      "y": 0
+     }
+    ]
+   }
+  ],
+  "displayName": "Unknown"
+ },
+ {
+  "index": 4,
+  "name": "Deshret",
+  "slug": "deshret",
+  "filename": "mapRegion3.png",
+  "image": "regions/4.png",
+  "width": 480,
+  "height": 320,
+  "square": 16,
+  "points": [
+   {
+    "x": 18,
+    "y": 2,
+    "name": "Zirconium Tower",
+    "description": null,
+    "flyMapId": 758,
+    "flyX": 20,
+    "flyY": 12,
+    "switch": null,
+    "slug": "zirconium-tower",
+    "mapId": 758,
+    "left": 288,
+    "top": 32,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 18,
+    "y": 1,
+    "name": "Zirconium Tower Summit",
+    "description": null,
+    "flyMapId": 775,
+    "flyX": 25,
+    "flyY": 45,
+    "switch": null,
+    "slug": null,
+    "mapId": null,
+    "left": 288,
+    "top": 16,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 18,
+    "y": 3,
+    "name": "Road to Ruin",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "road-to-ruin",
+    "mapId": 757,
+    "left": 288,
+    "top": 48,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 17,
+    "y": 3,
+    "name": "Road to Ruin",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "road-to-ruin",
+    "mapId": 757,
+    "left": 272,
+    "top": 48,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 17,
+    "y": 4,
+    "name": "Road to Ruin",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "road-to-ruin",
+    "mapId": 757,
+    "left": 272,
+    "top": 64,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 14,
+    "y": 3,
+    "name": "New Ma'at",
+    "description": null,
+    "flyMapId": 658,
+    "flyX": 28,
+    "flyY": 30,
+    "switch": null,
+    "slug": "new-ma-at",
+    "mapId": 658,
+    "left": 224,
+    "top": 48,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 10,
+    "y": 5,
+    "name": "Nubis Town",
+    "description": null,
+    "flyMapId": 679,
+    "flyX": 50,
+    "flyY": 26,
+    "switch": null,
+    "slug": "nubis-town",
+    "mapId": 679,
+    "left": 160,
+    "top": 80,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 10,
+    "y": 6,
+    "name": "Highroad 2",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "highroad-2",
+    "mapId": 693,
+    "left": 160,
+    "top": 96,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 10,
+    "y": 7,
+    "name": "Highroad 2",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "highroad-2",
+    "mapId": 693,
+    "left": 160,
+    "top": 112,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 16,
+    "y": 6,
+    "name": "Shakret Town",
+    "description": null,
+    "flyMapId": 670,
+    "flyX": 30,
+    "flyY": 13,
+    "switch": null,
+    "slug": "shakret-town",
+    "mapId": 670,
+    "left": 256,
+    "top": 96,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 13,
+    "y": 8,
+    "name": "Sacred Oasis",
+    "description": null,
+    "flyMapId": 720,
+    "flyX": 29,
+    "flyY": 25,
+    "switch": null,
+    "slug": "sacred-oasis",
+    "mapId": 720,
+    "left": 208,
+    "top": 128,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 11,
+    "y": 9,
+    "name": "Dalby Village",
+    "description": null,
+    "flyMapId": 697,
+    "flyX": 45,
+    "flyY": 14,
+    "switch": null,
+    "slug": "dalby-village",
+    "mapId": 697,
+    "left": 176,
+    "top": 144,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 9,
+    "y": 11,
+    "name": "Lashan Cliffs",
+    "description": null,
+    "flyMapId": 703,
+    "flyX": 26,
+    "flyY": 12,
+    "switch": null,
+    "slug": "lashan-cliffs",
+    "mapId": 703,
+    "left": 144,
+    "top": 176,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 14,
+    "y": 12,
+    "name": "The Alarean",
+    "description": null,
+    "flyMapId": 732,
+    "flyX": 76,
+    "flyY": 35,
+    "switch": null,
+    "slug": "the-alarean",
+    "mapId": 732,
+    "left": 224,
+    "top": 192,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 16,
+    "y": 17,
+    "name": "Star Temple",
+    "description": null,
+    "flyMapId": 739,
+    "flyX": 29,
+    "flyY": 14,
+    "switch": null,
+    "slug": "star-temple-3",
+    "mapId": 740,
+    "left": 256,
+    "top": 272,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 14,
+    "y": 4,
+    "name": "Junction C001",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "junction-c001",
+    "mapId": 664,
+    "left": 224,
+    "top": 64,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 13,
+    "y": 4,
+    "name": "Highroad 1",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "highroad-1",
+    "mapId": 674,
+    "left": 208,
+    "top": 64,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 12,
+    "y": 4,
+    "name": "Route C001",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-c001",
+    "mapId": 675,
+    "left": 192,
+    "top": 64,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 12,
+    "y": 5,
+    "name": "Route C001",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-c001",
+    "mapId": 675,
+    "left": 192,
+    "top": 80,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 11,
+    "y": 4,
+    "name": "Secret Mountain",
+    "description": null,
+    "flyMapId": 677,
+    "flyX": 25,
+    "flyY": 8,
+    "switch": null,
+    "slug": "secret-mountain",
+    "mapId": 677,
+    "left": 176,
+    "top": 64,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 11,
+    "y": 5,
+    "name": "Route C001",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-c001",
+    "mapId": 675,
+    "left": 176,
+    "top": 80,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 15,
+    "y": 4,
+    "name": "Route C002",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-c002",
+    "mapId": 665,
+    "left": 240,
+    "top": 64,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 15,
+    "y": 5,
+    "name": "Route C002",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-c002",
+    "mapId": 665,
+    "left": 240,
+    "top": 80,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 15,
+    "y": 6,
+    "name": "Route C002",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-c002",
+    "mapId": 665,
+    "left": 240,
+    "top": 96,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 17,
+    "y": 6,
+    "name": "Scorched Way",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "scorched-way",
+    "mapId": 714,
+    "left": 272,
+    "top": 96,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 17,
+    "y": 7,
+    "name": "Scorched Way",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "scorched-way",
+    "mapId": 714,
+    "left": 272,
+    "top": 112,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 17,
+    "y": 8,
+    "name": "Scorched Way",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "scorched-way",
+    "mapId": 714,
+    "left": 272,
+    "top": 128,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 16,
+    "y": 8,
+    "name": "Junction D001",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "junction-d001",
+    "mapId": 717,
+    "left": 256,
+    "top": 128,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 10,
+    "y": 8,
+    "name": "Junction D000",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "junction-d000",
+    "mapId": 694,
+    "left": 160,
+    "top": 128,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 11,
+    "y": 8,
+    "name": "Route D000",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-d000",
+    "mapId": 712,
+    "left": 176,
+    "top": 128,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 12,
+    "y": 8,
+    "name": "Route D000",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-d000",
+    "mapId": 712,
+    "left": 192,
+    "top": 128,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 14,
+    "y": 8,
+    "name": "Route D001",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-d001",
+    "mapId": 718,
+    "left": 224,
+    "top": 128,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 15,
+    "y": 8,
+    "name": "Route D001",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-d001",
+    "mapId": 718,
+    "left": 240,
+    "top": 128,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 10,
+    "y": 9,
+    "name": "Route D002",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-d002",
+    "mapId": 695,
+    "left": 160,
+    "top": 144,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 10,
+    "y": 10,
+    "name": "Route D002",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-d002",
+    "mapId": 695,
+    "left": 160,
+    "top": 160,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 10,
+    "y": 11,
+    "name": "Narrow Path",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "narrow-path",
+    "mapId": 702,
+    "left": 160,
+    "top": 176,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 11,
+    "y": 10,
+    "name": "Route D002",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-d002",
+    "mapId": 695,
+    "left": 176,
+    "top": 160,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 11,
+    "y": 11,
+    "name": "Route D003",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-d003",
+    "mapId": 704,
+    "left": 176,
+    "top": 176,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 12,
+    "y": 11,
+    "name": "Route D003",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-d003",
+    "mapId": 704,
+    "left": 192,
+    "top": 176,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 12,
+    "y": 12,
+    "name": "Route D003",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-d003",
+    "mapId": 704,
+    "left": 192,
+    "top": 192,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 13,
+    "y": 12,
+    "name": "Route D003",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-d003",
+    "mapId": 704,
+    "left": 208,
+    "top": 192,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 16,
+    "y": 9,
+    "name": "Scorched Way",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "scorched-way",
+    "mapId": 714,
+    "left": 256,
+    "top": 144,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 17,
+    "y": 9,
+    "name": "Scorched Way",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "scorched-way",
+    "mapId": 714,
+    "left": 272,
+    "top": 144,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 17,
+    "y": 10,
+    "name": "Scorched Way",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "scorched-way",
+    "mapId": 714,
+    "left": 272,
+    "top": 160,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 17,
+    "y": 11,
+    "name": "Highroad 3",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "highroad-3",
+    "mapId": 728,
+    "left": 272,
+    "top": 176,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 18,
+    "y": 10,
+    "name": "Dead Yard",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "dead-yard",
+    "mapId": 727,
+    "left": 288,
+    "top": 160,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 17,
+    "y": 12,
+    "name": "Route D004",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-d004",
+    "mapId": 730,
+    "left": 272,
+    "top": 192,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 16,
+    "y": 12,
+    "name": "Route D004",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-d004",
+    "mapId": 730,
+    "left": 256,
+    "top": 192,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 15,
+    "y": 12,
+    "name": "Route D004",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "route-d004",
+    "mapId": 730,
+    "left": 240,
+    "top": 192,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 14,
+    "y": 13,
+    "name": "Alarean Sands",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "alarean-sands",
+    "mapId": 734,
+    "left": 224,
+    "top": 208,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 14,
+    "y": 14,
+    "name": "Highroad 4",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "highroad-4",
+    "mapId": 735,
+    "left": 224,
+    "top": 224,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 14,
+    "y": 15,
+    "name": "Mobius Strip",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "mobius-strip",
+    "mapId": 736,
+    "left": 224,
+    "top": 240,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 15,
+    "y": 15,
+    "name": "Mobius Strip",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "mobius-strip",
+    "mapId": 736,
+    "left": 240,
+    "top": 240,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 16,
+    "y": 15,
+    "name": "Mobius Strip",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "mobius-strip",
+    "mapId": 736,
+    "left": 256,
+    "top": 240,
+    "width": 16,
+    "height": 16
+   },
+   {
+    "x": 16,
+    "y": 16,
+    "name": "Mobius Strip",
+    "description": null,
+    "flyMapId": null,
+    "flyX": null,
+    "flyY": null,
+    "switch": null,
+    "slug": "mobius-strip",
+    "mapId": 736,
+    "left": 256,
+    "top": 256,
+    "width": 16,
+    "height": 16
+   }
+  ],
+  "places": [
+   {
+    "name": "Alarean Sands",
+    "slug": "alarean-sands",
+    "mapId": 734,
+    "description": null,
+    "squares": [
+     {
+      "x": 14,
+      "y": 13
+     }
+    ]
+   },
+   {
+    "name": "Dalby Village",
+    "slug": "dalby-village",
+    "mapId": 697,
+    "description": null,
+    "squares": [
+     {
+      "x": 11,
+      "y": 9
+     }
+    ]
+   },
+   {
+    "name": "Dead Yard",
+    "slug": "dead-yard",
+    "mapId": 727,
+    "description": null,
+    "squares": [
+     {
+      "x": 18,
+      "y": 10
+     }
+    ]
+   },
+   {
+    "name": "Highroad 1",
+    "slug": "highroad-1",
+    "mapId": 674,
+    "description": null,
+    "squares": [
+     {
+      "x": 13,
+      "y": 4
+     }
+    ]
+   },
+   {
+    "name": "Highroad 2",
+    "slug": "highroad-2",
+    "mapId": 693,
+    "description": null,
+    "squares": [
+     {
+      "x": 10,
+      "y": 6
+     },
+     {
+      "x": 10,
+      "y": 7
+     }
+    ]
+   },
+   {
+    "name": "Highroad 3",
+    "slug": "highroad-3",
+    "mapId": 728,
+    "description": null,
+    "squares": [
+     {
+      "x": 17,
+      "y": 11
+     }
+    ]
+   },
+   {
+    "name": "Highroad 4",
+    "slug": "highroad-4",
+    "mapId": 735,
+    "description": null,
+    "squares": [
+     {
+      "x": 14,
+      "y": 14
+     }
+    ]
+   },
+   {
+    "name": "Junction C001",
+    "slug": "junction-c001",
+    "mapId": 664,
+    "description": null,
+    "squares": [
+     {
+      "x": 14,
+      "y": 4
+     }
+    ]
+   },
+   {
+    "name": "Junction D000",
+    "slug": "junction-d000",
+    "mapId": 694,
+    "description": null,
+    "squares": [
+     {
+      "x": 10,
+      "y": 8
+     }
+    ]
+   },
+   {
+    "name": "Junction D001",
+    "slug": "junction-d001",
+    "mapId": 717,
+    "description": null,
+    "squares": [
+     {
+      "x": 16,
+      "y": 8
+     }
+    ]
+   },
+   {
+    "name": "Lashan Cliffs",
+    "slug": "lashan-cliffs",
+    "mapId": 703,
+    "description": null,
+    "squares": [
+     {
+      "x": 9,
+      "y": 11
+     }
+    ]
+   },
+   {
+    "name": "Mobius Strip",
+    "slug": "mobius-strip",
+    "mapId": 736,
+    "description": null,
+    "squares": [
+     {
+      "x": 14,
+      "y": 15
+     },
+     {
+      "x": 15,
+      "y": 15
+     },
+     {
+      "x": 16,
+      "y": 15
+     },
+     {
+      "x": 16,
+      "y": 16
+     }
+    ]
+   },
+   {
+    "name": "Narrow Path",
+    "slug": "narrow-path",
+    "mapId": 702,
+    "description": null,
+    "squares": [
+     {
+      "x": 10,
+      "y": 11
+     }
+    ]
+   },
+   {
+    "name": "New Ma'at",
+    "slug": "new-ma-at",
+    "mapId": 658,
+    "description": null,
+    "squares": [
+     {
+      "x": 14,
+      "y": 3
+     }
+    ]
+   },
+   {
+    "name": "Nubis Town",
+    "slug": "nubis-town",
+    "mapId": 679,
+    "description": null,
+    "squares": [
+     {
+      "x": 10,
+      "y": 5
+     }
+    ]
+   },
+   {
+    "name": "Road to Ruin",
+    "slug": "road-to-ruin",
+    "mapId": 757,
+    "description": null,
+    "squares": [
+     {
+      "x": 18,
+      "y": 3
+     },
+     {
+      "x": 17,
+      "y": 3
+     },
+     {
+      "x": 17,
+      "y": 4
+     }
+    ]
+   },
+   {
+    "name": "Route C001",
+    "slug": "route-c001",
+    "mapId": 675,
+    "description": null,
+    "squares": [
+     {
+      "x": 12,
+      "y": 4
+     },
+     {
+      "x": 12,
+      "y": 5
+     },
+     {
+      "x": 11,
+      "y": 5
+     }
+    ]
+   },
+   {
+    "name": "Route C002",
+    "slug": "route-c002",
+    "mapId": 665,
+    "description": null,
+    "squares": [
+     {
+      "x": 15,
+      "y": 4
+     },
+     {
+      "x": 15,
+      "y": 5
+     },
+     {
+      "x": 15,
+      "y": 6
+     }
+    ]
+   },
+   {
+    "name": "Route D000",
+    "slug": "route-d000",
+    "mapId": 712,
+    "description": null,
+    "squares": [
+     {
+      "x": 11,
+      "y": 8
+     },
+     {
+      "x": 12,
+      "y": 8
+     }
+    ]
+   },
+   {
+    "name": "Route D001",
+    "slug": "route-d001",
+    "mapId": 718,
+    "description": null,
+    "squares": [
+     {
+      "x": 14,
+      "y": 8
+     },
+     {
+      "x": 15,
+      "y": 8
+     }
+    ]
+   },
+   {
+    "name": "Route D002",
+    "slug": "route-d002",
+    "mapId": 695,
+    "description": null,
+    "squares": [
+     {
+      "x": 10,
+      "y": 9
+     },
+     {
+      "x": 10,
+      "y": 10
+     },
+     {
+      "x": 11,
+      "y": 10
+     }
+    ]
+   },
+   {
+    "name": "Route D003",
+    "slug": "route-d003",
+    "mapId": 704,
+    "description": null,
+    "squares": [
+     {
+      "x": 11,
+      "y": 11
+     },
+     {
+      "x": 12,
+      "y": 11
+     },
+     {
+      "x": 12,
+      "y": 12
+     },
+     {
+      "x": 13,
+      "y": 12
+     }
+    ]
+   },
+   {
+    "name": "Route D004",
+    "slug": "route-d004",
+    "mapId": 730,
+    "description": null,
+    "squares": [
+     {
+      "x": 17,
+      "y": 12
+     },
+     {
+      "x": 16,
+      "y": 12
+     },
+     {
+      "x": 15,
+      "y": 12
+     }
+    ]
+   },
+   {
+    "name": "Sacred Oasis",
+    "slug": "sacred-oasis",
+    "mapId": 720,
+    "description": null,
+    "squares": [
+     {
+      "x": 13,
+      "y": 8
+     }
+    ]
+   },
+   {
+    "name": "Scorched Way",
+    "slug": "scorched-way",
+    "mapId": 714,
+    "description": null,
+    "squares": [
+     {
+      "x": 17,
+      "y": 6
+     },
+     {
+      "x": 17,
+      "y": 7
+     },
+     {
+      "x": 17,
+      "y": 8
+     },
+     {
+      "x": 16,
+      "y": 9
+     },
+     {
+      "x": 17,
+      "y": 9
+     },
+     {
+      "x": 17,
+      "y": 10
+     }
+    ]
+   },
+   {
+    "name": "Secret Mountain",
+    "slug": "secret-mountain",
+    "mapId": 677,
+    "description": null,
+    "squares": [
+     {
+      "x": 11,
+      "y": 4
+     }
+    ]
+   },
+   {
+    "name": "Shakret Town",
+    "slug": "shakret-town",
+    "mapId": 670,
+    "description": null,
+    "squares": [
+     {
+      "x": 16,
+      "y": 6
+     }
+    ]
+   },
+   {
+    "name": "Star Temple",
+    "slug": "star-temple-3",
+    "mapId": 740,
+    "description": null,
+    "squares": [
+     {
+      "x": 16,
+      "y": 17
+     }
+    ]
+   },
+   {
+    "name": "The Alarean",
+    "slug": "the-alarean",
+    "mapId": 732,
+    "description": null,
+    "squares": [
+     {
+      "x": 14,
+      "y": 12
+     }
+    ]
+   },
+   {
+    "name": "Zirconium Tower",
+    "slug": "zirconium-tower",
+    "mapId": 758,
+    "description": null,
+    "squares": [
+     {
+      "x": 18,
+      "y": 2
+     }
+    ]
+   },
+   {
+    "name": "Zirconium Tower Summit",
+    "slug": null,
+    "mapId": null,
+    "description": null,
+    "squares": [
+     {
+      "x": 18,
+      "y": 1
+     }
+    ]
+   }
+  ],
+  "displayName": "Deshret"
+ },
+ {
+  "index": 5,
+  "name": "Baltia",
+  "slug": "baltia",
+  "filename": "mapRegion4.png",
+  "image": "regions/5.png",
+  "width": 480,
+  "height": 320,
+  "square": 16,
+  "points": [
+   {
+    "x": 7,
+    "y": 10,
+    "name": "Snovska Village",
+    "description": null,
+    "flyMapId": 660,
+    "flyX": 29,
+    "flyY": 11,
+    "switch": null,
+    "slug": "snovska-village",
+    "mapId": 660,
+    "left": 112,
+    "top": 160,
+    "width": 16,
+    "height": 16
+   }
+  ],
+  "places": [
+   {
+    "name": "Snovska Village",
+    "slug": "snovska-village",
+    "mapId": 660,
+    "description": null,
+    "squares": [
+     {
+      "x": 7,
+      "y": 10
+     }
+    ]
+   }
+  ],
+  "displayName": "Baltia"
+ }
+]
